@@ -1,0 +1,90 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "agentic-benchmark-harne-b447fbac",
+  "consumer_brick": "agentic-benchmark-harne-b447fbac",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/agentic-benchmark-harne-b447fbac.json",
+  "fixture_source": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/agentic-benchmark-harne-b447fbac.input-schema.json",
+  "fixture_sha256": "d98fc2089065a14d785937009d80d0c871215cf06e5e87ed67cc5f632dd8726a",
+  "fixture_value_sha256": "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+  "input_schema_sha256": "05f64b453ac54d0390f893fc429e091a586ab1238af346789357bd178aa5d313",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+    "selected_argument_name": null,
+    "selected_source_line": 44,
+    "selected_test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+    "confirmation_kinds": [
+      "unit"
+    ],
+    "matching_candidate_count": 1,
+    "candidate_count": 6,
+    "candidate_hashes": [
+      "1bb3ea747bcaba91799790f198de48fb8f27a0aff1dbed6daf4084da2d421296",
+      "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "515669db59d0ddde9d94db9274acd8cf540e5a1467cf7a48819ba587f7e5a691",
+      "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+      "b0bc5e9d780e07964be1efe5c0a884e20d5b06a7fef6be4b998e9d8b63ce7a9d",
+      "ea9cc953c5f69448f96a30e2553eab83b8d79aa6bb7625fd82119e317de93eae"
+    ],
+    "candidates": [
+      {
+        "hash": "1bb3ea747bcaba91799790f198de48fb8f27a0aff1dbed6daf4084da2d421296",
+        "argument_name": "payload",
+        "line": 58,
+        "expression": "Name",
+        "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "argument_name": null,
+        "line": 74,
+        "expression": "Dict",
+        "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_contract.py",
+        "test_kind": "contract",
+        "guarded": true
+      },
+      {
+        "hash": "ea9cc953c5f69448f96a30e2553eab83b8d79aa6bb7625fd82119e317de93eae",
+        "argument_name": "payload",
+        "line": 31,
+        "expression": "Name",
+        "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+        "argument_name": null,
+        "line": 44,
+        "expression": "Dict",
+        "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "515669db59d0ddde9d94db9274acd8cf540e5a1467cf7a48819ba587f7e5a691",
+        "argument_name": null,
+        "line": 79,
+        "expression": "Dict",
+        "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "b0bc5e9d780e07964be1efe5c0a884e20d5b06a7fef6be4b998e9d8b63ce7a9d",
+        "argument_name": null,
+        "line": 119,
+        "expression": "Dict",
+        "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      }
+    ]
+  }
+}

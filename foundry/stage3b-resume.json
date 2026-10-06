@@ -1,0 +1,11 @@
+{
+  "schema": "portfolio-foundry.stage3b-resume.v1",
+  "status": "RESUME_SELECTED",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "previousBuildToken": "BUILD212_TEST225",
+  "currentBuildToken": "BUILD214_TEST227",
+  "policy": "RESUME_EXACT_SPEC_ONLY",
+  "selectedAt": "2026-10-02T15:12:32.2896495+00:00"
+}

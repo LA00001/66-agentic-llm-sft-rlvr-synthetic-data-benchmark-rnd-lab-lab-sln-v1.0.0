@@ -1,0 +1,52 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "sql-agent-tasks-and-exe-31fdd585",
+  "strategy": "1",
+  "runtime_profile": "python",
+  "resolution": "GENERIC_RUNTIME_CONTRACT",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/bricks/sql-agent-tasks-and-exe-31fdd585/core.py",
+    "callable": "execute"
+  },
+  "arguments": {
+    "mode": "payload"
+  },
+  "input": {
+    "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+    "smoke_fixture": "foundry/runtime-fixtures/sql-agent-tasks-and-exe-31fdd585.json",
+    "schema": "foundry/runtime-contracts/sql-agent-tasks-and-exe-31fdd585.input-schema.json",
+    "fixture_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fixture_source": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+    "consumer_brick": "sql-agent-tasks-and-exe-31fdd585"
+  },
+  "output": {
+    "validation": "json-compatible",
+    "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+    "graph_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+    "runtime_contract": "",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 30,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "12d95397172252d2e52ab4578e2d3984c9eebb16f8639c39f575c3dbc709cbff"
+  },
+  "provenance": {
+    "implementation_provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "previewId": "preview-b6d511be6f514c6aaae1224b41702be8",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "workspaceRelativePath": ".",
+  "status": "CANDIDATE_READY",
+  "vacancyKey": "HH:133035106",
+  "vacancyTitle": "Middle/Senior ML engineer (GigaCode R\u0026D)",
+  "candidateVersion": 1,
+  "candidateTag": "HH:133035106:C001",
+  "factoryBuildToken": "BUILD214_TEST227",
+  "reusedMaterialized": 0,
+  "adaptWorkspaces": 6,
+  "portWorkspaces": 0,
+  "newScaffolds": 1,
+  "createdAt": "2026-10-02T13:54:33.5568809+00:00",
+  "stage3bReadyAt": "2026-10-02T17:13:01.2728398+00:00",
+  "readinessContract": "STAGE3B_EXECUTABLE_GENERATION_PASS"
+}

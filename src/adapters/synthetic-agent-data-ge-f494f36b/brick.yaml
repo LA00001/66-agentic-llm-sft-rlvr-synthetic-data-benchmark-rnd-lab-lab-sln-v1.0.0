@@ -1,0 +1,17 @@
+﻿brick_schema: '1.0'
+id: synthetic-agent-data-ge-f494f36b
+version: 0.1.0
+status: VALIDATED
+language: python
+contract: 'foundry.platform.evidence_registry.v1'
+runtime_contract:
+  input: 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+  output: 'foundry.platform.evidence_registry.v1'
+implementation:
+  provider: executable-contract-closure-v1
+  kind: edge
+  from: synthetic-agent-data-ge-5456d7a2
+  to: agentic-benchmark-harne-b447fbac
+mapping:
+  mode: nominal-contract-envelope
+  preserves_payload: true

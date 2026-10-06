@@ -1,0 +1,98 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "synthetic-agent-data-ge-5456d7a2",
+  "consumer_brick": "synthetic-agent-data-ge-5456d7a2",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/synthetic-agent-data-ge-5456d7a2.json",
+  "fixture_source": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/synthetic-agent-data-ge-5456d7a2.input-schema.json",
+  "fixture_sha256": "e5de8e6a1c58bf8c0a002fd70f137bb826e0ccbaffec806c1ddd01cb613cd576",
+  "fixture_value_sha256": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+  "input_schema_sha256": "b32861638efae7cf91258dab163bf3b40a71061d906a818fb4c18a8b72776073",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+    "selected_argument_name": "payload",
+    "selected_source_line": 19,
+    "selected_test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+    "confirmation_kinds": [
+      "contract"
+    ],
+    "matching_candidate_count": 2,
+    "candidate_count": 7,
+    "candidate_hashes": [
+      "345c9897bcf7a0751eacc48b000ca04f8d7ce3177a643c3d1e4655c1dbde8ece",
+      "77e7afb32c85498f439d6081a6c97ac5e3667b057411e1424f19837f515e6377",
+      "a06717b894178598e8df0f8d9f8c1e4a1de7c747590023dbc6a971fbc37146b6",
+      "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+      "f5868b6a115b00cfd391cc50cf3cbd866318c76d82e038c5a7753c361a389042"
+    ],
+    "candidates": [
+      {
+        "hash": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+        "argument_name": "payload",
+        "line": 19,
+        "expression": "Name",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+        "argument_name": "payload",
+        "line": 20,
+        "expression": "Name",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "345c9897bcf7a0751eacc48b000ca04f8d7ce3177a643c3d1e4655c1dbde8ece",
+        "argument_name": "payload",
+        "line": 21,
+        "expression": "Name",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "77e7afb32c85498f439d6081a6c97ac5e3667b057411e1424f19837f515e6377",
+        "argument_name": null,
+        "line": 35,
+        "expression": "Dict",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_unit.py",
+        "test_kind": "unit",
+        "guarded": true
+      },
+      {
+        "hash": "f5868b6a115b00cfd391cc50cf3cbd866318c76d82e038c5a7753c361a389042",
+        "argument_name": "payload",
+        "line": 19,
+        "expression": "Name",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "f5868b6a115b00cfd391cc50cf3cbd866318c76d82e038c5a7753c361a389042",
+        "argument_name": "payload",
+        "line": 20,
+        "expression": "Name",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "a06717b894178598e8df0f8d9f8c1e4a1de7c747590023dbc6a971fbc37146b6",
+        "argument_name": null,
+        "line": 43,
+        "expression": "Dict",
+        "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "agentic-benchmark-harne-b447fbac",
+  "strategy": "1",
+  "runtime_profile": "analytics-py314-v1",
+  "resolution": "GENERIC_RUNTIME_CONTRACT",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/bricks/agentic-benchmark-harne-b447fbac/core.py",
+    "callable": "execute"
+  },
+  "arguments": {
+    "mode": "payload"
+  },
+  "input": {
+    "contract": "foundry.platform.evidence_registry.v1",
+    "smoke_fixture": "foundry/runtime-fixtures/agentic-benchmark-harne-b447fbac.json",
+    "schema": "foundry/runtime-contracts/agentic-benchmark-harne-b447fbac.input-schema.json",
+    "fixture_sha256": "d98fc2089065a14d785937009d80d0c871215cf06e5e87ed67cc5f632dd8726a",
+    "fixture_source": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+    "consumer_brick": "agentic-benchmark-harne-b447fbac"
+  },
+  "output": {
+    "validation": "json-compatible",
+    "contract": "foundry.platform.evidence_registry.v1",
+    "graph_contract": "foundry.platform.evidence_registry.v1",
+    "runtime_contract": "",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 30,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "40ae4c6e0e4269056649d6a3970f14d1c173e746b52ebb51f538fe51d1b4576f"
+  },
+  "provenance": {
+    "implementation_provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

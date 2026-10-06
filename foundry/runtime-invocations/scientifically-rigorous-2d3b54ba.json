@@ -1,0 +1,54 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "scientifically-rigorous-2d3b54ba",
+  "strategy": "1",
+  "runtime_profile": "analytics-py314-v1",
+  "resolution": "GENERIC_RUNTIME_CONTRACT",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/bricks/scientifically-rigorous-2d3b54ba/core.py",
+    "callable": "execute"
+  },
+  "arguments": {
+    "mode": "payload"
+  },
+  "input": {
+    "contract": "foundry.analytics.ab_testing.v1",
+    "smoke_fixture": "foundry/runtime-fixtures/scientifically-rigorous-2d3b54ba.json",
+    "schema": "foundry/runtime-contracts/scientifically-rigorous-2d3b54ba.input-schema.json",
+    "fixture_sha256": "0e049ba99cfebe75a89fa1477b5ab9f1e3fafcdba4ef3968499ed9bc766f1fab",
+    "fixture_source": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+    "consumer_brick": "scientifically-rigorous-2d3b54ba"
+  },
+  "output": {
+    "validation": "json-compatible",
+    "contract": "foundry.analytics.ab_testing.v1",
+    "graph_contract": "foundry.analytics.ab_testing.v1",
+    "runtime_contract": "",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 90,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [
+      "pandas"
+    ],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "253d31af11c0bb57928ca3a16d1618ac22fbedc68d0f1cf7b34e316acc426c20"
+  },
+  "provenance": {
+    "implementation_provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

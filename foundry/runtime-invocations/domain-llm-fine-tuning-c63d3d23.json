@@ -1,0 +1,52 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "domain-llm-fine-tuning-c63d3d23",
+  "strategy": "1",
+  "runtime_profile": "python",
+  "resolution": "EXPLICIT_GRAPH_ADAPTER",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/adapters/domain-llm-fine-tuning-c63d3d23/core.py",
+    "callable": "adapt"
+  },
+  "arguments": {
+    "mode": "value"
+  },
+  "input": {
+    "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "smoke_fixture": null,
+    "schema": null,
+    "fixture_sha256": null,
+    "fixture_source": null,
+    "consumer_brick": "domain-llm-fine-tuning-c63d3d23"
+  },
+  "output": {
+    "validation": "mapping",
+    "contract": "foundry.analytics.ab_testing.v1",
+    "graph_contract": "foundry.analytics.ab_testing.v1",
+    "runtime_contract": "foundry.analytics.ab_testing.v1",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 30,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "3a15ef070cb6d066a70ed449e4b6c8717a5cfd9e675d4e703771274ea96a9c4f"
+  },
+  "provenance": {
+    "implementation_provider": "contract-closure-adapter-v1",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

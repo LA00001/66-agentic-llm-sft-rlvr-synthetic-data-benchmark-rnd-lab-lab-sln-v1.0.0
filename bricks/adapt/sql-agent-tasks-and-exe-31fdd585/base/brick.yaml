@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'complex-sql-analysis-an-0e9c0c3c'
+logical_id: 'complex-sql-analysis-and-preparation-of-banking-data-for-agents-and-ml-m'
+name: 'Complex SQL analysis and preparation of banking data for agents and ML models'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+capabilities:
+  - 'Complex SQL analysis and preparation of banking data for agents and ML models'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  output: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  requires:
+    - 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  provides:
+    - 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: ADAPT
+  origin: 'sql@1.0.2'
+  origin_project: 65
+  source_fingerprint: 'a4ebc2e98cac166a4f4fc14a4b681bfc11906b07200cca15753fd7e8645f1533'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

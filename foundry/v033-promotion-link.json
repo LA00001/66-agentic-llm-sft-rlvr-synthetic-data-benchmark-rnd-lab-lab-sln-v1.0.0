@@ -1,0 +1,45 @@
+{
+  "schema": "portfolio-foundry.v033-promotion-link.v1",
+  "status": "PASS",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "projectProofId": "proof-20261004-072049-40d5a1d08ac84e3b",
+  "promotionId": "atomic-promotion-20261004-072439-7682016d6d174bc6",
+  "transactionId": "catalog-tx-e4b1f93cdf67405bb14e2c8f75dc1cbc",
+  "generationId": "generation-20261004042439-272db47c5fa3421a8bd1e",
+  "promoted": [
+    {
+      "id": "domain-llm-fine-tuning-05d1e392",
+      "version": "1.0.1"
+    },
+    {
+      "id": "scientifically-rigorous-2d3b54ba",
+      "version": "1.0.1"
+    },
+    {
+      "id": "synthetic-agent-data-ge-5456d7a2",
+      "version": "1.0.1"
+    },
+    {
+      "id": "agentic-benchmark-harne-b447fbac",
+      "version": "1.0.1"
+    },
+    {
+      "id": "sql-agent-tasks-and-exe-31fdd585",
+      "version": "1.0.1"
+    },
+    {
+      "id": "synthetic-training-eval-00c1d43f",
+      "version": "1.0.1"
+    },
+    {
+      "id": "project-owned-end-to-en-f490927d",
+      "version": "1.0.1"
+    }
+  ],
+  "closedLoopId": "closed-loop-4d0971b163cd464fa00d4fcfeac916c9",
+  "closedLoopStatus": "PASS",
+  "closedLoopBrickId": "agentic-benchmark-harne-b447fbac",
+  "closedLoopBrickVersion": "1.0.1",
+  "catalogLedgerSha256": "800b49b5978ac824304b22efbaaa42e0ae7a80674ed8bc4b96fcabeeed35a912",
+  "createdAt": "2026-10-04T04:24:46.0599543+00:00"
+}

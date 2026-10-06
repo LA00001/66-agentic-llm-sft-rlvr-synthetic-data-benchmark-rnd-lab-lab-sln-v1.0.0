@@ -1,0 +1,86 @@
+{
+  "schema": "portfolio-foundry.capability-graph.v1",
+  "nodes": [
+    {
+      "id": "domain-llm-fine-tuning-05d1e392",
+      "strategy": 1,
+      "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "inputContract": "foundry.requirement.v1",
+      "outputContract": "foundry.capability.domain-llm-fine-tuning-05d1e392.v1"
+    },
+    {
+      "id": "scientifically-rigorous-2d3b54ba",
+      "strategy": 1,
+      "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+      "inputContract": "foundry.capability.domain-llm-fine-tuning-05d1e392.v1",
+      "outputContract": "foundry.capability.scientifically-rigorous-2d3b54ba.v1"
+    },
+    {
+      "id": "synthetic-agent-data-ge-5456d7a2",
+      "strategy": 3,
+      "capability": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly",
+      "inputContract": "foundry.capability.scientifically-rigorous-2d3b54ba.v1",
+      "outputContract": "foundry.capability.synthetic-agent-data-ge-5456d7a2.v1"
+    },
+    {
+      "id": "agentic-benchmark-harne-b447fbac",
+      "strategy": 1,
+      "capability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "inputContract": "foundry.capability.synthetic-agent-data-ge-5456d7a2.v1",
+      "outputContract": "foundry.capability.agentic-benchmark-harne-b447fbac.v1"
+    },
+    {
+      "id": "sql-agent-tasks-and-exe-31fdd585",
+      "strategy": 1,
+      "capability": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "inputContract": "foundry.capability.agentic-benchmark-harne-b447fbac.v1",
+      "outputContract": "foundry.capability.sql-agent-tasks-and-exe-31fdd585.v1"
+    },
+    {
+      "id": "synthetic-training-eval-00c1d43f",
+      "strategy": 1,
+      "capability": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering",
+      "inputContract": "foundry.capability.sql-agent-tasks-and-exe-31fdd585.v1",
+      "outputContract": "foundry.capability.synthetic-training-eval-00c1d43f.v1"
+    },
+    {
+      "id": "project-owned-end-to-en-f490927d",
+      "strategy": 1,
+      "capability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "inputContract": "foundry.capability.synthetic-training-eval-00c1d43f.v1",
+      "outputContract": "foundry.capability.project-owned-end-to-en-f490927d.v1"
+    }
+  ],
+  "edges": [
+    {
+      "from": "domain-llm-fine-tuning-05d1e392",
+      "to": "scientifically-rigorous-2d3b54ba",
+      "contract": "foundry.capability.domain-llm-fine-tuning-05d1e392.v1"
+    },
+    {
+      "from": "scientifically-rigorous-2d3b54ba",
+      "to": "synthetic-agent-data-ge-5456d7a2",
+      "contract": "foundry.capability.scientifically-rigorous-2d3b54ba.v1"
+    },
+    {
+      "from": "synthetic-agent-data-ge-5456d7a2",
+      "to": "agentic-benchmark-harne-b447fbac",
+      "contract": "foundry.capability.synthetic-agent-data-ge-5456d7a2.v1"
+    },
+    {
+      "from": "agentic-benchmark-harne-b447fbac",
+      "to": "sql-agent-tasks-and-exe-31fdd585",
+      "contract": "foundry.capability.agentic-benchmark-harne-b447fbac.v1"
+    },
+    {
+      "from": "sql-agent-tasks-and-exe-31fdd585",
+      "to": "synthetic-training-eval-00c1d43f",
+      "contract": "foundry.capability.sql-agent-tasks-and-exe-31fdd585.v1"
+    },
+    {
+      "from": "synthetic-training-eval-00c1d43f",
+      "to": "project-owned-end-to-en-f490927d",
+      "contract": "foundry.capability.synthetic-training-eval-00c1d43f.v1"
+    }
+  ]
+}

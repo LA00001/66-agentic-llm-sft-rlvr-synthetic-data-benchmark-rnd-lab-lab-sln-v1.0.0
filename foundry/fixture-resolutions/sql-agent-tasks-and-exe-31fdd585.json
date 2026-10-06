@@ -1,0 +1,170 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "sql-agent-tasks-and-exe-31fdd585",
+  "consumer_brick": "sql-agent-tasks-and-exe-31fdd585",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/sql-agent-tasks-and-exe-31fdd585.json",
+  "fixture_source": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/sql-agent-tasks-and-exe-31fdd585.input-schema.json",
+  "fixture_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "fixture_value_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "input_schema_sha256": "f76863fca94493b6e25baaefc8be74d33a5a8c7415184d73cae6b10601a6b060",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "selected_argument_name": null,
+    "selected_source_line": 12,
+    "selected_test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+    "confirmation_kinds": [
+      "contract",
+      "unit"
+    ],
+    "matching_candidate_count": 2,
+    "candidate_count": 14,
+    "candidate_hashes": [
+      "2012bb7769a420c0d2b80093c82efc6c23d89ce70f656a0c35319b73053a5327",
+      "222ff0cc41b2a2cb9d83a3d14f78e273ec858062cd638fc272338315b7179634",
+      "2ea460a417e6e45dcabc224d042e8c187de00a6b8120058382fdf037807c4f87",
+      "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "545882f87d570564473fa7f7f4a0c59a53cab09d1d455e548a52f582ef8cbabc",
+      "5d911c0a378142550d7d921e9495b9e4047464525314c12e68eab641a42dea2b",
+      "960af023fe727410265e9f3f34a03db7f5e0a69f8d2fc7817efac7ebd6d08e19",
+      "9bd62cfabe7597fe5e4e9fc0f9c4b307a070a3ca7af0062d84bf29eb51c19251",
+      "a4faac6d0731c7c5d5b6db8454bfcbf4c57c774ed6bb3a668d20c100e84f015c",
+      "a7ff0af8fac5edd128e6d33c51a40d0575aacf079a504aa6084008b579a85503",
+      "c9b2a8177f958f43830c18dcf0108f7640b8ae894c251bae4287f25b68f28677",
+      "ee4de68d6bd09a9081a25290bc24597e9169e34a674c04c80ef4e2cd84886087",
+      "ff585e066a040a087e07420d4f6fbc24b7c6788f46a8b3d265f7b9d22dad1743"
+    ],
+    "candidates": [
+      {
+        "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "argument_name": null,
+        "line": 12,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "c9b2a8177f958f43830c18dcf0108f7640b8ae894c251bae4287f25b68f28677",
+        "argument_name": null,
+        "line": 34,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "545882f87d570564473fa7f7f4a0c59a53cab09d1d455e548a52f582ef8cbabc",
+        "argument_name": null,
+        "line": 42,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "2012bb7769a420c0d2b80093c82efc6c23d89ce70f656a0c35319b73053a5327",
+        "argument_name": null,
+        "line": 50,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "9bd62cfabe7597fe5e4e9fc0f9c4b307a070a3ca7af0062d84bf29eb51c19251",
+        "argument_name": null,
+        "line": 58,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "argument_name": null,
+        "line": 12,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "5d911c0a378142550d7d921e9495b9e4047464525314c12e68eab641a42dea2b",
+        "argument_name": null,
+        "line": 44,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "a7ff0af8fac5edd128e6d33c51a40d0575aacf079a504aa6084008b579a85503",
+        "argument_name": null,
+        "line": 64,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "222ff0cc41b2a2cb9d83a3d14f78e273ec858062cd638fc272338315b7179634",
+        "argument_name": null,
+        "line": 72,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "ee4de68d6bd09a9081a25290bc24597e9169e34a674c04c80ef4e2cd84886087",
+        "argument_name": null,
+        "line": 80,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+        "test_kind": "unit",
+        "guarded": true
+      },
+      {
+        "hash": "960af023fe727410265e9f3f34a03db7f5e0a69f8d2fc7817efac7ebd6d08e19",
+        "argument_name": "payload",
+        "line": 60,
+        "expression": "Name",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "ff585e066a040a087e07420d4f6fbc24b7c6788f46a8b3d265f7b9d22dad1743",
+        "argument_name": null,
+        "line": 76,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "2ea460a417e6e45dcabc224d042e8c187de00a6b8120058382fdf037807c4f87",
+        "argument_name": null,
+        "line": 77,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "a4faac6d0731c7c5d5b6db8454bfcbf4c57c774ed6bb3a668d20c100e84f015c",
+        "argument_name": null,
+        "line": 78,
+        "expression": "Dict",
+        "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      }
+    ]
+  }
+}

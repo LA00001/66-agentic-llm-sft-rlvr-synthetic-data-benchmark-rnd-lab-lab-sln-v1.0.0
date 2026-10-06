@@ -1,0 +1,5 @@
+56154889e6810cf00305d963865465cdfc9afb3038761588ed0d370c7adbf1b3  src/adapters/domain-llm-fine-tuning-c63d3d23/brick.yaml
+3a15ef070cb6d066a70ed449e4b6c8717a5cfd9e675d4e703771274ea96a9c4f  src/adapters/domain-llm-fine-tuning-c63d3d23/core.py
+e9efcb3c4fe606048e9eb3485a7317d7dc23137210110a65df514fac072493a1  src/adapters/domain-llm-fine-tuning-c63d3d23/__init__.py
+4090b2ca4d80f7ab4fd6cb1324f9818e34ac57947ec6b302d32cc98c23f61ebe  tests/adapters/domain-llm-fine-tuning-c63d3d23/test_contract.py
+92698a8a692146de93cc1132e13b0bafa5bd6f708c6475d88283919e47f79574  tests/adapters/domain-llm-fine-tuning-c63d3d23/test_integration.py

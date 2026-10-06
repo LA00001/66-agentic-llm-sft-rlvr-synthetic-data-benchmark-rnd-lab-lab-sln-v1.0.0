@@ -1,0 +1,50 @@
+{
+  "schema": "portfolio-foundry.runtime-profile.v2",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "profiles": [
+    "analytics-py314-v1",
+    "python"
+  ],
+  "python": "external-foundry-runtime-cache",
+  "pythonVersion": "Python 3.14.2",
+  "dependencyRestore": "scripts/RuntimeManager.ps1",
+  "optionalModules": [],
+  "requestedRequirements": [
+    "pytest\u003E=8.0,\u003C9",
+    "torch\u003E=2.2,\u003C3",
+    "transformers\u003E=4.40,\u003C5",
+    "peft\u003E=0.11,\u003C1",
+    "tokenizers\u003E=0.19,\u003C1",
+    "fastapi\u003E=0.110,\u003C1",
+    "pydantic\u003E=2.6,\u003C3",
+    "httpx\u003E=0.27,\u003C1",
+    "uvicorn\u003E=0.29,\u003C1",
+    "pandas\u003E=2.2,\u003C4",
+    "pandas\u003E=2.2,\u003C4"
+  ],
+  "effectiveRequirements": [
+    "fastapi\u003E=0.110,\u003C1",
+    "httpx\u003E=0.27,\u003C1",
+    "pandas\u003E=2.2,\u003C4",
+    "peft\u003E=0.11,\u003C1",
+    "pydantic\u003E=2.6,\u003C3",
+    "pytest\u003E=8.0,\u003C9",
+    "tokenizers\u003E=0.19,\u003C1",
+    "torch\u003E=2.2,\u003C3",
+    "transformers\u003E=4.40,\u003C5",
+    "uvicorn\u003E=0.29,\u003C1"
+  ],
+  "requirements": [
+    "fastapi\u003E=0.110,\u003C1",
+    "httpx\u003E=0.27,\u003C1",
+    "pandas\u003E=2.2,\u003C4",
+    "peft\u003E=0.11,\u003C1",
+    "pydantic\u003E=2.6,\u003C3",
+    "pytest\u003E=8.0,\u003C9",
+    "tokenizers\u003E=0.19,\u003C1",
+    "torch\u003E=2.2,\u003C3",
+    "transformers\u003E=4.40,\u003C5",
+    "uvicorn\u003E=0.29,\u003C1"
+  ],
+  "compatibilityAdjustments": []
+}

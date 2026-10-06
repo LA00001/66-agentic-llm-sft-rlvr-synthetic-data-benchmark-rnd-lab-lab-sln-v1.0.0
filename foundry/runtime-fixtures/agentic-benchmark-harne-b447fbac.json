@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "id": "execution-fail",
+      "domain": "code",
+      "candidate": "raise_error",
+      "cases": [
+        [
+          1
+        ]
+      ],
+      "oracle": {
+        "expected": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "oracle-fail",
+      "domain": "code",
+      "candidate": "sum_even",
+      "cases": [
+        [
+          2
+        ]
+      ],
+      "oracle": {}
+    }
+  ]
+}

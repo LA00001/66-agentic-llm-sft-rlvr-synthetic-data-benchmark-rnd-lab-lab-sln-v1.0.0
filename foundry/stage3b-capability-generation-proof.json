@@ -1,0 +1,372 @@
+{
+  "implementationId": "implementation-20261002-181232-184857e863f54c2e",
+  "schemaVersion": "portfolio-foundry.stage3b-capability-generation-proof.v1",
+  "foundationId": "foundation-20261002-181232-814d0b3c82e849cd",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "status": "PASS",
+  "requiredCapabilities": 7,
+  "implementedCapabilities": 7,
+  "reuseCapabilitiesSkipped": 0,
+  "unitTestsPassed": 7,
+  "contractTestsPassed": 7,
+  "integrationTestsPassed": 7,
+  "capabilities": [
+    {
+      "targetBrickId": "domain-llm-fine-tuning-05d1e392",
+      "fileSystemId": "domain-llm-fine-tuning-05d1e392",
+      "strategy": 1,
+      "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/domain-llm-fine-tuning-05d1e392",
+      "testsRelativePath": "tests/bricks/domain-llm-fine-tuning-05d1e392",
+      "evidenceRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392",
+      "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "inputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "outputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "PASS",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 58040,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py",
+          "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Lib\\site-packages\\peft\\tuners\\lora\\layer.py:2733: UserWarning: fan_in_fan_out is set to False but the target module is \u0060Conv1D\u0060. Setting fan_in_fan_out to True.",
+          "logRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 8496,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+          "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Lib\\site-packages\\peft\\tuners\\lora\\layer.py:2733: UserWarning: fan_in_fan_out is set to False but the target module is \u0060Conv1D\u0060. Setting fan_in_fan_out to True.",
+          "logRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 10121,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py",
+          "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Lib\\site-packages\\peft\\tuners\\lora\\layer.py:2733: UserWarning: fan_in_fan_out is set to False but the target module is \u0060Conv1D\u0060. Setting fan_in_fan_out to True.",
+          "logRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/integration.log"
+        }
+      ],
+      "implementationFingerprint": "f5eeb9393ecba8ee24d26905fffdc3efedefdc47ddb0f6c8cbace91b585e20ff",
+      "findings": []
+    },
+    {
+      "targetBrickId": "scientifically-rigorous-2d3b54ba",
+      "fileSystemId": "scientifically-rigorous-2d3b54ba",
+      "strategy": 1,
+      "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/scientifically-rigorous-2d3b54ba",
+      "testsRelativePath": "tests/bricks/scientifically-rigorous-2d3b54ba",
+      "evidenceRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba",
+      "contract": "foundry.analytics.ab_testing.v1",
+      "inputContract": "foundry.analytics.ab_testing.v1",
+      "outputContract": "foundry.analytics.ab_testing.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "PASS",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 6503,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/scientifically-rigorous-2d3b54ba/test_unit.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 1147,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 1449,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/scientifically-rigorous-2d3b54ba/test_integration.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/integration.log"
+        }
+      ],
+      "implementationFingerprint": "695d8ee4beadf52e457fd10cac62e7da7f4ff1f8a7112a634e633baf8009a599",
+      "findings": []
+    },
+    {
+      "targetBrickId": "synthetic-agent-data-ge-5456d7a2",
+      "fileSystemId": "synthetic-agent-data-ge-5456d7a2",
+      "strategy": 3,
+      "capability": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/synthetic-agent-data-ge-5456d7a2",
+      "testsRelativePath": "tests/bricks/synthetic-agent-data-ge-5456d7a2",
+      "evidenceRelativePath": "evidence/v030/synthetic-agent-data-ge-5456d7a2",
+      "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "inputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "outputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "NOT_APPLICABLE",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 182,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v031\\req-f1945cd6c19e56b3\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/synthetic-agent-data-ge-5456d7a2/test_unit.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/synthetic-agent-data-ge-5456d7a2/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 160,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v031\\req-f1945cd6c19e56b3\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/synthetic-agent-data-ge-5456d7a2/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 161,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v031\\req-f1945cd6c19e56b3\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/synthetic-agent-data-ge-5456d7a2/integration.log"
+        }
+      ],
+      "implementationFingerprint": "1e0999be519fb5d56865a46fc08ec9c83d9b956f254eb4f18a629272f2c58154",
+      "findings": []
+    },
+    {
+      "targetBrickId": "agentic-benchmark-harne-b447fbac",
+      "fileSystemId": "agentic-benchmark-harne-b447fbac",
+      "strategy": 1,
+      "capability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/agentic-benchmark-harne-b447fbac",
+      "testsRelativePath": "tests/bricks/agentic-benchmark-harne-b447fbac",
+      "evidenceRelativePath": "evidence/v030/agentic-benchmark-harne-b447fbac",
+      "contract": "foundry.platform.evidence_registry.v1",
+      "inputContract": "foundry.platform.evidence_registry.v1",
+      "outputContract": "foundry.platform.evidence_registry.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "PASS",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 230,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/agentic-benchmark-harne-b447fbac/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 250,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/agentic-benchmark-harne-b447fbac/test_contract.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/agentic-benchmark-harne-b447fbac/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 220,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/agentic-benchmark-harne-b447fbac/test_integration.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/agentic-benchmark-harne-b447fbac/integration.log"
+        }
+      ],
+      "implementationFingerprint": "8490eb7861157553bc5924ab741923d74830fb31175a17265b5b31d0c8faf9e0",
+      "findings": []
+    },
+    {
+      "targetBrickId": "sql-agent-tasks-and-exe-31fdd585",
+      "fileSystemId": "sql-agent-tasks-and-exe-31fdd585",
+      "strategy": 1,
+      "capability": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/sql-agent-tasks-and-exe-31fdd585",
+      "testsRelativePath": "tests/bricks/sql-agent-tasks-and-exe-31fdd585",
+      "evidenceRelativePath": "evidence/v030/sql-agent-tasks-and-exe-31fdd585",
+      "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "inputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "outputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "PASS",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 393,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v031\\req-f1945cd6c19e56b3\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/sql-agent-tasks-and-exe-31fdd585/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 312,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v031\\req-f1945cd6c19e56b3\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+          "summary": "PASS \u00B7 fixture count reconciled from executable truth",
+          "logRelativePath": "evidence/v030/sql-agent-tasks-and-exe-31fdd585/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 248,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v031\\req-f1945cd6c19e56b3\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/sql-agent-tasks-and-exe-31fdd585/integration.log"
+        }
+      ],
+      "implementationFingerprint": "200413163f0d027c6bdde68d758b81139f81dffe8f00af0e53ec95520cb9e7e1",
+      "findings": []
+    },
+    {
+      "targetBrickId": "synthetic-training-eval-00c1d43f",
+      "fileSystemId": "synthetic-training-eval-00c1d43f",
+      "strategy": 1,
+      "capability": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/synthetic-training-eval-00c1d43f",
+      "testsRelativePath": "tests/bricks/synthetic-training-eval-00c1d43f",
+      "evidenceRelativePath": "evidence/v030/synthetic-training-eval-00c1d43f",
+      "contract": "foundry.data.data_quality.v1",
+      "inputContract": "foundry.data.data_quality.v1",
+      "outputContract": "foundry.data.data_quality.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "PASS",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 1779,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/synthetic-training-eval-00c1d43f/test_unit.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/synthetic-training-eval-00c1d43f/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 1087,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/synthetic-training-eval-00c1d43f/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 1215,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/synthetic-training-eval-00c1d43f/test_integration.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/synthetic-training-eval-00c1d43f/integration.log"
+        }
+      ],
+      "implementationFingerprint": "1279ece3e31eef4b5203e476062ea778e1f344cf0047faa4a79e6240bae7b114",
+      "findings": []
+    },
+    {
+      "targetBrickId": "project-owned-end-to-en-f490927d",
+      "fileSystemId": "project-owned-end-to-en-f490927d",
+      "strategy": 1,
+      "capability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "status": "PASS",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "sourceRelativePath": "src/bricks/project-owned-end-to-en-f490927d",
+      "testsRelativePath": "tests/bricks/project-owned-end-to-en-f490927d",
+      "evidenceRelativePath": "evidence/v030/project-owned-end-to-en-f490927d",
+      "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "inputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "outputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "runtimeProfile": "python",
+      "baseIntegrityStatus": "PASS",
+      "sourceFiles": 4,
+      "testFiles": 3,
+      "tests": [
+        {
+          "kind": "UNIT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 1573,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+          "summary": "PASS",
+          "logRelativePath": "evidence/v030/project-owned-end-to-en-f490927d/unit.log"
+        },
+        {
+          "kind": "CONTRACT",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 984,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+          "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using \u0060httpx\u0060 with \u0060starlette.testclient\u0060 is deprecated; install \u0060httpx2\u0060 instead.",
+          "logRelativePath": "evidence/v030/project-owned-end-to-en-f490927d/contract.log"
+        },
+        {
+          "kind": "INTEGRATION",
+          "status": "PASS",
+          "exitCode": 0,
+          "durationMs": 976,
+          "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/project-owned-end-to-en-f490927d/test_integration.py",
+          "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\39ba2625f4af364132d2f6a5\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using \u0060httpx\u0060 with \u0060starlette.testclient\u0060 is deprecated; install \u0060httpx2\u0060 instead.",
+          "logRelativePath": "evidence/v030/project-owned-end-to-en-f490927d/integration.log"
+        }
+      ],
+      "implementationFingerprint": "0d69f902e89b2e6eae0b75f4a39022afec002279991398f081389b6c8c8f5efa",
+      "findings": []
+    }
+  ],
+  "implementationFingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+  "evidenceDirectory": "evidence/v030",
+  "supersededProjectProofId": null,
+  "createdAt": "2026-10-02T15:12:46.3188534+00:00",
+  "contractClosureStatus": "PENDING_STAGE8_V030",
+  "edgeAdaptersMaterialized": 0,
+  "internalBindingsResolved": 0,
+  "internalBindingsTotal": 0,
+  "contractClosureFingerprint": null,
+  "contractClosureProofPath": null,
+  "closedFoundationId": null
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "portfolio-foundry.stage3b-executable-proof.v1",
+  "buildToken": "BUILD216_TEST229",
+  "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+  "strategy": 1,
+  "targetBrickId": "scientifically-rigorous-2d3b54ba",
+  "fileSystemId": "scientifically-rigorous-2d3b54ba",
+  "status": "PASS",
+  "requiredProof": [
+    "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C experiment spec \u0441 \u0433\u0438\u043F\u043E\u0442\u0435\u0437\u043E\u0439, primary metric, guardrails, baseline, treatment \u0438 \u0437\u0430\u0440\u0430\u043D\u0435\u0435 \u0437\u0430\u0434\u0430\u043D\u043D\u044B\u043C acceptance criterion \u0434\u043E \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044F.",
+    "\u041D\u0430 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C pandas DataFrame \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C baseline-versus-treatment statistical comparison \u0441 p-value \u0438 confidence interval.",
+    "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C SRM/\u0432\u0430\u043B\u0438\u0434\u043D\u043E\u0441\u0442\u044C \u0440\u0430\u0437\u0431\u0438\u0435\u043D\u0438\u044F \u0438 \u044F\u0432\u043D\u043E \u0437\u0430\u0432\u0435\u0440\u0448\u0430\u0442\u044C \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442 \u043E\u0448\u0438\u0431\u043A\u043E\u0439 \u043F\u0440\u0438 \u043D\u0435\u043A\u043E\u0440\u0440\u0435\u043A\u0442\u043D\u043E\u043C \u0434\u0438\u0437\u0430\u0439\u043D\u0435.",
+    "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u0430\u043D\u0430\u043B\u0438\u0437 \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C dataset \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C \u0434\u0435\u0442\u0435\u0440\u043C\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 machine-readable verdict.",
+    "\u0421\u0432\u044F\u0437\u0430\u0442\u044C experiment artifact \u0441 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u044B\u043C\u0438 baseline \u0438 trained checkpoint identifiers.",
+    "\u0414\u043E \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C hypothesis, metric, baseline, treatment \u0438 acceptance criterion.",
+    "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0435 \u0438 \u0441\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u044B\u0432\u043E\u0434 \u0442\u043E\u043B\u044C\u043A\u043E \u0438\u0437 \u0437\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u043C\u0435\u0442\u0440\u0438\u043A \u0438 confidence statistics."
+  ],
+  "vacancyRequirements": [
+    "\u041D\u0430\u0443\u0447\u043D\u043E \u0441\u0442\u0440\u043E\u0433\u0430\u044F \u043F\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0433\u0438\u043F\u043E\u0442\u0435\u0437, \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u0432\u044B\u0432\u043E\u0434\u044B"
+  ],
+  "implementation": {
+    "targetBrickId": "scientifically-rigorous-2d3b54ba",
+    "fileSystemId": "scientifically-rigorous-2d3b54ba",
+    "strategy": 1,
+    "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+    "status": "PASS",
+    "provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "sourceRelativePath": "src/bricks/scientifically-rigorous-2d3b54ba",
+    "testsRelativePath": "tests/bricks/scientifically-rigorous-2d3b54ba",
+    "evidenceRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba",
+    "contract": "foundry.analytics.ab_testing.v1",
+    "inputContract": "foundry.analytics.ab_testing.v1",
+    "outputContract": "foundry.analytics.ab_testing.v1",
+    "runtimeProfile": "python",
+    "baseIntegrityStatus": "PASS",
+    "sourceFiles": 4,
+    "testFiles": 3,
+    "tests": [
+      {
+        "kind": "UNIT",
+        "status": "PASS",
+        "exitCode": 0,
+        "durationMs": 6503,
+        "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/scientifically-rigorous-2d3b54ba/test_unit.py",
+        "summary": "PASS",
+        "logRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/unit.log"
+      },
+      {
+        "kind": "CONTRACT",
+        "status": "PASS",
+        "exitCode": 0,
+        "durationMs": 1147,
+        "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+        "summary": "PASS",
+        "logRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/contract.log"
+      },
+      {
+        "kind": "INTEGRATION",
+        "status": "PASS",
+        "exitCode": 0,
+        "durationMs": 1449,
+        "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v03b\\5381b48f1b69dd2d9a8e7e35\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/scientifically-rigorous-2d3b54ba/test_integration.py",
+        "summary": "PASS",
+        "logRelativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/integration.log"
+      }
+    ],
+    "implementationFingerprint": "695d8ee4beadf52e457fd10cac62e7da7f4ff1f8a7112a634e633baf8009a599",
+    "findings": []
+  },
+  "projectProof": "PENDING_STAGE4_V026",
+  "createdAt": "2026-10-02T17:13:01.0448842+00:00"
+}

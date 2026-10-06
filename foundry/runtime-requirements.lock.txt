@@ -1,0 +1,11 @@
+# PORTFOLIO_FOUNDRY_GENERATED_STAGE9_LOCK
+fastapi>=0.110,<1
+httpx>=0.27,<1
+pandas>=2.2,<4
+peft>=0.11,<1
+pydantic>=2.6,<3
+pytest>=8.0,<9
+tokenizers>=0.19,<1
+torch>=2.2,<3
+transformers>=4.40,<5
+uvicorn>=0.29,<1

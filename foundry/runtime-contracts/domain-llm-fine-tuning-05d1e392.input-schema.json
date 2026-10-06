@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": [
+    "learning_rate",
+    "seed",
+    "steps",
+    "trajectories"
+  ],
+  "properties": {
+    "learning_rate": {
+      "type": "number"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "steps": {
+      "type": "integer"
+    },
+    "trajectories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "turns"
+        ],
+        "properties": {
+          "turns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "content",
+                "role"
+              ],
+              "properties": {
+                "content": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

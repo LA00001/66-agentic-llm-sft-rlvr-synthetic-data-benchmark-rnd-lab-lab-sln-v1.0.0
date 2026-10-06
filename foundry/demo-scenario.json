@@ -1,0 +1,241 @@
+{
+  "schema": "portfolio-foundry.demo-scenario.v1",
+  "id": "portfolio-graph-demo-v031",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "purpose": "Traverse every executable capability-graph node. Generated non-REUSE providers execute real domain functions; REUSE nodes verify their materialized runtime binding.",
+  "nodes": [
+    {
+      "order": 1,
+      "id": "ingress-domain-llm-fine-4d7e8b27",
+      "capability": "Project ingress \u2192 domain-llm-fine-tuning-05d1e392",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.requirement.v1",
+      "outputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1"
+    },
+    {
+      "order": 2,
+      "id": "domain-llm-fine-tuning-05d1e392",
+      "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "strategy": "ADAPT",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "outputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1"
+    },
+    {
+      "order": 3,
+      "id": "domain-llm-fine-tuning-c63d3d23",
+      "capability": "domain-llm-fine-tuning-05d1e392 \u2192 scientifically-rigorous-2d3b54ba contract adapter",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "outputContract": "foundry.analytics.ab_testing.v1"
+    },
+    {
+      "order": 4,
+      "id": "scientifically-rigorous-2d3b54ba",
+      "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+      "strategy": "ADAPT",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.analytics.ab_testing.v1",
+      "outputContract": "foundry.analytics.ab_testing.v1"
+    },
+    {
+      "order": 5,
+      "id": "scientifically-rigorous-83d835d4",
+      "capability": "scientifically-rigorous-2d3b54ba \u2192 synthetic-agent-data-ge-5456d7a2 contract adapter",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.analytics.ab_testing.v1",
+      "outputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1"
+    },
+    {
+      "order": 6,
+      "id": "synthetic-agent-data-ge-5456d7a2",
+      "capability": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly",
+      "strategy": "NEW",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "outputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1"
+    },
+    {
+      "order": 7,
+      "id": "synthetic-agent-data-ge-f494f36b",
+      "capability": "synthetic-agent-data-ge-5456d7a2 \u2192 agentic-benchmark-harne-b447fbac contract adapter",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "outputContract": "foundry.platform.evidence_registry.v1"
+    },
+    {
+      "order": 8,
+      "id": "agentic-benchmark-harne-b447fbac",
+      "capability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "strategy": "ADAPT",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.platform.evidence_registry.v1",
+      "outputContract": "foundry.platform.evidence_registry.v1"
+    },
+    {
+      "order": 9,
+      "id": "agentic-benchmark-harne-e01dfa09",
+      "capability": "agentic-benchmark-harne-b447fbac \u2192 sql-agent-tasks-and-exe-31fdd585 contract adapter",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.platform.evidence_registry.v1",
+      "outputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1"
+    },
+    {
+      "order": 10,
+      "id": "sql-agent-tasks-and-exe-31fdd585",
+      "capability": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "strategy": "ADAPT",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "outputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1"
+    },
+    {
+      "order": 11,
+      "id": "sql-agent-tasks-and-exe-e5909590",
+      "capability": "sql-agent-tasks-and-exe-31fdd585 \u2192 synthetic-training-eval-00c1d43f contract adapter",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "outputContract": "foundry.data.data_quality.v1"
+    },
+    {
+      "order": 12,
+      "id": "synthetic-training-eval-00c1d43f",
+      "capability": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering",
+      "strategy": "ADAPT",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.data.data_quality.v1",
+      "outputContract": "foundry.data.data_quality.v1"
+    },
+    {
+      "order": 13,
+      "id": "synthetic-training-eval-ae6d4440",
+      "capability": "synthetic-training-eval-00c1d43f \u2192 project-owned-end-to-en-f490927d contract adapter",
+      "strategy": "ADAPT",
+      "provider": "contract-closure-adapter-v1",
+      "inputContract": "foundry.data.data_quality.v1",
+      "outputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1"
+    },
+    {
+      "order": 14,
+      "id": "project-owned-end-to-en-f490927d",
+      "capability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "strategy": "ADAPT",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "inputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "outputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1"
+    }
+  ],
+  "edges": [
+    {
+      "from": "__input",
+      "to": "ingress-domain-llm-fine-4d7e8b27",
+      "contract": "foundry.requirement.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter ingress-domain-llm-fine-4d7e8b27."
+    },
+    {
+      "from": "ingress-domain-llm-fine-4d7e8b27",
+      "to": "domain-llm-fine-tuning-05d1e392",
+      "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter ingress-domain-llm-fine-4d7e8b27 provides the exact target contract."
+    },
+    {
+      "from": "domain-llm-fine-tuning-05d1e392",
+      "to": "domain-llm-fine-tuning-c63d3d23",
+      "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter domain-llm-fine-tuning-c63d3d23."
+    },
+    {
+      "from": "domain-llm-fine-tuning-c63d3d23",
+      "to": "scientifically-rigorous-2d3b54ba",
+      "contract": "foundry.analytics.ab_testing.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter domain-llm-fine-tuning-c63d3d23 provides the exact target contract."
+    },
+    {
+      "from": "scientifically-rigorous-2d3b54ba",
+      "to": "scientifically-rigorous-83d835d4",
+      "contract": "foundry.analytics.ab_testing.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter scientifically-rigorous-83d835d4."
+    },
+    {
+      "from": "scientifically-rigorous-83d835d4",
+      "to": "synthetic-agent-data-ge-5456d7a2",
+      "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter scientifically-rigorous-83d835d4 provides the exact target contract."
+    },
+    {
+      "from": "synthetic-agent-data-ge-5456d7a2",
+      "to": "synthetic-agent-data-ge-f494f36b",
+      "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter synthetic-agent-data-ge-f494f36b."
+    },
+    {
+      "from": "synthetic-agent-data-ge-f494f36b",
+      "to": "agentic-benchmark-harne-b447fbac",
+      "contract": "foundry.platform.evidence_registry.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter synthetic-agent-data-ge-f494f36b provides the exact target contract."
+    },
+    {
+      "from": "agentic-benchmark-harne-b447fbac",
+      "to": "agentic-benchmark-harne-e01dfa09",
+      "contract": "foundry.platform.evidence_registry.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter agentic-benchmark-harne-e01dfa09."
+    },
+    {
+      "from": "agentic-benchmark-harne-e01dfa09",
+      "to": "sql-agent-tasks-and-exe-31fdd585",
+      "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter agentic-benchmark-harne-e01dfa09 provides the exact target contract."
+    },
+    {
+      "from": "sql-agent-tasks-and-exe-31fdd585",
+      "to": "sql-agent-tasks-and-exe-e5909590",
+      "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter sql-agent-tasks-and-exe-e5909590."
+    },
+    {
+      "from": "sql-agent-tasks-and-exe-e5909590",
+      "to": "synthetic-training-eval-00c1d43f",
+      "contract": "foundry.data.data_quality.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter sql-agent-tasks-and-exe-e5909590 provides the exact target contract."
+    },
+    {
+      "from": "synthetic-training-eval-00c1d43f",
+      "to": "synthetic-training-eval-ae6d4440",
+      "contract": "foundry.data.data_quality.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter synthetic-training-eval-ae6d4440."
+    },
+    {
+      "from": "synthetic-training-eval-ae6d4440",
+      "to": "project-owned-end-to-en-f490927d",
+      "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter synthetic-training-eval-ae6d4440 provides the exact target contract."
+    },
+    {
+      "from": "project-owned-end-to-en-f490927d",
+      "to": "__output",
+      "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "status": "DEFERRED_V031",
+      "reason": "Final portfolio application output is intentionally finalized by v0.31."
+    }
+  ]
+}

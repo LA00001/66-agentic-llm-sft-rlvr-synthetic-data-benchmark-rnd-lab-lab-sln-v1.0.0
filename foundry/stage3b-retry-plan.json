@@ -1,0 +1,48 @@
+{
+  "schema": "portfolio-foundry.stage3b-retry-plan.v1",
+  "status": "READY",
+  "buildToken": "BUILD214_TEST227",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "sourceImplementationId": "implementation-20261002-165434-d114ce4169674418",
+  "sourceProofStatus": "FAIL",
+  "frozenPass": [
+    {
+      "fileSystemId": "domain-llm-fine-tuning-05d1e392",
+      "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats"
+    },
+    {
+      "fileSystemId": "scientifically-rigorous-2d3b54ba",
+      "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison"
+    },
+    {
+      "fileSystemId": "synthetic-agent-data-ge-5456d7a2",
+      "capability": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly"
+    },
+    {
+      "fileSystemId": "agentic-benchmark-harne-b447fbac",
+      "capability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories"
+    },
+    {
+      "fileSystemId": "synthetic-training-eval-00c1d43f",
+      "capability": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering"
+    },
+    {
+      "fileSystemId": "project-owned-end-to-en-f490927d",
+      "capability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface"
+    }
+  ],
+  "deferred": [],
+  "retry": [
+    {
+      "fileSystemId": "sql-agent-tasks-and-exe-31fdd585",
+      "capability": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "previousStatus": "FAIL",
+      "previousFindings": [
+        "sql-agent-tasks-and-exe-31fdd585 contract tests failed exit=1: test_reproducible_benchmark_artifact_contract() | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^ | File \u0022C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\workspaces\\HH133035106\\candidates\\candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab\\tests\\bricks\\sql-agent-tasks-and-exe-31fdd585\\test_contract.py\u0022, line 30, in test_reproducible_benchmark_artifact_contract | assert result[\u0027evidence\u0027][\u0027fixture_insert_count\u0027] == 10 | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ | AssertionError"
+      ]
+    }
+  ],
+  "newAiCallsAllowed": false,
+  "createdAt": "2026-10-02T15:12:33.6900404+00:00"
+}

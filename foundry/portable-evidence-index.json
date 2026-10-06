@@ -1,0 +1,370 @@
+{
+  "schema": "portfolio-foundry.portable-evidence-projection.v1",
+  "status": "PASS",
+  "projectedFiles": 38,
+  "entries": [
+    {
+      "relativePath": "bricks/adapt/agentic-benchmark-harne-b447fbac/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "1e8f3f2c172e0302dedc67c6a818e300878ba43daf0890051da0e3805dafe09c",
+      "portableSha256": "a9c3f955446f7effcaddc3d630c040af9cf6afb6acf133f8836dc796f1d2fa4c",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "bricks/adapt/domain-llm-fine-tuning-05d1e392/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "99c9d6d99c7fb89e38236c19ed1ec06865c96e28f0aebf185e0d660acee88c2f",
+      "portableSha256": "93aed8fc1a0097032a8c387fb4acdb5e9572e9589721935bd39584261da546ca",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "bricks/adapt/project-owned-end-to-en-f490927d/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "fe325a116aceb08eaf095900c9abb6b8a82ea98a5e60d35c6d6f915a02fcf3ba",
+      "portableSha256": "01bc0224ba360b1dd7d3a8138817addd56107880dcbf0087987314f36d4a26a5",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "bricks/adapt/scientifically-rigorous-2d3b54ba/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "555fd88d73932d6ef463f49c981795be4300f7ff351ff26ed77adef826671112",
+      "portableSha256": "a0e2c503c46d6ef67ae9761228a62a0f6da4af7c44b944223841d65fc8f6d04b",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "bricks/adapt/sql-agent-tasks-and-exe-31fdd585/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "b27f851038a82370597b758eaeeb04220b115a34ab26437a60c3641cd1b2046f",
+      "portableSha256": "ed59d0ae53ba539a6861b28949ef7bd0d92f89a0c034e27172eff01ed4676ba5",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "bricks/adapt/synthetic-training-eval-00c1d43f/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "cea23f05a57ca2863b1647eb13b2603a5499d72f0fc8028bed486df78878adfa",
+      "portableSha256": "ca184410f22ed7c2b457f989803f339334b0a185124efd1254ab5c3c40939574",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "bricks/new/synthetic-agent-data-ge-5456d7a2/STAGE3B_EXECUTABLE_PROOF.json",
+      "sourceSha256": "22ce7b80dc97438927b50bf5e07e59f2bede23d1a7315495c4e357c47bd2c792",
+      "portableSha256": "dfd641fa07efe77f595dbc116ea0d14ec4ba416a6d5125c99e89d9a1be1ba2ed",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/agentic-benchmark-harne-b447fbac/implementation.json",
+      "sourceSha256": "e808f2dc726939e44f66104e0349a7e6e5630d973dd0f5c67b85d608217eb6ab",
+      "portableSha256": "4350812e8d9ef51082a0f6fb7e3f724323b17d9a3e525c6221bccfa5a1466aa8",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/capability-implementation-proof.json",
+      "sourceSha256": "9fe6643a6b9869a5a987b942955f4e73650a1600b3d8c1b6d966e15f5bdb6b36",
+      "portableSha256": "3851331f7dd1f4e371e8157a1013a4cb90cd3c5e42047a616a74277cdd327e44",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/agentic-benchmark-harne-e01dfa09/adapter.json",
+      "sourceSha256": "cdcd4e31ec3a4bc1e00e9ae286860350a8092099cc60ac0e7a46f5ffc7eb6be3",
+      "portableSha256": "dba3c7fa537cc3d9aaa270a33c3997d4e403443d8e993d7dd29d6d2588576a9d",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/contract-closure-proof.json",
+      "sourceSha256": "243a1133cf9411cb545bb53c65f29d019bef85123aaed8ab39d48e194ac85527",
+      "portableSha256": "126ad1d024dcfcf557aace99b093acd05744f30cabfe99a22a007fd8a7cf4cfe",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/domain-llm-fine-tuning-c63d3d23/adapter.json",
+      "sourceSha256": "30668e17c265caa81f38261c07777ec324f87e45493c260a5d3f2e674f21ed7d",
+      "portableSha256": "d059731ac1c5958adfca6f2d28a5c225593bbfc05c4990f6162ddc2496083f72",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/ingress-domain-llm-fine-4d7e8b27/adapter.json",
+      "sourceSha256": "a9e83ef76bd5d71c52c3363f18ddf917691f80188d4f9ab78fd784360978adee",
+      "portableSha256": "2204757984ba135c3ed5223e0419c42fa208113297a59ccec8fa7067070ead3c",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/scientifically-rigorous-83d835d4/adapter.json",
+      "sourceSha256": "f74d0a4b3f1473bf69fd69fe6a1e15492ca80d4288d5b52e609ec7b62ba39e0d",
+      "portableSha256": "d4ed174184c5d44443b1c42f8e706ffbcb7b258a390b6b4e96e74b462932435f",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/sql-agent-tasks-and-exe-e5909590/adapter.json",
+      "sourceSha256": "5b5f9134911cc9dbf766715093f545d6e6acdb91cdc558e2b9707d77fd63f0a8",
+      "portableSha256": "37d97aeea2b42002fe11ee657211d923de0601c5390a3419459aca34d88b5f0a",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/synthetic-agent-data-ge-f494f36b/adapter.json",
+      "sourceSha256": "cfccbbc11cae153a20daf95eaa5ce49c9b518fddb637c7ce39b1e2b0f4e8bc90",
+      "portableSha256": "f44d58961646d781f86f80d7b20bd95be017046d02965b1b026342ec65cb13b1",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/contract-closure/synthetic-training-eval-ae6d4440/adapter.json",
+      "sourceSha256": "e6b3f65e5071292d986a15128c982767c2fc33e0350958472fe681372ee9ad92",
+      "portableSha256": "5866fe32be327844c656a9564c163853801fbfc89633266d47432c8c44a528cb",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/implementation.json",
+      "sourceSha256": "c182868ca1d5a34a1664785d4db0f9b8090ea99732275ababa5ba9228fdb556f",
+      "portableSha256": "be312da1e5000a5d6fbf5a8d3dc4543903492a1a801d36d28cd61e05f26035e7",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/project-owned-end-to-en-f490927d/implementation.json",
+      "sourceSha256": "8b8327394b0426472c116d0ab1ca0ec8e65f2021ae097fbfedb691bd394e8451",
+      "portableSha256": "d691951160329890db45066715950397cd4a42780e66c4a308f9d080a8a9ab61",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/scientifically-rigorous-2d3b54ba/implementation.json",
+      "sourceSha256": "62a19138e779ca5b6c3ebda53af4f98ebc8a43e0bbc4c92f06bfac2849219840",
+      "portableSha256": "7efeb04bd8c2a56570b4c6609a929b259d706d4e291a375900a4c385ccad4ad5",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/sql-agent-tasks-and-exe-31fdd585/contract.fixture-count-probe.py",
+      "sourceSha256": "a40448f7191fd0ea6ebc6ea4b351ad6ad0e316e2cb56cfc9ea203dd8dad54851",
+      "portableSha256": "5e728df45761375a033f5b9a65595551b35f04ce81332202724ef51798a46964",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/sql-agent-tasks-and-exe-31fdd585/implementation.json",
+      "sourceSha256": "c693d1b7e5a348eca66287086f9b5458fe1dae10044b393c93ed17e48fcba913",
+      "portableSha256": "f18d94cedbae0b00e408e45a981402bc838a5af6acd3563cad42e2ee276fec9c",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/stage3b-capability-generation-proof.json",
+      "sourceSha256": "0c4dce07d1ad9c471da2423f02458853ae258e7116c511c5ee1d8fe40cec0e89",
+      "portableSha256": "78d9e482fbdf667acf70883f3863e748cb69998ee572767dd5e2e07eb751df35",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/synthetic-agent-data-ge-5456d7a2/implementation.json",
+      "sourceSha256": "4f1420ac33e88a2229cb0222893cb6cac350889249442653f12f22fe551e434d",
+      "portableSha256": "e8b6a02d8b7dd0b44f849b86dd3448a2c8221dc705de35fd9bcb7cf7d63aed8b",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "evidence/v030/synthetic-training-eval-00c1d43f/implementation.json",
+      "sourceSha256": "b19835650a96e9f7f9df669d1477bbb3bb00b7c82b13dcc13409ac35e7613d00",
+      "portableSha256": "d301457fb9081f4d6ae92868f9c1949887b067abe8b0872e3235617becb9231b",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/build-preview.json",
+      "sourceSha256": "42c4805f5604ea579f06a18f3aca97ff536b9336d33f49ed4953876afa126569",
+      "portableSha256": "851c00e89406d0a872d4a09c7c2c33edf6808d8ed378620c7f460739002ce979",
+      "transformations": [
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/capability-implementation-proof.json",
+      "sourceSha256": "9fe6643a6b9869a5a987b942955f4e73650a1600b3d8c1b6d966e15f5bdb6b36",
+      "portableSha256": "3851331f7dd1f4e371e8157a1013a4cb90cd3c5e42047a616a74277cdd327e44",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/contract-closure-proof.json",
+      "sourceSha256": "243a1133cf9411cb545bb53c65f29d019bef85123aaed8ab39d48e194ac85527",
+      "portableSha256": "126ad1d024dcfcf557aace99b093acd05744f30cabfe99a22a007fd8a7cf4cfe",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/environment.json",
+      "sourceSha256": "581c27edda121b647edc10f341cbcd2ab238acc88826bac875f13f7ab50e5c60",
+      "portableSha256": "33036a8cbf2dc3f97f4f0737ef578072d5f233025971b1c6601f9f493f776e0f",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/project-candidate.json",
+      "sourceSha256": "3d02e892df97a8d331760b4c99eb5cac40eda2eb95c3878ecffb5969135e3e82",
+      "portableSha256": "e02f0aef238c56b174bd978ed4f0e2c854a28e4e3f2c668c80a1052efa944c2e",
+      "transformations": [
+        "PROJECT_CANDIDATE_PORTABLE_DESCRIPTOR"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/project-foundation.json",
+      "sourceSha256": "691047fc6735b1655e7066292b952ccf95d8b9b67f0a39f8a713b2f8b4dda340",
+      "portableSha256": "248f5681fb8646a2dd215e53ec93ba26c38930dd00c570c22379460acc850823",
+      "transformations": [
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/project-spec.json",
+      "sourceSha256": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+      "portableSha256": "13ef171dee59a0d993bac47121acef47e9ade76beb0136439220d30a5754a841",
+      "transformations": [
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/runtime-discovery-process.json",
+      "sourceSha256": "e5c409ce1a9c48abe42fefc748d0b8e2b2418a48fbcb83095a8c35bd1db1463d",
+      "portableSha256": "15f3bf247a348bb4d613e8e8ec4a9febe79019f9457efb0a9e8c0a2787e80e93",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/runtime-environment.json",
+      "sourceSha256": "1f6707421fcdfec1c9217d6776843cd2a14f845b8f4a0f10255183b030b29a31",
+      "portableSha256": "0dfb448c6264e1a0369d0939b8bb55d17a408b6439192b8783a667e7d070705c",
+      "transformations": [
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/stage3b-capability-generation-proof.json",
+      "sourceSha256": "0c4dce07d1ad9c471da2423f02458853ae258e7116c511c5ee1d8fe40cec0e89",
+      "portableSha256": "78d9e482fbdf667acf70883f3863e748cb69998ee572767dd5e2e07eb751df35",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT",
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/stage3b-retry-plan.json",
+      "sourceSha256": "3bbb810c98c6a8b593c88831a644119f7f6669321f88ccf20b47ab554ae14abb",
+      "portableSha256": "9eae63de5ae796c84f37d430b993f6c6a42c791d03e8b871e0de10c161dd921f",
+      "transformations": [
+        "CURRENT_CANDIDATE_ROOT"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "foundry/stage9-preflight-latest.json",
+      "sourceSha256": "b395aace7995c760bfb07a2808bafb99de417ca9d0698e3c7445ad75e513ca8f",
+      "portableSha256": "34a7522c1c71e4d72c7ca2887f518d555a31e7634d38bcedacf035409ca88537",
+      "transformations": [
+        "WINDOWS_USER_HOME_TO_TOKEN"
+      ],
+      "reason": "PORTABILITY"
+    },
+    {
+      "relativePath": "scripts/runtime_smoke.py",
+      "sourceSha256": "7c70dac8958dcbf6f3a407b95b1bfd1119aa4a6ce6d6fb053ef2c1d6b560e7d3",
+      "portableSha256": "d63ede21c0705b55e65a2cb2e3ff9dd56e8df99905f2764c6add13eea68b8371",
+      "transformations": [
+        "COLD_REPLAY_TIMEOUT_POLICY"
+      ],
+      "reason": "PORTABILITY"
+    }
+  ],
+  "createdAt": "2026-10-04T04:22:45.4082885+00:00"
+}

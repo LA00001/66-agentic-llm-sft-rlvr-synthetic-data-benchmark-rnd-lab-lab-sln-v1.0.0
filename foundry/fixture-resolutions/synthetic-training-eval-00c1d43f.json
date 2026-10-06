@@ -1,0 +1,70 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "synthetic-training-eval-00c1d43f",
+  "consumer_brick": "synthetic-training-eval-00c1d43f",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/synthetic-training-eval-00c1d43f.json",
+  "fixture_source": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/synthetic-training-eval-00c1d43f.input-schema.json",
+  "fixture_sha256": "53118aba596dbd2f7b5e2ab05718a19d554ddf119eaf2757d0f5ae43b032abbc",
+  "fixture_value_sha256": "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503",
+  "input_schema_sha256": "4961d1eebb426fa382e6a45865cda9aabb381735ad52087f68ade42db371f11d",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503",
+    "selected_argument_name": null,
+    "selected_source_line": 18,
+    "selected_test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+    "confirmation_kinds": [
+      "contract"
+    ],
+    "matching_candidate_count": 1,
+    "candidate_count": 4,
+    "candidate_hashes": [
+      "2e85de505b782e43bb3c6f99b7dbe6d537959de54ab9ba6e20543ac68e110f9b",
+      "308301bb6840ae281b9ac8b7bc76f585a309278fec547052aa800fbef84ff5bf",
+      "5f437868345bbe903e502503ed5eaae8a666330a4a0b5baa98b887c351190220",
+      "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503"
+    ],
+    "candidates": [
+      {
+        "hash": "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503",
+        "argument_name": null,
+        "line": 18,
+        "expression": "Dict",
+        "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "2e85de505b782e43bb3c6f99b7dbe6d537959de54ab9ba6e20543ac68e110f9b",
+        "argument_name": null,
+        "line": 19,
+        "expression": "Dict",
+        "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "308301bb6840ae281b9ac8b7bc76f585a309278fec547052aa800fbef84ff5bf",
+        "argument_name": null,
+        "line": 33,
+        "expression": "Dict",
+        "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+        "test_kind": "contract",
+        "guarded": true
+      },
+      {
+        "hash": "5f437868345bbe903e502503ed5eaae8a666330a4a0b5baa98b887c351190220",
+        "argument_name": null,
+        "line": 20,
+        "expression": "Dict",
+        "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      }
+    ]
+  }
+}

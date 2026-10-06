@@ -1,0 +1,6 @@
+{
+  "seed": 77,
+  "samples": 24,
+  "sft_epochs": 3,
+  "rlvr_steps": 6
+}

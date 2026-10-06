@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "required": [
+    "tasks"
+  ],
+  "properties": {
+    "tasks": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "candidate",
+              "cases",
+              "domain",
+              "id",
+              "oracle"
+            ],
+            "properties": {
+              "candidate": {
+                "type": "string"
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "domain": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "oracle": {
+                "type": "object",
+                "required": [
+                  "expected"
+                ],
+                "properties": {
+                  "expected": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "additionalProperties": true
+              }
+            },
+            "additionalProperties": true
+          },
+          {
+            "type": "object",
+            "required": [
+              "candidate",
+              "cases",
+              "domain",
+              "id",
+              "oracle"
+            ],
+            "properties": {
+              "candidate": {
+                "type": "string"
+              },
+              "cases": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "domain": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "oracle": {
+                "type": "object",
+                "required": [],
+                "properties": {},
+                "additionalProperties": true
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

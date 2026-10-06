@@ -1,0 +1,5 @@
+b0f8c9a69b197e1070fcf742c9b8b944dc9f27f6a95403e512a578b0b3c23d52  src/adapters/synthetic-agent-data-ge-f494f36b/brick.yaml
+d11ecbac28fee1e15f1be013197c9a7f1f7959b45c61f3184c9304efd8714d23  src/adapters/synthetic-agent-data-ge-f494f36b/core.py
+e9efcb3c4fe606048e9eb3485a7317d7dc23137210110a65df514fac072493a1  src/adapters/synthetic-agent-data-ge-f494f36b/__init__.py
+ef1cd241ec8c01476a9000a187fd3a3d26f5af2edb5e49c67507d1bb708c08e4  tests/adapters/synthetic-agent-data-ge-f494f36b/test_contract.py
+bd415279629735394eef656b8c7cfb1802315dd3f18609a79d5b2051870116e8  tests/adapters/synthetic-agent-data-ge-f494f36b/test_integration.py

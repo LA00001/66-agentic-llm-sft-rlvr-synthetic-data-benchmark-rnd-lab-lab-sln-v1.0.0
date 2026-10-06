@@ -1,0 +1,5 @@
+bcd2a32f64197348414ea4545cf05dab2c2c6d2dcf3ddfa7d427360a8bc5de4f  src/adapters/ingress-domain-llm-fine-4d7e8b27/brick.yaml
+8cf9251aebed549c47f97a71ff0a9c4beda355ab5179728f3dc32053bcec3f1c  src/adapters/ingress-domain-llm-fine-4d7e8b27/core.py
+e9efcb3c4fe606048e9eb3485a7317d7dc23137210110a65df514fac072493a1  src/adapters/ingress-domain-llm-fine-4d7e8b27/__init__.py
+6be88fd97203758c274618367727821dc71b05ab6febebfbb5f2ed41a9099828  tests/adapters/ingress-domain-llm-fine-4d7e8b27/test_contract.py
+2e5ce063f481bf2260c70eaf9a569965c5215a62cfb53d11e24ceb961b6dd2c2  tests/adapters/ingress-domain-llm-fine-4d7e8b27/test_integration.py

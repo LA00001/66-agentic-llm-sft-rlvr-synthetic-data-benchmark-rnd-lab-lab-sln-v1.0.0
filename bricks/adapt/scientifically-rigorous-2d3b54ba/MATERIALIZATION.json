@@ -1,0 +1,11 @@
+{
+  "strategy": "ADAPT",
+  "source": "ab-testing@1.0.0",
+  "sourceProject": 64,
+  "expected_fingerprint": "dbffefff31b7e65f66829f4a356187ae8a657e61649fc7baff8b8abc98bcdc47",
+  "materialized_files": 4,
+  "immutable_base": true,
+  "editable_workspace": "work",
+  "materialization_boundary": "SHALLOW_V1",
+  "transitive_copy": false
+}

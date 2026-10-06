@@ -1,0 +1,5 @@
+9fee45354f799079f3ac38e0bb58e874305eb720a0fe3fe3923c76bdb320a150  src/adapters/synthetic-training-eval-ae6d4440/brick.yaml
+66767eea6c31f96826d4e92ba1099b33b2607af9a3b5da6c71b91ecbe6edb0e3  src/adapters/synthetic-training-eval-ae6d4440/core.py
+e9efcb3c4fe606048e9eb3485a7317d7dc23137210110a65df514fac072493a1  src/adapters/synthetic-training-eval-ae6d4440/__init__.py
+37c1e1774c4f466548c650cb1b01a0f4ed7b82d35953925a66e01a36e36c971a  tests/adapters/synthetic-training-eval-ae6d4440/test_contract.py
+a9d4c5f7cedf0b472bbe5b82bcdef98e36f49ed555cf52a44427ec54d397191c  tests/adapters/synthetic-training-eval-ae6d4440/test_integration.py

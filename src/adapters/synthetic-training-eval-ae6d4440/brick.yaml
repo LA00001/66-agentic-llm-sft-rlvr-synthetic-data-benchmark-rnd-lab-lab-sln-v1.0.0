@@ -1,0 +1,17 @@
+﻿brick_schema: '1.0'
+id: synthetic-training-eval-ae6d4440
+version: 0.1.0
+status: VALIDATED
+language: python
+contract: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+runtime_contract:
+  input: 'foundry.data.data_quality.v1'
+  output: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+implementation:
+  provider: executable-contract-closure-v1
+  kind: edge
+  from: synthetic-training-eval-00c1d43f
+  to: project-owned-end-to-en-f490927d
+mapping:
+  mode: nominal-contract-envelope
+  preserves_payload: true

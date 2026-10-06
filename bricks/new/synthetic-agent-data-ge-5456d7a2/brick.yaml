@@ -1,0 +1,33 @@
+﻿brick_schema: '1.0'
+id: synthetic-agent-data-ge-5456d7a2
+version: 0.1.0
+status: EXPERIMENTAL
+language: Python
+contract: foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1
+capabilities:
+  - 'Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly'
+runtime_contract:
+  input: foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1
+  output: foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1
+  requires:
+  - foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1
+  provides:
+  - foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1
+  resources: []
+  side_effects: []
+  timeout_ms: 5000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+provenance:
+  strategy: NEW
+  origin: NEW
+reuse:
+  eligible: false
+  policy: Candidate skeleton; requires source, tests and evidence before promotion.
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  runtime_profile: 'python'
+  source_of_truth: repository-short-path

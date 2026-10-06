@@ -1,0 +1,11 @@
+{
+  "strategy": "ADAPT",
+  "source": "project-owned-docker-pa-ffcf750f@1.0.1",
+  "sourceProject": 65,
+  "expected_fingerprint": "33c005c67db6a8fcec00b203b1d5cf4d51506398ad9d865d5aa25bf0667ddec1",
+  "materialized_files": 4,
+  "immutable_base": true,
+  "editable_workspace": "work",
+  "materialization_boundary": "SHALLOW_V1",
+  "transitive_copy": false
+}

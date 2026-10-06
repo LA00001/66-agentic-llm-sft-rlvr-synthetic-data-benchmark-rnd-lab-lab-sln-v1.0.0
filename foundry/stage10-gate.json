@@ -1,0 +1,13 @@
+{
+  "schema": "portfolio-foundry.stage10-gate.v1",
+  "status": "OPEN",
+  "stage9RunId": "stage9-20261004T041729203Z-b541c6ad72b14534ac48700a4",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "applicationId": "app-20261004-071735-6a2b4782cc3545c0",
+  "applicationFingerprint": "87cfcee75911ae9945fdba1326f972ab746bd4e516a5f0f02ed2abaca4ba159f",
+  "inputFingerprint": "6cf54945376f26440f964edcef48fb43efc9846f89695563d4015785a7cbd805",
+  "reason": "Fresh real Stage 9 PASS accepted.",
+  "updatedAt": "2026-10-04T04:19:14.2188388+00:00"
+}

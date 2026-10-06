@@ -1,0 +1,17 @@
+﻿brick_schema: '1.0'
+id: scientifically-rigorous-83d835d4
+version: 0.1.0
+status: VALIDATED
+language: python
+contract: 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+runtime_contract:
+  input: 'foundry.analytics.ab_testing.v1'
+  output: 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+implementation:
+  provider: executable-contract-closure-v1
+  kind: edge
+  from: scientifically-rigorous-2d3b54ba
+  to: synthetic-agent-data-ge-5456d7a2
+mapping:
+  mode: nominal-contract-envelope
+  preserves_payload: true

@@ -1,0 +1,5 @@
+b9bc9fbe7bff1ac15db3a8cc4adfcacef6c8dc5d1f407037dbe79dfbe99a3622  src/adapters/sql-agent-tasks-and-exe-e5909590/brick.yaml
+f3833582bd1049f4f81638f15e2eb0d5ea54379c7012e78dbd592d2fa8795806  src/adapters/sql-agent-tasks-and-exe-e5909590/core.py
+e9efcb3c4fe606048e9eb3485a7317d7dc23137210110a65df514fac072493a1  src/adapters/sql-agent-tasks-and-exe-e5909590/__init__.py
+6f38b10e776cad661fdb9ea476cf7b94c6688291b8b054d3f59f51c7ccd79ab9  tests/adapters/sql-agent-tasks-and-exe-e5909590/test_contract.py
+6723a606d35093f84b8fed8a20c6ad2abc013aeacb5e34095092230be048d1db  tests/adapters/sql-agent-tasks-and-exe-e5909590/test_integration.py

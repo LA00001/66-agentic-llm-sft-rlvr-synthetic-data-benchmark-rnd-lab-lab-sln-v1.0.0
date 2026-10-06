@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# .NET / IDE
+bin/
+obj/
+.vs/
+
+# Runtime/build-local evidence
+.runtime/
+УСПЕХ/build-run-capture.json
+TestResults/
+artifacts/
+*.binlog
+evidence/v031/
+foundry/stage9-checkpoints/
+foundry/stage9-*.json
+foundry/stage9-*.ndjson
+foundry/runtime-environment.json
+foundry/*progress-cache*.json
+foundry/*live-status*.json
+foundry/*.tmp*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.user
+*.suo

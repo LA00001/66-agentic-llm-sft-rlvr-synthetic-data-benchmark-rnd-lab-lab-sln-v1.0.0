@@ -1,0 +1,17 @@
+﻿brick_schema: '1.0'
+id: ingress-domain-llm-fine-4d7e8b27
+version: 0.1.0
+status: VALIDATED
+language: python
+contract: 'foundry.project.enterprise-operational-risk-agentic-21313c83.v1'
+runtime_contract:
+  input: 'foundry.requirement.v1'
+  output: 'foundry.project.enterprise-operational-risk-agentic-21313c83.v1'
+implementation:
+  provider: executable-contract-closure-v1
+  kind: ingress
+  from: __input
+  to: domain-llm-fine-tuning-05d1e392
+mapping:
+  mode: nominal-contract-envelope
+  preserves_payload: true

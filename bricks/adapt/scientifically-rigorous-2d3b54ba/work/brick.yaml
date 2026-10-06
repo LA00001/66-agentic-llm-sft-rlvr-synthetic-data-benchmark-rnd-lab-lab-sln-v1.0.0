@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'scientifically-rigorous-2d3b54ba'
+logical_id: 'scientifically-rigorous-hypothesis-formulation-controlled-experiments-an'
+name: 'Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.analytics.ab_testing.v1'
+capabilities:
+  - 'Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.analytics.ab_testing.v1'
+  output: 'foundry.analytics.ab_testing.v1'
+  requires:
+    - 'foundry.analytics.ab_testing.v1'
+  provides:
+    - 'foundry.analytics.ab_testing.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: ADAPT
+  origin: 'ab-testing@1.0.0'
+  origin_project: 64
+  source_fingerprint: 'dbffefff31b7e65f66829f4a356187ae8a657e61649fc7baff8b8abc98bcdc47'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

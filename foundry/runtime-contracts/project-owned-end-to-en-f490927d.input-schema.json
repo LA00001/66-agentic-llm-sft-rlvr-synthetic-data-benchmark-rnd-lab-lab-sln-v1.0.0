@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "rlvr_steps",
+    "samples",
+    "seed",
+    "sft_epochs"
+  ],
+  "properties": {
+    "rlvr_steps": {
+      "type": "integer"
+    },
+    "samples": {
+      "type": "integer"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "sft_epochs": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": true
+}

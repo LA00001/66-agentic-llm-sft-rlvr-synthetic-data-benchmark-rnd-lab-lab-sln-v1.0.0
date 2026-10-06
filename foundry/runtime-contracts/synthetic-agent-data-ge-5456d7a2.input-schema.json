@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "seed",
+    "seed_items"
+  ],
+  "properties": {
+    "seed": {
+      "type": "integer"
+    },
+    "seed_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "domain",
+          "expected",
+          "prompt"
+        ],
+        "properties": {
+          "domain": {
+            "type": "string"
+          },
+          "expected": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

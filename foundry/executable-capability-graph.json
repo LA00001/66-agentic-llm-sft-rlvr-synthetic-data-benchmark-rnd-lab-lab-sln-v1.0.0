@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "portfolio-foundry.executable-capability-graph.v3",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "nodes": [
+    {
+      "id": "ingress-domain-llm-fine-4d7e8b27",
+      "logicalId": "contract-adapter:__input-\u003Edomain-llm-fine-tuning-05d1e392",
+      "fileSystemId": "ingress-domain-llm-fine-4d7e8b27",
+      "displayName": "Project ingress \u2192 domain-llm-fine-tuning-05d1e392",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/ingress-domain-llm-fine-4d7e8b27",
+      "repositoryRelativePath": "src/adapters/ingress-domain-llm-fine-4d7e8b27",
+      "declaredContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "inputContract": "foundry.requirement.v1",
+      "outputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "17594eb6e2cc5f370420aad208ee96b1fbba8706a0ad1fe0effa5b33f2c4f5d0",
+      "ports": [
+        {
+          "id": "ingress-domain-llm-fine-4d7e8b27.input",
+          "direction": "INPUT",
+          "contract": "foundry.requirement.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "ingress-domain-llm-fine-4d7e8b27.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "domain-llm-fine-tuning-05d1e392",
+      "logicalId": "domain-llm-fine-tuning-with-lora-sft-and-dialogue-tool-call-training-for",
+      "fileSystemId": "domain-llm-fine-tuning-05d1e392",
+      "displayName": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "strategy": 1,
+      "candidateRelativePath": "bricks/adapt/domain-llm-fine-tuning-05d1e392/work",
+      "repositoryRelativePath": "src/bricks/domain-llm-fine-tuning-05d1e392",
+      "declaredContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "inputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "outputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": "nlp-llm-fine-tuning-and-5ad208ff",
+      "sourceVersion": "1.0.1",
+      "originProject": 65,
+      "sourceFingerprint": "a42415e8ecc73501d9f670c4b10e49117adb51fedb88781b1fd23ba6eb8429a9",
+      "ports": [
+        {
+          "id": "domain-llm-fine-tuning-05d1e392.input",
+          "direction": "INPUT",
+          "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "domain-llm-fine-tuning-05d1e392.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "domain-llm-fine-tuning-c63d3d23",
+      "logicalId": "contract-adapter:domain-llm-fine-tuning-05d1e392-\u003Escientifically-rigorous-2d3b54ba",
+      "fileSystemId": "domain-llm-fine-tuning-c63d3d23",
+      "displayName": "domain-llm-fine-tuning-05d1e392 \u2192 scientifically-rigorous-2d3b54ba contract adapter",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/domain-llm-fine-tuning-c63d3d23",
+      "repositoryRelativePath": "src/adapters/domain-llm-fine-tuning-c63d3d23",
+      "declaredContract": "foundry.analytics.ab_testing.v1",
+      "inputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "outputContract": "foundry.analytics.ab_testing.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "00c8e41e8caf464d3c7817d5b8803f56fb6260297594fbcee8209e23047790c6",
+      "ports": [
+        {
+          "id": "domain-llm-fine-tuning-c63d3d23.input",
+          "direction": "INPUT",
+          "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "domain-llm-fine-tuning-c63d3d23.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.analytics.ab_testing.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "scientifically-rigorous-2d3b54ba",
+      "logicalId": "scientifically-rigorous-hypothesis-formulation-controlled-experiments-an",
+      "fileSystemId": "scientifically-rigorous-2d3b54ba",
+      "displayName": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+      "strategy": 1,
+      "candidateRelativePath": "bricks/adapt/scientifically-rigorous-2d3b54ba/work",
+      "repositoryRelativePath": "src/bricks/scientifically-rigorous-2d3b54ba",
+      "declaredContract": "foundry.analytics.ab_testing.v1",
+      "inputContract": "foundry.analytics.ab_testing.v1",
+      "outputContract": "foundry.analytics.ab_testing.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "analytics-py314-v1",
+      "sourceBrickId": "ab-testing",
+      "sourceVersion": "1.0.0",
+      "originProject": 64,
+      "sourceFingerprint": "dbffefff31b7e65f66829f4a356187ae8a657e61649fc7baff8b8abc98bcdc47",
+      "ports": [
+        {
+          "id": "scientifically-rigorous-2d3b54ba.input",
+          "direction": "INPUT",
+          "contract": "foundry.analytics.ab_testing.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "scientifically-rigorous-2d3b54ba.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.analytics.ab_testing.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "scientifically-rigorous-83d835d4",
+      "logicalId": "contract-adapter:scientifically-rigorous-2d3b54ba-\u003Esynthetic-agent-data-ge-5456d7a2",
+      "fileSystemId": "scientifically-rigorous-83d835d4",
+      "displayName": "scientifically-rigorous-2d3b54ba \u2192 synthetic-agent-data-ge-5456d7a2 contract adapter",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/scientifically-rigorous-83d835d4",
+      "repositoryRelativePath": "src/adapters/scientifically-rigorous-83d835d4",
+      "declaredContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "inputContract": "foundry.analytics.ab_testing.v1",
+      "outputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "99a82f68d97cea164e22990a29fb386f0076586d99a063ee382dd8199bf0fc6a",
+      "ports": [
+        {
+          "id": "scientifically-rigorous-83d835d4.input",
+          "direction": "INPUT",
+          "contract": "foundry.analytics.ab_testing.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "scientifically-rigorous-83d835d4.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "synthetic-agent-data-ge-5456d7a2",
+      "logicalId": "synthetic-agent-data-generation-pipeline-task-generation-agent-rollout-a",
+      "fileSystemId": "synthetic-agent-data-ge-5456d7a2",
+      "displayName": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly",
+      "strategy": 3,
+      "candidateRelativePath": "bricks/new/synthetic-agent-data-ge-5456d7a2/src",
+      "repositoryRelativePath": "src/bricks/synthetic-agent-data-ge-5456d7a2",
+      "declaredContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "inputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "outputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "Python",
+      "sourceBrickId": null,
+      "sourceVersion": null,
+      "originProject": null,
+      "sourceFingerprint": null,
+      "ports": [
+        {
+          "id": "synthetic-agent-data-ge-5456d7a2.input",
+          "direction": "INPUT",
+          "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "synthetic-agent-data-ge-5456d7a2.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "synthetic-agent-data-ge-f494f36b",
+      "logicalId": "contract-adapter:synthetic-agent-data-ge-5456d7a2-\u003Eagentic-benchmark-harne-b447fbac",
+      "fileSystemId": "synthetic-agent-data-ge-f494f36b",
+      "displayName": "synthetic-agent-data-ge-5456d7a2 \u2192 agentic-benchmark-harne-b447fbac contract adapter",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/synthetic-agent-data-ge-f494f36b",
+      "repositoryRelativePath": "src/adapters/synthetic-agent-data-ge-f494f36b",
+      "declaredContract": "foundry.platform.evidence_registry.v1",
+      "inputContract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "outputContract": "foundry.platform.evidence_registry.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "ff2a0187cc6326cc6dcd47eeded3f125ced8de08d8fbdf4bb59b3b5d65a9feb3",
+      "ports": [
+        {
+          "id": "synthetic-agent-data-ge-f494f36b.input",
+          "direction": "INPUT",
+          "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "synthetic-agent-data-ge-f494f36b.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.platform.evidence_registry.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "agentic-benchmark-harne-b447fbac",
+      "logicalId": "agentic-benchmark-harness-with-deterministic-oracles-tests-and-domain-sp",
+      "fileSystemId": "agentic-benchmark-harne-b447fbac",
+      "displayName": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "strategy": 1,
+      "candidateRelativePath": "bricks/adapt/agentic-benchmark-harne-b447fbac/work",
+      "repositoryRelativePath": "src/bricks/agentic-benchmark-harne-b447fbac",
+      "declaredContract": "foundry.platform.evidence_registry.v1",
+      "inputContract": "foundry.platform.evidence_registry.v1",
+      "outputContract": "foundry.platform.evidence_registry.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "analytics-py314-v1",
+      "sourceBrickId": "evidence-registry",
+      "sourceVersion": "1.0.0",
+      "originProject": 64,
+      "sourceFingerprint": "de7e756d88e9e451a1e63a5c33e74dc837ec068677209afb8b154dfa5a25abe1",
+      "ports": [
+        {
+          "id": "agentic-benchmark-harne-b447fbac.input",
+          "direction": "INPUT",
+          "contract": "foundry.platform.evidence_registry.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "agentic-benchmark-harne-b447fbac.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.platform.evidence_registry.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "agentic-benchmark-harne-e01dfa09",
+      "logicalId": "contract-adapter:agentic-benchmark-harne-b447fbac-\u003Esql-agent-tasks-and-exe-31fdd585",
+      "fileSystemId": "agentic-benchmark-harne-e01dfa09",
+      "displayName": "agentic-benchmark-harne-b447fbac \u2192 sql-agent-tasks-and-exe-31fdd585 contract adapter",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/agentic-benchmark-harne-e01dfa09",
+      "repositoryRelativePath": "src/adapters/agentic-benchmark-harne-e01dfa09",
+      "declaredContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "inputContract": "foundry.platform.evidence_registry.v1",
+      "outputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "587397735bbad44ba442e2fd877233fde6520d5669eabb30c9b27f6d6a17f398",
+      "ports": [
+        {
+          "id": "agentic-benchmark-harne-e01dfa09.input",
+          "direction": "INPUT",
+          "contract": "foundry.platform.evidence_registry.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "agentic-benchmark-harne-e01dfa09.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "sql-agent-tasks-and-exe-31fdd585",
+      "logicalId": "sql-agent-tasks-and-executable-database-oracles-for-generated-benchmarks",
+      "fileSystemId": "sql-agent-tasks-and-exe-31fdd585",
+      "displayName": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "strategy": 1,
+      "candidateRelativePath": "bricks/adapt/sql-agent-tasks-and-exe-31fdd585/work",
+      "repositoryRelativePath": "src/bricks/sql-agent-tasks-and-exe-31fdd585",
+      "declaredContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "inputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "outputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": "complex-sql-analysis-an-0e9c0c3c",
+      "sourceVersion": "1.0.1",
+      "originProject": 65,
+      "sourceFingerprint": "4d8d435a3b895095146453f1637c66480072fab9ea6b8e4411694278b280dbaa",
+      "ports": [
+        {
+          "id": "sql-agent-tasks-and-exe-31fdd585.input",
+          "direction": "INPUT",
+          "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "sql-agent-tasks-and-exe-31fdd585.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "sql-agent-tasks-and-exe-e5909590",
+      "logicalId": "contract-adapter:sql-agent-tasks-and-exe-31fdd585-\u003Esynthetic-training-eval-00c1d43f",
+      "fileSystemId": "sql-agent-tasks-and-exe-e5909590",
+      "displayName": "sql-agent-tasks-and-exe-31fdd585 \u2192 synthetic-training-eval-00c1d43f contract adapter",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/sql-agent-tasks-and-exe-e5909590",
+      "repositoryRelativePath": "src/adapters/sql-agent-tasks-and-exe-e5909590",
+      "declaredContract": "foundry.data.data_quality.v1",
+      "inputContract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "outputContract": "foundry.data.data_quality.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "fedfd5bbf636f1979847539ec41a5ad60654ce02a76ffe2e700c405141cdde6d",
+      "ports": [
+        {
+          "id": "sql-agent-tasks-and-exe-e5909590.input",
+          "direction": "INPUT",
+          "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "sql-agent-tasks-and-exe-e5909590.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.data.data_quality.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "synthetic-training-eval-00c1d43f",
+      "logicalId": "synthetic-training-evaluation-dataset-quality-controls-deduplication-con",
+      "fileSystemId": "synthetic-training-eval-00c1d43f",
+      "displayName": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering",
+      "strategy": 1,
+      "candidateRelativePath": "bricks/adapt/synthetic-training-eval-00c1d43f/work",
+      "repositoryRelativePath": "src/bricks/synthetic-training-eval-00c1d43f",
+      "declaredContract": "foundry.data.data_quality.v1",
+      "inputContract": "foundry.data.data_quality.v1",
+      "outputContract": "foundry.data.data_quality.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "analytics-py314-v1",
+      "sourceBrickId": "data-quality",
+      "sourceVersion": "1.0.0",
+      "originProject": 64,
+      "sourceFingerprint": "51ad97bdb9837ce6440a89efe98433adaf13bca48b8817e8e33c80bb36c6aafa",
+      "ports": [
+        {
+          "id": "synthetic-training-eval-00c1d43f.input",
+          "direction": "INPUT",
+          "contract": "foundry.data.data_quality.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "synthetic-training-eval-00c1d43f.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.data.data_quality.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "synthetic-training-eval-ae6d4440",
+      "logicalId": "contract-adapter:synthetic-training-eval-00c1d43f-\u003Eproject-owned-end-to-en-f490927d",
+      "fileSystemId": "synthetic-training-eval-ae6d4440",
+      "displayName": "synthetic-training-eval-00c1d43f \u2192 project-owned-end-to-en-f490927d contract adapter",
+      "strategy": 1,
+      "candidateRelativePath": "src/adapters/synthetic-training-eval-ae6d4440",
+      "repositoryRelativePath": "src/adapters/synthetic-training-eval-ae6d4440",
+      "declaredContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "inputContract": "foundry.data.data_quality.v1",
+      "outputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": null,
+      "sourceVersion": "v0.33.5",
+      "originProject": null,
+      "sourceFingerprint": "46feed2ef76bbac5828c95022370680dddfcb8ecc232bb0b3ec00f25e1785960",
+      "ports": [
+        {
+          "id": "synthetic-training-eval-ae6d4440.input",
+          "direction": "INPUT",
+          "contract": "foundry.data.data_quality.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "synthetic-training-eval-ae6d4440.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+          "status": "DECLARED"
+        }
+      ]
+    },
+    {
+      "id": "project-owned-end-to-en-f490927d",
+      "logicalId": "project-owned-end-to-end-integration-reproducible-runtime-experiment-art",
+      "fileSystemId": "project-owned-end-to-en-f490927d",
+      "displayName": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "strategy": 1,
+      "candidateRelativePath": "bricks/adapt/project-owned-end-to-en-f490927d/work",
+      "repositoryRelativePath": "src/bricks/project-owned-end-to-en-f490927d",
+      "declaredContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "inputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "outputContract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "contractStatus": "DECLARED",
+      "runtimeProfile": "python",
+      "sourceBrickId": "project-owned-docker-pa-ffcf750f",
+      "sourceVersion": "1.0.1",
+      "originProject": 65,
+      "sourceFingerprint": "33c005c67db6a8fcec00b203b1d5cf4d51506398ad9d865d5aa25bf0667ddec1",
+      "ports": [
+        {
+          "id": "project-owned-end-to-en-f490927d.input",
+          "direction": "INPUT",
+          "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+          "status": "DECLARED"
+        },
+        {
+          "id": "project-owned-end-to-en-f490927d.output",
+          "direction": "OUTPUT",
+          "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+          "status": "DECLARED"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "__input",
+      "to": "ingress-domain-llm-fine-4d7e8b27",
+      "contract": "foundry.requirement.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter ingress-domain-llm-fine-4d7e8b27."
+    },
+    {
+      "from": "ingress-domain-llm-fine-4d7e8b27",
+      "to": "domain-llm-fine-tuning-05d1e392",
+      "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter ingress-domain-llm-fine-4d7e8b27 provides the exact target contract."
+    },
+    {
+      "from": "domain-llm-fine-tuning-05d1e392",
+      "to": "domain-llm-fine-tuning-c63d3d23",
+      "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter domain-llm-fine-tuning-c63d3d23."
+    },
+    {
+      "from": "domain-llm-fine-tuning-c63d3d23",
+      "to": "scientifically-rigorous-2d3b54ba",
+      "contract": "foundry.analytics.ab_testing.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter domain-llm-fine-tuning-c63d3d23 provides the exact target contract."
+    },
+    {
+      "from": "scientifically-rigorous-2d3b54ba",
+      "to": "scientifically-rigorous-83d835d4",
+      "contract": "foundry.analytics.ab_testing.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter scientifically-rigorous-83d835d4."
+    },
+    {
+      "from": "scientifically-rigorous-83d835d4",
+      "to": "synthetic-agent-data-ge-5456d7a2",
+      "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter scientifically-rigorous-83d835d4 provides the exact target contract."
+    },
+    {
+      "from": "synthetic-agent-data-ge-5456d7a2",
+      "to": "synthetic-agent-data-ge-f494f36b",
+      "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter synthetic-agent-data-ge-f494f36b."
+    },
+    {
+      "from": "synthetic-agent-data-ge-f494f36b",
+      "to": "agentic-benchmark-harne-b447fbac",
+      "contract": "foundry.platform.evidence_registry.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter synthetic-agent-data-ge-f494f36b provides the exact target contract."
+    },
+    {
+      "from": "agentic-benchmark-harne-b447fbac",
+      "to": "agentic-benchmark-harne-e01dfa09",
+      "contract": "foundry.platform.evidence_registry.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter agentic-benchmark-harne-e01dfa09."
+    },
+    {
+      "from": "agentic-benchmark-harne-e01dfa09",
+      "to": "sql-agent-tasks-and-exe-31fdd585",
+      "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter agentic-benchmark-harne-e01dfa09 provides the exact target contract."
+    },
+    {
+      "from": "sql-agent-tasks-and-exe-31fdd585",
+      "to": "sql-agent-tasks-and-exe-e5909590",
+      "contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter sql-agent-tasks-and-exe-e5909590."
+    },
+    {
+      "from": "sql-agent-tasks-and-exe-e5909590",
+      "to": "synthetic-training-eval-00c1d43f",
+      "contract": "foundry.data.data_quality.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter sql-agent-tasks-and-exe-e5909590 provides the exact target contract."
+    },
+    {
+      "from": "synthetic-training-eval-00c1d43f",
+      "to": "synthetic-training-eval-ae6d4440",
+      "contract": "foundry.data.data_quality.v1",
+      "status": "EXACT",
+      "reason": "v0.30 contract closure routes the source through executable adapter synthetic-training-eval-ae6d4440."
+    },
+    {
+      "from": "synthetic-training-eval-ae6d4440",
+      "to": "project-owned-end-to-en-f490927d",
+      "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "status": "EXACT",
+      "reason": "Executable adapter synthetic-training-eval-ae6d4440 provides the exact target contract."
+    },
+    {
+      "from": "project-owned-end-to-en-f490927d",
+      "to": "__output",
+      "contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "status": "DEFERRED_V031",
+      "reason": "Final portfolio application output is intentionally finalized by v0.31."
+    }
+  ]
+}

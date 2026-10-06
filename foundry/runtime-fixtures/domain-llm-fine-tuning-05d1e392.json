@@ -1,0 +1,55 @@
+{
+  "seed": 23,
+  "steps": 6,
+  "learning_rate": 0.08,
+  "trajectories": [
+    {
+      "turns": [
+        {
+          "role": "user",
+          "content": "find account balance"
+        },
+        {
+          "role": "assistant",
+          "content": "i will query account"
+        },
+        {
+          "role": "tool_call",
+          "content": "sql_balance account 7"
+        },
+        {
+          "role": "tool_result",
+          "content": "balance 900"
+        },
+        {
+          "role": "assistant",
+          "content": "account balance is 900"
+        }
+      ]
+    },
+    {
+      "turns": [
+        {
+          "role": "user",
+          "content": "calculate tax"
+        },
+        {
+          "role": "assistant",
+          "content": "i will calculate tax"
+        },
+        {
+          "role": "tool_call",
+          "content": "calculator_tax 100"
+        },
+        {
+          "role": "tool_result",
+          "content": "tax 20"
+        },
+        {
+          "role": "assistant",
+          "content": "tax is 20"
+        }
+      ]
+    }
+  ]
+}

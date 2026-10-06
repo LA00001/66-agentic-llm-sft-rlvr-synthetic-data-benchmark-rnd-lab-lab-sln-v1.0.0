@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'synthetic-agent-data-ge-5456d7a2'
+logical_id: 'synthetic-agent-data-generation-pipeline-task-generation-agent-rollout-a'
+name: 'Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+capabilities:
+  - 'Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+  output: 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+  requires:
+    - 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+  provides:
+    - 'foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: NEW
+  origin: 'NEW'
+  origin_project: null
+  source_fingerprint: 'NEW'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

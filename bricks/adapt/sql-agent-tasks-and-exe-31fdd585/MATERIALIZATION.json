@@ -1,0 +1,11 @@
+{
+  "strategy": "ADAPT",
+  "source": "complex-sql-analysis-an-0e9c0c3c@1.0.1",
+  "sourceProject": 65,
+  "expected_fingerprint": "4d8d435a3b895095146453f1637c66480072fab9ea6b8e4411694278b280dbaa",
+  "materialized_files": 4,
+  "immutable_base": true,
+  "editable_workspace": "work",
+  "materialization_boundary": "SHALLOW_V1",
+  "transitive_copy": false
+}

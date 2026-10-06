@@ -1,0 +1,80 @@
+{
+  "schema": "portfolio-foundry.stage3b-executable-proof.v1",
+  "buildToken": "BUILD216_TEST229",
+  "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+  "strategy": 1,
+  "targetBrickId": "domain-llm-fine-tuning-05d1e392",
+  "fileSystemId": "domain-llm-fine-tuning-05d1e392",
+  "status": "PASS",
+  "requiredProof": [
+    "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 PyTorch forward/backward training step \u043D\u0430 Transformers causal LM \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C finite loss \u0438 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 trainable \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432.",
+    "\u0421\u043E\u0437\u0434\u0430\u0442\u044C PEFT LoraConfig, \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C get_peft_model \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C, \u0447\u0442\u043E \u043E\u0431\u0443\u0447\u0430\u0435\u043C\u044B\u043C\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F LoRA-\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B, \u0430 base-\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u044B \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u043E \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438.",
+    "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C SFT \u043D\u0430 \u043D\u0430\u0431\u043E\u0440\u0435 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 dialogue trajectories \u0441 user/assistant/tool_call/tool_result turns \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u043A\u043E\u0440\u0440\u0435\u043A\u0442\u043D\u043E\u0435 masking labels.",
+    "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0438 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C LoRA adapter, \u0437\u0430\u0442\u0435\u043C \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u044D\u043A\u0432\u0438\u0432\u0430\u043B\u0435\u043D\u0442\u043D\u044B\u0439 inference result \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C input.",
+    "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C baseline \u0438 post-SFT \u043C\u0435\u0442\u0440\u0438\u043A\u0443 \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C eval-\u043D\u0430\u0431\u043E\u0440\u0435 \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C machine-readable before/after artifact.",
+    "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C Transformers tokenizer/model serialization \u0438 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u0440\u0438 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C seed.",
+    "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 transformer forward/backward pass \u0441 loss, gradients \u0438 parameter update.",
+    "\u0417\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C architecture/tokenization/training configuration \u0438 \u043E\u0431\u044A\u044F\u0441\u043D\u0438\u043C\u044B\u0435 baseline-versus-trained metrics.",
+    "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C torch \u0438 transformers \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 training/inference path \u043D\u0430 Transformers model.",
+    "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435 \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 model/tokenizer artifacts.",
+    "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C PEFT LoRA adapter \u043A \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0439 Transformers causal LM \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C optimization step.",
+    "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C trainable-parameter report \u0438 reloadable LoRA adapter artifact."
+  ],
+  "vacancyRequirements": [
+    "\u0425\u043E\u0440\u043E\u0448\u0438\u0435 \u0437\u043D\u0430\u043D\u0438\u044F ML/DL \u0441 \u0443\u043F\u043E\u0440\u043E\u043C \u043D\u0430 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 NLP \u0438 \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0435\u0440\u044B",
+    "PyTorch \u0438 Transformers \u043A\u0430\u043A \u0446\u0435\u043B\u0435\u0432\u043E\u0439 \u0441\u0442\u0435\u043A \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438",
+    "\u0414\u043E\u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 LLM \u043F\u043E\u0434 \u0434\u043E\u043C\u0435\u043D\u043D\u044B\u0435 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u0441 LoRA/PEFT",
+    "SFT \u043D\u0430 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0445 \u0442\u0440\u0430\u0435\u043A\u0442\u043E\u0440\u0438\u044F\u0445 \u0438 \u0444\u043E\u0440\u043C\u0430\u0442\u0430\u0445 \u0434\u0438\u0430\u043B\u043E\u0433\u043E\u0432/tool calls"
+  ],
+  "implementation": {
+    "targetBrickId": "domain-llm-fine-tuning-05d1e392",
+    "fileSystemId": "domain-llm-fine-tuning-05d1e392",
+    "strategy": 1,
+    "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+    "status": "PASS",
+    "provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "sourceRelativePath": "src/bricks/domain-llm-fine-tuning-05d1e392",
+    "testsRelativePath": "tests/bricks/domain-llm-fine-tuning-05d1e392",
+    "evidenceRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392",
+    "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "inputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "outputContract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "runtimeProfile": "python",
+    "baseIntegrityStatus": "PASS",
+    "sourceFiles": 4,
+    "testFiles": 3,
+    "tests": [
+      {
+        "kind": "UNIT",
+        "status": "PASS",
+        "exitCode": 0,
+        "durationMs": 58040,
+        "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py",
+        "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Lib\\site-packages\\peft\\tuners\\lora\\layer.py:2733: UserWarning: fan_in_fan_out is set to False but the target module is \u0060Conv1D\u0060. Setting fan_in_fan_out to True.",
+        "logRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/unit.log"
+      },
+      {
+        "kind": "CONTRACT",
+        "status": "PASS",
+        "exitCode": 0,
+        "durationMs": 8496,
+        "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+        "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Lib\\site-packages\\peft\\tuners\\lora\\layer.py:2733: UserWarning: fan_in_fan_out is set to False but the target module is \u0060Conv1D\u0060. Setting fan_in_fan_out to True.",
+        "logRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/contract.log"
+      },
+      {
+        "kind": "INTEGRATION",
+        "status": "PASS",
+        "exitCode": 0,
+        "durationMs": 10121,
+        "command": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Scripts\\python.exe %PROJECT_ROOT%/tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py",
+        "summary": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\e7638c6f1caec3a8b00147bb\\Lib\\site-packages\\peft\\tuners\\lora\\layer.py:2733: UserWarning: fan_in_fan_out is set to False but the target module is \u0060Conv1D\u0060. Setting fan_in_fan_out to True.",
+        "logRelativePath": "evidence/v030/domain-llm-fine-tuning-05d1e392/integration.log"
+      }
+    ],
+    "implementationFingerprint": "f5eeb9393ecba8ee24d26905fffdc3efedefdc47ddb0f6c8cbace91b585e20ff",
+    "findings": []
+  },
+  "projectProof": "PENDING_STAGE4_V026",
+  "createdAt": "2026-10-02T17:13:01.0024954+00:00"
+}

@@ -1,0 +1,7 @@
+850813b8244b1aafec2c70a3642fb7528d81e33488ab9454ec55a0debe7ce074  src/bricks/domain-llm-fine-tuning-05d1e392/brick.yaml
+422cc3fcc61b9da752aad0a3d642341c3efd94daf07ea193ce764f01e629a16b  src/bricks/domain-llm-fine-tuning-05d1e392/core.py
+40563e845111a879c0f29b20f100f9a132cf78caacfeee22355ea979e519db7b  src/bricks/domain-llm-fine-tuning-05d1e392/requirements.txt
+63fd74264ac6ae94ef1a8dd37e9611b2cc492f7a987311c5fbae80dba6deaf3f  src/bricks/domain-llm-fine-tuning-05d1e392/__init__.py
+a279838af16bed41c28e0e916ff7cd40b1c5031af17be0f847d6c35f0af8cfa9  tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py
+6751668cf6454f4e34f50110bd2dcf06f6e15bc5fef06414e9f87bc3cb3690e3  tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py
+27bfb17a11da6d564bc0400df4ee9635c5463f800bf9779aba9d538b29ece9db  tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py

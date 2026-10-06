@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "attempt": 2,
+  "proposed": 2,
+  "passed": 2,
+  "failed": 0,
+  "chatGptCacheHit": false,
+  "authoringFingerprint": "683527b2d4432285bafc3bb659e26faac29bad396c501a183520ecc0b7299f22",
+  "finalPackageRelativePath": "evidence/v038/candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab-UPGRADED-v038-683527b2d443.zip",
+  "upgrades": [
+    {
+      "id": "transformer-rlvr-proof",
+      "skill": "RLVR/GRPO-style optimization on a Transformer policy",
+      "linkedBrickId": "project-owned-end-to-en-f490927d",
+      "status": "PASS",
+      "runtime": "shared:v048/e7638c6f1caec3a8b00147bb",
+      "requirementsStatus": "PASS",
+      "testStatus": "PASS",
+      "demoStatus": "PASS",
+      "durationMs": 31547,
+      "evidenceFiles": [
+        "evidence/v038/attempt-02/transformer-rlvr-proof/restore.log",
+        "evidence/v038/attempt-02/transformer-rlvr-proof/test.log",
+        "evidence/v038/attempt-02/transformer-rlvr-proof/demo.log"
+      ],
+      "failure": null
+    },
+    {
+      "id": "office-cyber-benchmarks",
+      "skill": "Executable office and cybersecurity benchmark oracles",
+      "linkedBrickId": "agentic-benchmark-harne-b447fbac",
+      "status": "PASS",
+      "runtime": "shared:v031/req-f1945cd6c19e56b3",
+      "requirementsStatus": "PASS",
+      "testStatus": "PASS",
+      "demoStatus": "PASS",
+      "durationMs": 12365,
+      "evidenceFiles": [
+        "evidence/v038/attempt-01/office-cyber-benchmarks/restore.log",
+        "evidence/v038/attempt-01/office-cyber-benchmarks/test.log",
+        "evidence/v038/attempt-01/office-cyber-benchmarks/demo.log"
+      ],
+      "failure": null
+    }
+  ],
+  "createdAt": "2026-10-05T22:25:41.6669467+00:00",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "verificationRevision": ""
+}

@@ -1,0 +1,35 @@
+﻿brick_schema: '1.0'
+id: domain-llm-fine-tuning-05d1e392
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: foundry.project.enterprise-operational-risk-agentic-21313c83.v1
+capabilities:
+  - 'Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats'
+runtime_contract:
+  input: foundry.project.enterprise-operational-risk-agentic-21313c83.v1
+  output: foundry.project.enterprise-operational-risk-agentic-21313c83.v1
+  requires:
+  - foundry.project.enterprise-operational-risk-agentic-21313c83.v1
+  provides:
+  - foundry.project.enterprise-operational-risk-agentic-21313c83.v1
+  resources: []
+  side_effects: []
+  timeout_ms: 5000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+provenance:
+  strategy: ADAPT
+  origin: nlp-llm-fine-tuning-and-5ad208ff@1.0.1
+  origin_project: 65
+  source_fingerprint: a42415e8ecc73501d9f670c4b10e49117adb51fedb88781b1fd23ba6eb8429a9
+reuse:
+  eligible: false
+  policy: Candidate derivative; must pass v0.26 proof before promotion.
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  runtime_profile: 'python'
+  source_of_truth: repository-short-path

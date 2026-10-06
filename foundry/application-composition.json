@@ -1,0 +1,11 @@
+{
+  "schema": "portfolio-foundry.runnable-application-composition.v1",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "input": "capability-implementation-proof",
+  "graph": "foundry/executable-capability-graph.json",
+  "server": "src/app/server.py",
+  "web": "web/index.html",
+  "runtimeManager": "scripts/RuntimeManager.ps1",
+  "launcher": "PortfolioApplication.sln",
+  "output": "runnable-portfolio-application"
+}

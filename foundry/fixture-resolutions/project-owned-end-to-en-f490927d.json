@@ -1,0 +1,99 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "project-owned-end-to-en-f490927d",
+  "consumer_brick": "project-owned-end-to-en-f490927d",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/project-owned-end-to-en-f490927d.json",
+  "fixture_source": "tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/project-owned-end-to-en-f490927d.input-schema.json",
+  "fixture_sha256": "3dd4ac649b31797ba56966aaf433edccf16e53fc78c444c57c28e8a29c23b6ef",
+  "fixture_value_sha256": "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149",
+  "input_schema_sha256": "ac187ce7497f94497a5baab8d08e6575f8073cb047dfe43bad75a697e3d1a016",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149",
+    "selected_argument_name": null,
+    "selected_source_line": 15,
+    "selected_test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+    "confirmation_kinds": [
+      "contract"
+    ],
+    "matching_candidate_count": 1,
+    "candidate_count": 7,
+    "candidate_hashes": [
+      "28a002568435e92b8c484e2375c972c068c204fa1399b342d4d28598596c1e85",
+      "2acb6e6853cc7a124a9a050074a964a7fe270f42cf1d39517f960bd26d15759e",
+      "6c561e1f98831b0270e260ecc6d03eda361b0c09f8f49cdd9dec6f68c5eec24c",
+      "878dd56899dec963bf63f69a4b6e5c9300a404adbe67863bed0f8f71dc6a622c",
+      "8c1dd0a563edee673fd40e247c3bf75a74c5af2a8b1ff0d71c34ec10ffbdbd0f",
+      "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149"
+    ],
+    "candidates": [
+      {
+        "hash": "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149",
+        "argument_name": null,
+        "line": 15,
+        "expression": "Dict",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "2acb6e6853cc7a124a9a050074a964a7fe270f42cf1d39517f960bd26d15759e",
+        "argument_name": null,
+        "line": 13,
+        "expression": "Dict",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "6c561e1f98831b0270e260ecc6d03eda361b0c09f8f49cdd9dec6f68c5eec24c",
+        "argument_name": "payload",
+        "line": 34,
+        "expression": "Name",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "6c561e1f98831b0270e260ecc6d03eda361b0c09f8f49cdd9dec6f68c5eec24c",
+        "argument_name": "payload",
+        "line": 35,
+        "expression": "Name",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "8c1dd0a563edee673fd40e247c3bf75a74c5af2a8b1ff0d71c34ec10ffbdbd0f",
+        "argument_name": null,
+        "line": 47,
+        "expression": "Dict",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+        "test_kind": "unit",
+        "guarded": true
+      },
+      {
+        "hash": "28a002568435e92b8c484e2375c972c068c204fa1399b342d4d28598596c1e85",
+        "argument_name": null,
+        "line": 53,
+        "expression": "Dict",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+        "test_kind": "unit",
+        "guarded": true
+      },
+      {
+        "hash": "878dd56899dec963bf63f69a4b6e5c9300a404adbe67863bed0f8f71dc6a622c",
+        "argument_name": "payload",
+        "line": 19,
+        "expression": "Name",
+        "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      }
+    ]
+  }
+}

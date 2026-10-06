@@ -1,0 +1,7 @@
+eb03740729c48dc530cc240b9819ab8fcf2d53ba471fab119acc65f0371f9822  src/bricks/sql-agent-tasks-and-exe-31fdd585/brick.yaml
+12d95397172252d2e52ab4578e2d3984c9eebb16f8639c39f575c3dbc709cbff  src/bricks/sql-agent-tasks-and-exe-31fdd585/core.py
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  src/bricks/sql-agent-tasks-and-exe-31fdd585/requirements.txt
+63fd74264ac6ae94ef1a8dd37e9611b2cc492f7a987311c5fbae80dba6deaf3f  src/bricks/sql-agent-tasks-and-exe-31fdd585/__init__.py
+63293656b6387c0deae7dba9b84b8512c4ccdc02bc3d8fb287c80f7403ceeb72  tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py
+dc5527ef2c0835ddc4ee1e5914c55df3f5bdb27ac49564f9715ccdb05dc6494e  tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py
+d652d98f54cb3390d14e1352b0a6796fa721fa0fa92c5eb6a22deca6e78b63af  tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py

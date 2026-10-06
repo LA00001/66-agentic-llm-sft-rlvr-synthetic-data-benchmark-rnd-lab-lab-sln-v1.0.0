@@ -1,0 +1,5 @@
+35aaba4aaa6ea4b244d2e5ede53359db9f3c0289115247bec3e3b98c172d0795  src/adapters/agentic-benchmark-harne-e01dfa09/brick.yaml
+4507291ccc9e775f0ede80822b4030e6b58e334f436fa13576931c49b8e877ea  src/adapters/agentic-benchmark-harne-e01dfa09/core.py
+e9efcb3c4fe606048e9eb3485a7317d7dc23137210110a65df514fac072493a1  src/adapters/agentic-benchmark-harne-e01dfa09/__init__.py
+785b56bb7d563f79c5c1757c6518dfdb6b8e3c423c94cd7eeaf791f562119440  tests/adapters/agentic-benchmark-harne-e01dfa09/test_contract.py
+1fe5841c236cf33c6b1965bebd6fe41c73071371fd8743243f841eff6bc168b4  tests/adapters/agentic-benchmark-harne-e01dfa09/test_integration.py

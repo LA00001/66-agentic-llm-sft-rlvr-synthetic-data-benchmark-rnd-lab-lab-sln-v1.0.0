@@ -1,0 +1,11 @@
+{
+  "schema": "portfolio-foundry.project-proof-validity.v1",
+  "status": "CURRENT",
+  "proofId": "proof-20261004-072049-40d5a1d08ac84e3b",
+  "proofStatus": "PASS",
+  "implementationId": "implementation-20261003-133050-9cae8bfc714344a9",
+  "implementationFingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+  "applicationFingerprint": "87cfcee75911ae9945fdba1326f972ab746bd4e516a5f0f02ed2abaca4ba159f",
+  "proofScope": "REAL_RUNNABLE_APPLICATION_PORTABLE_V2",
+  "provedAt": "2026-10-04T04:23:20.9443102+00:00"
+}

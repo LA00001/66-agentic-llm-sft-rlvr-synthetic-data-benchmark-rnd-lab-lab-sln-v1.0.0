@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "record_id": "a",
+      "split": "train",
+      "task_id": "ta",
+      "trajectory_id": "xa",
+      "task": "SELECT count rows",
+      "answer": "3",
+      "oracle_answer": "3",
+      "verifier_verdict": "pass",
+      "reward": 0.9,
+      "trajectory_steps": [
+        {
+          "role": "assistant",
+          "content": "query"
+        }
+      ],
+      "error_count": 0
+    },
+    {
+      "record_id": "b",
+      "split": "eval",
+      "task_id": "tb",
+      "trajectory_id": "xb",
+      "task": " select   count rows ",
+      "answer": "3",
+      "oracle_answer": "3",
+      "verifier_verdict": "pass",
+      "reward": 0.9,
+      "trajectory_steps": [
+        {
+          "role": "assistant",
+          "content": "query"
+        }
+      ],
+      "error_count": 0
+    },
+    {
+      "record_id": "c",
+      "split": "train",
+      "task_id": "tc",
+      "trajectory_id": "xc",
+      "task": "independent",
+      "answer": "ok",
+      "oracle_answer": "ok",
+      "verifier_verdict": "pass",
+      "reward": 0.7,
+      "trajectory_steps": [
+        {
+          "role": "assistant",
+          "content": "done"
+        }
+      ],
+      "error_count": 0
+    }
+  ],
+  "contamination_policy": "WARN"
+}

@@ -1,0 +1,904 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation-inventory.v2",
+  "stage9RunId": null,
+  "status": "PASS",
+  "nodes": [
+    {
+      "node_id": "ingress-domain-llm-fine-4d7e8b27",
+      "target_brick_id": "ingress-domain-llm-fine-4d7e8b27",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/ingress-domain-llm-fine-4d7e8b27/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.requirement.v1",
+      "output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "runtime_output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "graph_output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "domain-llm-fine-tuning-05d1e392",
+      "target_brick_id": "domain-llm-fine-tuning-05d1e392",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/domain-llm-fine-tuning-05d1e392/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "domain-llm-fine-tuning-05d1e392",
+        "consumer_brick": "domain-llm-fine-tuning-05d1e392",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/domain-llm-fine-tuning-05d1e392.json",
+        "fixture_source": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/domain-llm-fine-tuning-05d1e392.input-schema.json",
+        "fixture_sha256": "9bbbf314e7b3bbf5b5225b9b760fda2d9f6d3ee451855ccef9fba93013b1b4bd",
+        "fixture_value_sha256": "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+        "input_schema_sha256": "9737136d605af694b4323556670ca4d87160726de4076bee1766fc837b9340e1",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+          "selected_argument_name": "payload",
+          "selected_source_line": 32,
+          "selected_test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+          "confirmation_kinds": [
+            "contract"
+          ],
+          "matching_candidate_count": 1,
+          "candidate_count": 5,
+          "candidate_hashes": [
+            "00409d5cbd0d9d0ce02aca09b81438100007a5774d24564d3d91527f7570136c",
+            "04e62e9e61b2a45617f7f61cc5dcc7ff0f85adf37a229542d96243a20c2cb441",
+            "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+            "5a5d4ec8deb544525e1adf01c1ee9f34ae7df9c243797355fb7235621cf029ba"
+          ],
+          "candidates": [
+            {
+              "hash": "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+              "argument_name": "payload",
+              "line": 32,
+              "expression": "Name",
+              "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "04e62e9e61b2a45617f7f61cc5dcc7ff0f85adf37a229542d96243a20c2cb441",
+              "argument_name": null,
+              "line": 11,
+              "expression": "Dict",
+              "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "5a5d4ec8deb544525e1adf01c1ee9f34ae7df9c243797355fb7235621cf029ba",
+              "argument_name": null,
+              "line": 33,
+              "expression": "Dict",
+              "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py",
+              "test_kind": "unit",
+              "guarded": true
+            },
+            {
+              "hash": "00409d5cbd0d9d0ce02aca09b81438100007a5774d24564d3d91527f7570136c",
+              "argument_name": "payload",
+              "line": 40,
+              "expression": "Name",
+              "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "00409d5cbd0d9d0ce02aca09b81438100007a5774d24564d3d91527f7570136c",
+              "argument_name": "payload",
+              "line": 41,
+              "expression": "Name",
+              "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "domain-llm-fine-tuning-c63d3d23",
+      "target_brick_id": "domain-llm-fine-tuning-c63d3d23",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/domain-llm-fine-tuning-c63d3d23/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "output_contract": "foundry.analytics.ab_testing.v1",
+      "runtime_output_contract": "foundry.analytics.ab_testing.v1",
+      "graph_output_contract": "foundry.analytics.ab_testing.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "scientifically-rigorous-2d3b54ba",
+      "target_brick_id": "scientifically-rigorous-2d3b54ba",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/scientifically-rigorous-2d3b54ba/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.analytics.ab_testing.v1",
+      "output_contract": "foundry.analytics.ab_testing.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.analytics.ab_testing.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "scientifically-rigorous-2d3b54ba",
+        "consumer_brick": "scientifically-rigorous-2d3b54ba",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/scientifically-rigorous-2d3b54ba.json",
+        "fixture_source": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/scientifically-rigorous-2d3b54ba.input-schema.json",
+        "fixture_sha256": "0e049ba99cfebe75a89fa1477b5ab9f1e3fafcdba4ef3968499ed9bc766f1fab",
+        "fixture_value_sha256": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+        "input_schema_sha256": "b0a846ffe43073875f10e2e5c0505a29e14865d3c520bfb717a9de93d8d1c32a",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+          "selected_argument_name": null,
+          "selected_source_line": 32,
+          "selected_test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+          "confirmation_kinds": [
+            "contract"
+          ],
+          "matching_candidate_count": 2,
+          "candidate_count": 3,
+          "candidate_hashes": [
+            "7e7fe4ebb6343ddfcdbb0655ff47c11de04ae7decb8f3d70e1555aaad019b4f1",
+            "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065"
+          ],
+          "candidates": [
+            {
+              "hash": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+              "argument_name": null,
+              "line": 32,
+              "expression": "Dict",
+              "test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+              "argument_name": null,
+              "line": 33,
+              "expression": "Dict",
+              "test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "7e7fe4ebb6343ddfcdbb0655ff47c11de04ae7decb8f3d70e1555aaad019b4f1",
+              "argument_name": null,
+              "line": 65,
+              "expression": "Dict",
+              "test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_unit.py",
+              "test_kind": "unit",
+              "guarded": true
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "scientifically-rigorous-83d835d4",
+      "target_brick_id": "scientifically-rigorous-83d835d4",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/scientifically-rigorous-83d835d4/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.analytics.ab_testing.v1",
+      "output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "runtime_output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "graph_output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "synthetic-agent-data-ge-5456d7a2",
+      "target_brick_id": "synthetic-agent-data-ge-5456d7a2",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/synthetic-agent-data-ge-5456d7a2/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "synthetic-agent-data-ge-5456d7a2",
+        "consumer_brick": "synthetic-agent-data-ge-5456d7a2",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/synthetic-agent-data-ge-5456d7a2.json",
+        "fixture_source": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/synthetic-agent-data-ge-5456d7a2.input-schema.json",
+        "fixture_sha256": "e5de8e6a1c58bf8c0a002fd70f137bb826e0ccbaffec806c1ddd01cb613cd576",
+        "fixture_value_sha256": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+        "input_schema_sha256": "b32861638efae7cf91258dab163bf3b40a71061d906a818fb4c18a8b72776073",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+          "selected_argument_name": "payload",
+          "selected_source_line": 19,
+          "selected_test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+          "confirmation_kinds": [
+            "contract"
+          ],
+          "matching_candidate_count": 2,
+          "candidate_count": 7,
+          "candidate_hashes": [
+            "345c9897bcf7a0751eacc48b000ca04f8d7ce3177a643c3d1e4655c1dbde8ece",
+            "77e7afb32c85498f439d6081a6c97ac5e3667b057411e1424f19837f515e6377",
+            "a06717b894178598e8df0f8d9f8c1e4a1de7c747590023dbc6a971fbc37146b6",
+            "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+            "f5868b6a115b00cfd391cc50cf3cbd866318c76d82e038c5a7753c361a389042"
+          ],
+          "candidates": [
+            {
+              "hash": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+              "argument_name": "payload",
+              "line": 19,
+              "expression": "Name",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "c0c7bf6112c3cc78b9940a1c14e90922f4febc831989e30189dfba72268d9a4e",
+              "argument_name": "payload",
+              "line": 20,
+              "expression": "Name",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "345c9897bcf7a0751eacc48b000ca04f8d7ce3177a643c3d1e4655c1dbde8ece",
+              "argument_name": "payload",
+              "line": 21,
+              "expression": "Name",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "77e7afb32c85498f439d6081a6c97ac5e3667b057411e1424f19837f515e6377",
+              "argument_name": null,
+              "line": 35,
+              "expression": "Dict",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_unit.py",
+              "test_kind": "unit",
+              "guarded": true
+            },
+            {
+              "hash": "f5868b6a115b00cfd391cc50cf3cbd866318c76d82e038c5a7753c361a389042",
+              "argument_name": "payload",
+              "line": 19,
+              "expression": "Name",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "f5868b6a115b00cfd391cc50cf3cbd866318c76d82e038c5a7753c361a389042",
+              "argument_name": "payload",
+              "line": 20,
+              "expression": "Name",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "a06717b894178598e8df0f8d9f8c1e4a1de7c747590023dbc6a971fbc37146b6",
+              "argument_name": null,
+              "line": 43,
+              "expression": "Dict",
+              "test_path": "tests/bricks/synthetic-agent-data-ge-5456d7a2/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "synthetic-agent-data-ge-f494f36b",
+      "target_brick_id": "synthetic-agent-data-ge-f494f36b",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/synthetic-agent-data-ge-f494f36b/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "output_contract": "foundry.platform.evidence_registry.v1",
+      "runtime_output_contract": "foundry.platform.evidence_registry.v1",
+      "graph_output_contract": "foundry.platform.evidence_registry.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "agentic-benchmark-harne-b447fbac",
+      "target_brick_id": "agentic-benchmark-harne-b447fbac",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/agentic-benchmark-harne-b447fbac/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.platform.evidence_registry.v1",
+      "output_contract": "foundry.platform.evidence_registry.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.platform.evidence_registry.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "agentic-benchmark-harne-b447fbac",
+        "consumer_brick": "agentic-benchmark-harne-b447fbac",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/agentic-benchmark-harne-b447fbac.json",
+        "fixture_source": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/agentic-benchmark-harne-b447fbac.input-schema.json",
+        "fixture_sha256": "d98fc2089065a14d785937009d80d0c871215cf06e5e87ed67cc5f632dd8726a",
+        "fixture_value_sha256": "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+        "input_schema_sha256": "05f64b453ac54d0390f893fc429e091a586ab1238af346789357bd178aa5d313",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+          "selected_argument_name": null,
+          "selected_source_line": 44,
+          "selected_test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+          "confirmation_kinds": [
+            "unit"
+          ],
+          "matching_candidate_count": 1,
+          "candidate_count": 6,
+          "candidate_hashes": [
+            "1bb3ea747bcaba91799790f198de48fb8f27a0aff1dbed6daf4084da2d421296",
+            "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "515669db59d0ddde9d94db9274acd8cf540e5a1467cf7a48819ba587f7e5a691",
+            "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+            "b0bc5e9d780e07964be1efe5c0a884e20d5b06a7fef6be4b998e9d8b63ce7a9d",
+            "ea9cc953c5f69448f96a30e2553eab83b8d79aa6bb7625fd82119e317de93eae"
+          ],
+          "candidates": [
+            {
+              "hash": "1bb3ea747bcaba91799790f198de48fb8f27a0aff1dbed6daf4084da2d421296",
+              "argument_name": "payload",
+              "line": 58,
+              "expression": "Name",
+              "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+              "argument_name": null,
+              "line": 74,
+              "expression": "Dict",
+              "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_contract.py",
+              "test_kind": "contract",
+              "guarded": true
+            },
+            {
+              "hash": "ea9cc953c5f69448f96a30e2553eab83b8d79aa6bb7625fd82119e317de93eae",
+              "argument_name": "payload",
+              "line": 31,
+              "expression": "Name",
+              "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "9196560c5aa4d701afcb31637610c6a5b2d13712f57c53ff62578177a00149c9",
+              "argument_name": null,
+              "line": 44,
+              "expression": "Dict",
+              "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "515669db59d0ddde9d94db9274acd8cf540e5a1467cf7a48819ba587f7e5a691",
+              "argument_name": null,
+              "line": 79,
+              "expression": "Dict",
+              "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "b0bc5e9d780e07964be1efe5c0a884e20d5b06a7fef6be4b998e9d8b63ce7a9d",
+              "argument_name": null,
+              "line": 119,
+              "expression": "Dict",
+              "test_path": "tests/bricks/agentic-benchmark-harne-b447fbac/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "agentic-benchmark-harne-e01dfa09",
+      "target_brick_id": "agentic-benchmark-harne-e01dfa09",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/agentic-benchmark-harne-e01dfa09/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.platform.evidence_registry.v1",
+      "output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "runtime_output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "graph_output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "sql-agent-tasks-and-exe-31fdd585",
+      "target_brick_id": "sql-agent-tasks-and-exe-31fdd585",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/sql-agent-tasks-and-exe-31fdd585/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "sql-agent-tasks-and-exe-31fdd585",
+        "consumer_brick": "sql-agent-tasks-and-exe-31fdd585",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/sql-agent-tasks-and-exe-31fdd585.json",
+        "fixture_source": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/sql-agent-tasks-and-exe-31fdd585.input-schema.json",
+        "fixture_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "fixture_value_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "input_schema_sha256": "f76863fca94493b6e25baaefc8be74d33a5a8c7415184d73cae6b10601a6b060",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "selected_argument_name": null,
+          "selected_source_line": 12,
+          "selected_test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+          "confirmation_kinds": [
+            "contract",
+            "unit"
+          ],
+          "matching_candidate_count": 2,
+          "candidate_count": 14,
+          "candidate_hashes": [
+            "2012bb7769a420c0d2b80093c82efc6c23d89ce70f656a0c35319b73053a5327",
+            "222ff0cc41b2a2cb9d83a3d14f78e273ec858062cd638fc272338315b7179634",
+            "2ea460a417e6e45dcabc224d042e8c187de00a6b8120058382fdf037807c4f87",
+            "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "545882f87d570564473fa7f7f4a0c59a53cab09d1d455e548a52f582ef8cbabc",
+            "5d911c0a378142550d7d921e9495b9e4047464525314c12e68eab641a42dea2b",
+            "960af023fe727410265e9f3f34a03db7f5e0a69f8d2fc7817efac7ebd6d08e19",
+            "9bd62cfabe7597fe5e4e9fc0f9c4b307a070a3ca7af0062d84bf29eb51c19251",
+            "a4faac6d0731c7c5d5b6db8454bfcbf4c57c774ed6bb3a668d20c100e84f015c",
+            "a7ff0af8fac5edd128e6d33c51a40d0575aacf079a504aa6084008b579a85503",
+            "c9b2a8177f958f43830c18dcf0108f7640b8ae894c251bae4287f25b68f28677",
+            "ee4de68d6bd09a9081a25290bc24597e9169e34a674c04c80ef4e2cd84886087",
+            "ff585e066a040a087e07420d4f6fbc24b7c6788f46a8b3d265f7b9d22dad1743"
+          ],
+          "candidates": [
+            {
+              "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+              "argument_name": null,
+              "line": 12,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "c9b2a8177f958f43830c18dcf0108f7640b8ae894c251bae4287f25b68f28677",
+              "argument_name": null,
+              "line": 34,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "545882f87d570564473fa7f7f4a0c59a53cab09d1d455e548a52f582ef8cbabc",
+              "argument_name": null,
+              "line": 42,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "2012bb7769a420c0d2b80093c82efc6c23d89ce70f656a0c35319b73053a5327",
+              "argument_name": null,
+              "line": 50,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "9bd62cfabe7597fe5e4e9fc0f9c4b307a070a3ca7af0062d84bf29eb51c19251",
+              "argument_name": null,
+              "line": 58,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+              "argument_name": null,
+              "line": 12,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "5d911c0a378142550d7d921e9495b9e4047464525314c12e68eab641a42dea2b",
+              "argument_name": null,
+              "line": 44,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "a7ff0af8fac5edd128e6d33c51a40d0575aacf079a504aa6084008b579a85503",
+              "argument_name": null,
+              "line": 64,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "222ff0cc41b2a2cb9d83a3d14f78e273ec858062cd638fc272338315b7179634",
+              "argument_name": null,
+              "line": 72,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "ee4de68d6bd09a9081a25290bc24597e9169e34a674c04c80ef4e2cd84886087",
+              "argument_name": null,
+              "line": 80,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_unit.py",
+              "test_kind": "unit",
+              "guarded": true
+            },
+            {
+              "hash": "960af023fe727410265e9f3f34a03db7f5e0a69f8d2fc7817efac7ebd6d08e19",
+              "argument_name": "payload",
+              "line": 60,
+              "expression": "Name",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "ff585e066a040a087e07420d4f6fbc24b7c6788f46a8b3d265f7b9d22dad1743",
+              "argument_name": null,
+              "line": 76,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "2ea460a417e6e45dcabc224d042e8c187de00a6b8120058382fdf037807c4f87",
+              "argument_name": null,
+              "line": 77,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            },
+            {
+              "hash": "a4faac6d0731c7c5d5b6db8454bfcbf4c57c774ed6bb3a668d20c100e84f015c",
+              "argument_name": null,
+              "line": 78,
+              "expression": "Dict",
+              "test_path": "tests/bricks/sql-agent-tasks-and-exe-31fdd585/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "sql-agent-tasks-and-exe-e5909590",
+      "target_brick_id": "sql-agent-tasks-and-exe-e5909590",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/sql-agent-tasks-and-exe-e5909590/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "output_contract": "foundry.data.data_quality.v1",
+      "runtime_output_contract": "foundry.data.data_quality.v1",
+      "graph_output_contract": "foundry.data.data_quality.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "synthetic-training-eval-00c1d43f",
+      "target_brick_id": "synthetic-training-eval-00c1d43f",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/synthetic-training-eval-00c1d43f/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.data.data_quality.v1",
+      "output_contract": "foundry.data.data_quality.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.data.data_quality.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "synthetic-training-eval-00c1d43f",
+        "consumer_brick": "synthetic-training-eval-00c1d43f",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/synthetic-training-eval-00c1d43f.json",
+        "fixture_source": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/synthetic-training-eval-00c1d43f.input-schema.json",
+        "fixture_sha256": "53118aba596dbd2f7b5e2ab05718a19d554ddf119eaf2757d0f5ae43b032abbc",
+        "fixture_value_sha256": "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503",
+        "input_schema_sha256": "4961d1eebb426fa382e6a45865cda9aabb381735ad52087f68ade42db371f11d",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503",
+          "selected_argument_name": null,
+          "selected_source_line": 18,
+          "selected_test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+          "confirmation_kinds": [
+            "contract"
+          ],
+          "matching_candidate_count": 1,
+          "candidate_count": 4,
+          "candidate_hashes": [
+            "2e85de505b782e43bb3c6f99b7dbe6d537959de54ab9ba6e20543ac68e110f9b",
+            "308301bb6840ae281b9ac8b7bc76f585a309278fec547052aa800fbef84ff5bf",
+            "5f437868345bbe903e502503ed5eaae8a666330a4a0b5baa98b887c351190220",
+            "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503"
+          ],
+          "candidates": [
+            {
+              "hash": "b945f2282815ae753653f5816edd65efab3365f6d89733606480a1005cd9e503",
+              "argument_name": null,
+              "line": 18,
+              "expression": "Dict",
+              "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "2e85de505b782e43bb3c6f99b7dbe6d537959de54ab9ba6e20543ac68e110f9b",
+              "argument_name": null,
+              "line": 19,
+              "expression": "Dict",
+              "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "308301bb6840ae281b9ac8b7bc76f585a309278fec547052aa800fbef84ff5bf",
+              "argument_name": null,
+              "line": 33,
+              "expression": "Dict",
+              "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+              "test_kind": "contract",
+              "guarded": true
+            },
+            {
+              "hash": "5f437868345bbe903e502503ed5eaae8a666330a4a0b5baa98b887c351190220",
+              "argument_name": null,
+              "line": 20,
+              "expression": "Dict",
+              "test_path": "tests/bricks/synthetic-training-eval-00c1d43f/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "synthetic-training-eval-ae6d4440",
+      "target_brick_id": "synthetic-training-eval-ae6d4440",
+      "resolution": "EXPLICIT_GRAPH_ADAPTER",
+      "entrypoint": "src/adapters/synthetic-training-eval-ae6d4440/core.py::adapt",
+      "provider": "contract-closure-adapter-v1",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.data.data_quality.v1",
+      "output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "runtime_output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "graph_output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "contract_bridge": null,
+      "fixture_resolution": null,
+      "executed_capability": null,
+      "saved_execution_ms": null
+    },
+    {
+      "node_id": "project-owned-end-to-en-f490927d",
+      "target_brick_id": "project-owned-end-to-en-f490927d",
+      "resolution": "GENERIC_RUNTIME_CONTRACT",
+      "entrypoint": "src/bricks/project-owned-end-to-en-f490927d/core.py::execute",
+      "provider": "ai-generic-chatgpt-webview2-cache-v2",
+      "provider_used_for_dispatch": false,
+      "status": "READY",
+      "input_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "contract_bridge": null,
+      "fixture_resolution": {
+        "schema": "portfolio-foundry.fixture-resolution.v1",
+        "brick": "project-owned-end-to-en-f490927d",
+        "consumer_brick": "project-owned-end-to-en-f490927d",
+        "callable": "execute",
+        "fixture": "foundry/runtime-fixtures/project-owned-end-to-en-f490927d.json",
+        "fixture_source": "tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+        "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+        "input_schema": "foundry/runtime-contracts/project-owned-end-to-en-f490927d.input-schema.json",
+        "fixture_sha256": "3dd4ac649b31797ba56966aaf433edccf16e53fc78c444c57c28e8a29c23b6ef",
+        "fixture_value_sha256": "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149",
+        "input_schema_sha256": "ac187ce7497f94497a5baab8d08e6575f8073cb047dfe43bad75a697e3d1a016",
+        "stage9RunId": null,
+        "selection": {
+          "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+          "selected_hash": "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149",
+          "selected_argument_name": null,
+          "selected_source_line": 15,
+          "selected_test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+          "confirmation_kinds": [
+            "contract"
+          ],
+          "matching_candidate_count": 1,
+          "candidate_count": 7,
+          "candidate_hashes": [
+            "28a002568435e92b8c484e2375c972c068c204fa1399b342d4d28598596c1e85",
+            "2acb6e6853cc7a124a9a050074a964a7fe270f42cf1d39517f960bd26d15759e",
+            "6c561e1f98831b0270e260ecc6d03eda361b0c09f8f49cdd9dec6f68c5eec24c",
+            "878dd56899dec963bf63f69a4b6e5c9300a404adbe67863bed0f8f71dc6a622c",
+            "8c1dd0a563edee673fd40e247c3bf75a74c5af2a8b1ff0d71c34ec10ffbdbd0f",
+            "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149"
+          ],
+          "candidates": [
+            {
+              "hash": "fc906a6ccaeee5dc57ff050c63138f841baa0d5e130bd010afbe5870f162e149",
+              "argument_name": null,
+              "line": 15,
+              "expression": "Dict",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_contract.py",
+              "test_kind": "contract",
+              "guarded": false
+            },
+            {
+              "hash": "2acb6e6853cc7a124a9a050074a964a7fe270f42cf1d39517f960bd26d15759e",
+              "argument_name": null,
+              "line": 13,
+              "expression": "Dict",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "6c561e1f98831b0270e260ecc6d03eda361b0c09f8f49cdd9dec6f68c5eec24c",
+              "argument_name": "payload",
+              "line": 34,
+              "expression": "Name",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "6c561e1f98831b0270e260ecc6d03eda361b0c09f8f49cdd9dec6f68c5eec24c",
+              "argument_name": "payload",
+              "line": 35,
+              "expression": "Name",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+              "test_kind": "unit",
+              "guarded": false
+            },
+            {
+              "hash": "8c1dd0a563edee673fd40e247c3bf75a74c5af2a8b1ff0d71c34ec10ffbdbd0f",
+              "argument_name": null,
+              "line": 47,
+              "expression": "Dict",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+              "test_kind": "unit",
+              "guarded": true
+            },
+            {
+              "hash": "28a002568435e92b8c484e2375c972c068c204fa1399b342d4d28598596c1e85",
+              "argument_name": null,
+              "line": 53,
+              "expression": "Dict",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_unit.py",
+              "test_kind": "unit",
+              "guarded": true
+            },
+            {
+              "hash": "878dd56899dec963bf63f69a4b6e5c9300a404adbe67863bed0f8f71dc6a622c",
+              "argument_name": "payload",
+              "line": 19,
+              "expression": "Name",
+              "test_path": "tests/bricks/project-owned-end-to-en-f490927d/test_integration.py",
+              "test_kind": "integration",
+              "guarded": false
+            }
+          ]
+        }
+      },
+      "executed_capability": null,
+      "saved_execution_ms": null
+    }
+  ],
+  "created_at": "2026-10-05T23:09:22.096354+00:00"
+}

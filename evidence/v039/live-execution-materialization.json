@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "route": "/app/execution",
+  "nodes": 14,
+  "edges": 15,
+  "writtenFiles": [
+    "src/app/server.py",
+    "scripts/runtime_smoke.py",
+    "RUN_DEMO.cmd",
+    "RUN_TESTS.cmd",
+    "BUILD_EVIDENCE.cmd",
+    "web/index.html",
+    "web/app.js",
+    "web/styles.css",
+    "foundry/application-routes.json"
+  ],
+  "createdAt": "2026-10-05T23:06:38.9747565+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "domain-llm-fine-tuning-05d1e392",
+  "consumer_brick": "domain-llm-fine-tuning-05d1e392",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/domain-llm-fine-tuning-05d1e392.json",
+  "fixture_source": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/domain-llm-fine-tuning-05d1e392.input-schema.json",
+  "fixture_sha256": "9bbbf314e7b3bbf5b5225b9b760fda2d9f6d3ee451855ccef9fba93013b1b4bd",
+  "fixture_value_sha256": "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+  "input_schema_sha256": "9737136d605af694b4323556670ca4d87160726de4076bee1766fc837b9340e1",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+    "selected_argument_name": "payload",
+    "selected_source_line": 32,
+    "selected_test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+    "confirmation_kinds": [
+      "contract"
+    ],
+    "matching_candidate_count": 1,
+    "candidate_count": 5,
+    "candidate_hashes": [
+      "00409d5cbd0d9d0ce02aca09b81438100007a5774d24564d3d91527f7570136c",
+      "04e62e9e61b2a45617f7f61cc5dcc7ff0f85adf37a229542d96243a20c2cb441",
+      "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+      "5a5d4ec8deb544525e1adf01c1ee9f34ae7df9c243797355fb7235621cf029ba"
+    ],
+    "candidates": [
+      {
+        "hash": "42d991f93537f9391ac1d129f31178eb3d56e7f3b48b11993d40a8311534aecb",
+        "argument_name": "payload",
+        "line": 32,
+        "expression": "Name",
+        "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "04e62e9e61b2a45617f7f61cc5dcc7ff0f85adf37a229542d96243a20c2cb441",
+        "argument_name": null,
+        "line": 11,
+        "expression": "Dict",
+        "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py",
+        "test_kind": "unit",
+        "guarded": false
+      },
+      {
+        "hash": "5a5d4ec8deb544525e1adf01c1ee9f34ae7df9c243797355fb7235621cf029ba",
+        "argument_name": null,
+        "line": 33,
+        "expression": "Dict",
+        "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_unit.py",
+        "test_kind": "unit",
+        "guarded": true
+      },
+      {
+        "hash": "00409d5cbd0d9d0ce02aca09b81438100007a5774d24564d3d91527f7570136c",
+        "argument_name": "payload",
+        "line": 40,
+        "expression": "Name",
+        "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      },
+      {
+        "hash": "00409d5cbd0d9d0ce02aca09b81438100007a5774d24564d3d91527f7570136c",
+        "argument_name": "payload",
+        "line": 41,
+        "expression": "Name",
+        "test_path": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_integration.py",
+        "test_kind": "integration",
+        "guarded": false
+      }
+    ]
+  }
+}

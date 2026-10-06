@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'project-owned-end-to-en-f490927d'
+logical_id: 'project-owned-end-to-end-integration-reproducible-runtime-experiment-art'
+name: 'Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+capabilities:
+  - 'Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  output: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  requires:
+    - 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  provides:
+    - 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: ADAPT
+  origin: 'project-owned-docker-pa-ffcf750f@1.0.1'
+  origin_project: 65
+  source_fingerprint: '33c005c67db6a8fcec00b203b1d5cf4d51506398ad9d865d5aa25bf0667ddec1'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

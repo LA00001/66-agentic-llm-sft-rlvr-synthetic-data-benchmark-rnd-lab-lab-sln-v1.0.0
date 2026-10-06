@@ -1,0 +1,54 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "synthetic-training-eval-00c1d43f",
+  "strategy": "1",
+  "runtime_profile": "analytics-py314-v1",
+  "resolution": "GENERIC_RUNTIME_CONTRACT",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/bricks/synthetic-training-eval-00c1d43f/core.py",
+    "callable": "execute"
+  },
+  "arguments": {
+    "mode": "payload"
+  },
+  "input": {
+    "contract": "foundry.data.data_quality.v1",
+    "smoke_fixture": "foundry/runtime-fixtures/synthetic-training-eval-00c1d43f.json",
+    "schema": "foundry/runtime-contracts/synthetic-training-eval-00c1d43f.input-schema.json",
+    "fixture_sha256": "53118aba596dbd2f7b5e2ab05718a19d554ddf119eaf2757d0f5ae43b032abbc",
+    "fixture_source": "tests/bricks/synthetic-training-eval-00c1d43f/test_contract.py",
+    "consumer_brick": "synthetic-training-eval-00c1d43f"
+  },
+  "output": {
+    "validation": "json-compatible",
+    "contract": "foundry.data.data_quality.v1",
+    "graph_contract": "foundry.data.data_quality.v1",
+    "runtime_contract": "",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 90,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [
+      "pandas"
+    ],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "a749ead49edbc464bc8e21e23d3dfe40f6de23aaa99bb471d7b76d44dd1d6030"
+  },
+  "provenance": {
+    "implementation_provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

@@ -1,0 +1,17 @@
+﻿brick_schema: '1.0'
+id: agentic-benchmark-harne-e01dfa09
+version: 0.1.0
+status: VALIDATED
+language: python
+contract: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+runtime_contract:
+  input: 'foundry.platform.evidence_registry.v1'
+  output: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+implementation:
+  provider: executable-contract-closure-v1
+  kind: edge
+  from: agentic-benchmark-harne-b447fbac
+  to: sql-agent-tasks-and-exe-31fdd585
+mapping:
+  mode: nominal-contract-envelope
+  preserves_payload: true

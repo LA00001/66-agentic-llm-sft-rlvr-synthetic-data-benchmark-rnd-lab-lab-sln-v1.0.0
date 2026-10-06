@@ -1,0 +1,21 @@
+{
+  "schema": "portfolio-foundry.v031-application-integrity.v2",
+  "status": "PASS",
+  "compatibility": "NATIVE_V2",
+  "applicationId": "app-20261004-071735-6a2b4782cc3545c0",
+  "legacyApplicationFingerprint": "87cfcee75911ae9945fdba1326f972ab746bd4e516a5f0f02ed2abaca4ba159f",
+  "stableApplicationFingerprintV2": "87cfcee75911ae9945fdba1326f972ab746bd4e516a5f0f02ed2abaca4ba159f",
+  "runtimeSemanticFingerprint": "14e3361401d11fbb45a81433087cc61cfbdd9b64bfce3ce5e9349ec83c1b8900",
+  "stableArtifacts": 40,
+  "stableMutations": 0,
+  "runtimeInventory": "PASS",
+  "discoveryDiagnostics": "PASS",
+  "runtimeSmokeChecks": 11,
+  "apiChecks": 13,
+  "uiRoutes": 13,
+  "graphSteps": 14,
+  "sourceProofRewritten": false,
+  "buildIdentity": "v39.3.4492.96 BUILD237_TEST250 PATCH_STAGE9_FINAL_INPUT_FINGERPRINT173",
+  "baselineDisposition": "CURRENT_BUILD_PASS_BASELINE_ENFORCED",
+  "createdAt": "2026-10-04T04:20:51.7777439+00:00"
+}

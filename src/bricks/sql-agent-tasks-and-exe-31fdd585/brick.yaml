@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'sql-agent-tasks-and-exe-31fdd585'
+logical_id: 'sql-agent-tasks-and-executable-database-oracles-for-generated-benchmarks'
+name: 'SQL-agent tasks and executable database oracles for generated benchmarks'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+capabilities:
+  - 'SQL-agent tasks and executable database oracles for generated benchmarks'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  output: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  requires:
+    - 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  provides:
+    - 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: ADAPT
+  origin: 'complex-sql-analysis-an-0e9c0c3c@1.0.1'
+  origin_project: 65
+  source_fingerprint: '4d8d435a3b895095146453f1637c66480072fab9ea6b8e4411694278b280dbaa'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

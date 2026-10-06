@@ -1,0 +1,45 @@
+{
+  "schema": "portfolio-foundry.stage9-environment.v1",
+  "status": "READY",
+  "runId": "stage9-20261004T041729203Z-b541c6ad72b14534ac48700a4",
+  "os": "Microsoft Windows NT 10.0.26200.0",
+  "architecture": "X64",
+  "workingDirectory": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\workspaces\\HH133035106\\candidates\\candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "pythonPath": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\cache\\runtimes\\v048\\17f5f97370af4f7616911e42\\Scripts\\python.exe",
+  "pythonVersion": "Python 3.14.2",
+  "javaVersion": null,
+  "needsPySpark": false,
+  "runtimeId": "2307b33ade21474a6ce1f541",
+  "cacheStatus": "HIT",
+  "requestedRequirements": [
+    "pytest\u003E=8.0,\u003C9",
+    "torch\u003E=2.2,\u003C3",
+    "transformers\u003E=4.40,\u003C5",
+    "peft\u003E=0.11,\u003C1",
+    "tokenizers\u003E=0.19,\u003C1",
+    "fastapi\u003E=0.110,\u003C1",
+    "pydantic\u003E=2.6,\u003C3",
+    "httpx\u003E=0.27,\u003C1",
+    "uvicorn\u003E=0.29,\u003C1",
+    "pandas\u003E=2.2,\u003C4",
+    "pandas\u003E=2.2,\u003C4"
+  ],
+  "effectiveRequirements": [
+    "fastapi\u003E=0.110,\u003C1",
+    "httpx\u003E=0.27,\u003C1",
+    "pandas\u003E=2.2,\u003C4",
+    "peft\u003E=0.11,\u003C1",
+    "pydantic\u003E=2.6,\u003C3",
+    "pytest\u003E=8.0,\u003C9",
+    "tokenizers\u003E=0.19,\u003C1",
+    "torch\u003E=2.2,\u003C3",
+    "transformers\u003E=4.40,\u003C5",
+    "uvicorn\u003E=0.29,\u003C1"
+  ],
+  "safeEnvironment": {
+    "JAVA_HOME": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.8-hotspot\\",
+    "PYTHONHOME": null,
+    "PYTHONPATH": null
+  },
+  "createdAt": "2026-10-04T04:19:10.1221133+00:00"
+}

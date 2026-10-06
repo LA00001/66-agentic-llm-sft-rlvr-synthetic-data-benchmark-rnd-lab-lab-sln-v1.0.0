@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'agentic-benchmark-harne-b447fbac'
+logical_id: 'agentic-benchmark-harness-with-deterministic-oracles-tests-and-domain-sp'
+name: 'Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.platform.evidence_registry.v1'
+capabilities:
+  - 'Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.platform.evidence_registry.v1'
+  output: 'foundry.platform.evidence_registry.v1'
+  requires:
+    - 'foundry.platform.evidence_registry.v1'
+  provides:
+    - 'foundry.platform.evidence_registry.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: ADAPT
+  origin: 'evidence-registry@1.0.0'
+  origin_project: 64
+  source_fingerprint: 'de7e756d88e9e451a1e63a5c33e74dc837ec068677209afb8b154dfa5a25abe1'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

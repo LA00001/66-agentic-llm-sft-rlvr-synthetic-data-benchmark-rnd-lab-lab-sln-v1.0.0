@@ -1,0 +1,35 @@
+﻿brick_schema: '1.0'
+id: scientifically-rigorous-2d3b54ba
+version: 0.1.0
+status: EXPERIMENTAL
+language: analytics-py314-v1
+contract: foundry.analytics.ab_testing.v1
+capabilities:
+  - 'Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison'
+runtime_contract:
+  input: foundry.analytics.ab_testing.v1
+  output: foundry.analytics.ab_testing.v1
+  requires:
+  - foundry.analytics.ab_testing.v1
+  provides:
+  - foundry.analytics.ab_testing.v1
+  resources: []
+  side_effects: []
+  timeout_ms: 5000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+provenance:
+  strategy: ADAPT
+  origin: ab-testing@1.0.0
+  origin_project: 64
+  source_fingerprint: dbffefff31b7e65f66829f4a356187ae8a657e61649fc7baff8b8abc98bcdc47
+reuse:
+  eligible: false
+  policy: Candidate derivative; must pass v0.26 proof before promotion.
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  runtime_profile: 'python'
+  source_of_truth: repository-short-path

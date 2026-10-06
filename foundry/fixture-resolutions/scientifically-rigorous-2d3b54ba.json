@@ -1,0 +1,59 @@
+{
+  "schema": "portfolio-foundry.fixture-resolution.v1",
+  "brick": "scientifically-rigorous-2d3b54ba",
+  "consumer_brick": "scientifically-rigorous-2d3b54ba",
+  "callable": "execute",
+  "fixture": "foundry/runtime-fixtures/scientifically-rigorous-2d3b54ba.json",
+  "fixture_source": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+  "source_kind": "existing-runtime-fixture-confirmed-by-target-call",
+  "input_schema": "foundry/runtime-contracts/scientifically-rigorous-2d3b54ba.input-schema.json",
+  "fixture_sha256": "0e049ba99cfebe75a89fa1477b5ab9f1e3fafcdba4ef3968499ed9bc766f1fab",
+  "fixture_value_sha256": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+  "input_schema_sha256": "b0a846ffe43073875f10e2e5c0505a29e14865d3c520bfb717a9de93d8d1c32a",
+  "stage9RunId": null,
+  "selection": {
+    "reason": "EXISTING_FIXTURE_CONFIRMED_BY_TARGET_CALL",
+    "selected_hash": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+    "selected_argument_name": null,
+    "selected_source_line": 32,
+    "selected_test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+    "confirmation_kinds": [
+      "contract"
+    ],
+    "matching_candidate_count": 2,
+    "candidate_count": 3,
+    "candidate_hashes": [
+      "7e7fe4ebb6343ddfcdbb0655ff47c11de04ae7decb8f3d70e1555aaad019b4f1",
+      "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065"
+    ],
+    "candidates": [
+      {
+        "hash": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+        "argument_name": null,
+        "line": 32,
+        "expression": "Dict",
+        "test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "9481780b6e60fc92dfbfccd38488577e9bd6025d0522623d27d19a6442682065",
+        "argument_name": null,
+        "line": 33,
+        "expression": "Dict",
+        "test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_contract.py",
+        "test_kind": "contract",
+        "guarded": false
+      },
+      {
+        "hash": "7e7fe4ebb6343ddfcdbb0655ff47c11de04ae7decb8f3d70e1555aaad019b4f1",
+        "argument_name": null,
+        "line": 65,
+        "expression": "Dict",
+        "test_path": "tests/bricks/scientifically-rigorous-2d3b54ba/test_unit.py",
+        "test_kind": "unit",
+        "guarded": true
+      }
+    ]
+  }
+}

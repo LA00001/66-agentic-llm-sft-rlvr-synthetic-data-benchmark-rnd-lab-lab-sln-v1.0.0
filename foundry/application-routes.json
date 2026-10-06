@@ -1,0 +1,107 @@
+[
+  {
+    "id": "cases",
+    "label": "Practical Cases",
+    "path": "/app/cases",
+    "i18nKey": "cases",
+    "description": "Several vacancy-specific cases executed by the candidate\u0027s real graph."
+  },
+  {
+    "id": "effect",
+    "label": "Economic Effect",
+    "path": "/app/effect",
+    "i18nKey": "effect",
+    "description": "Transparent before/after scenario model, real-brick attribution and sensitivity."
+  },
+  {
+    "id": "overview",
+    "label": "Overview",
+    "path": "/app/overview",
+    "i18nKey": "overview",
+    "description": "Project health, executable graph and demo entrypoint."
+  },
+  {
+    "id": "graph",
+    "label": "Visual Graph",
+    "path": "/app/graph",
+    "i18nKey": "graph",
+    "description": "Interactive architecture graph generated from composition, capabilities, runtime bindings, contract edges and promotion state."
+  },
+  {
+    "id": "execution",
+    "label": "Live Execution",
+    "path": "/app/execution",
+    "i18nKey": "execution",
+    "description": "PRO MAX view of the last real RUN DEMO: actual input source, runtime, output, hashes, timings and graph bindings."
+  },
+  {
+    "id": "source",
+    "label": "Source Onboarding",
+    "path": "/app/source",
+    "i18nKey": "source",
+    "description": "Source onboarding workflow and source capabilities."
+  },
+  {
+    "id": "contracts",
+    "label": "Data Contracts",
+    "path": "/app/contracts",
+    "i18nKey": "contracts",
+    "description": "Delivery contracts and contract-bound capabilities."
+  },
+  {
+    "id": "quality",
+    "label": "Data Quality",
+    "path": "/app/quality",
+    "i18nKey": "quality",
+    "description": "Data-quality gates and related capabilities."
+  },
+  {
+    "id": "compliance",
+    "label": "Compliance",
+    "path": "/app/compliance",
+    "i18nKey": "compliance",
+    "description": "Personal-data, DPO and Security workflow."
+  },
+  {
+    "id": "incidents",
+    "label": "Incidents",
+    "path": "/app/incidents",
+    "i18nKey": "incidents",
+    "description": "Incident-oriented operational view."
+  },
+  {
+    "id": "segments",
+    "label": "Segments",
+    "path": "/app/segments",
+    "i18nKey": "segments",
+    "description": "Audience segment reach/delivery analytics."
+  },
+  {
+    "id": "lineage",
+    "label": "Lineage",
+    "path": "/app/lineage",
+    "i18nKey": "lineage",
+    "description": "Executable capability graph and provenance chain."
+  },
+  {
+    "id": "bi",
+    "label": "BI / Monitoring",
+    "path": "/app/bi",
+    "i18nKey": "bi",
+    "description": "Monitoring/BI capability surface."
+  },
+  {
+    "id": "evidence",
+    "label": "Evidence",
+    "path": "/app/evidence",
+    "i18nKey": "evidence",
+    "description": "Generated proof and evidence artifacts."
+  },
+  {
+    "id": "diagnostics",
+    "label": "Diagnostics",
+    "path": "/app/diagnostics",
+    "i18nKey": "diagnostics",
+    "description": "Runtime profiles, health and dependency diagnostics."
+  }
+]

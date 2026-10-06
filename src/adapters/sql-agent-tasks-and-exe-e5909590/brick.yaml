@@ -1,0 +1,17 @@
+﻿brick_schema: '1.0'
+id: sql-agent-tasks-and-exe-e5909590
+version: 0.1.0
+status: VALIDATED
+language: python
+contract: 'foundry.data.data_quality.v1'
+runtime_contract:
+  input: 'foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1'
+  output: 'foundry.data.data_quality.v1'
+implementation:
+  provider: executable-contract-closure-v1
+  kind: edge
+  from: sql-agent-tasks-and-exe-31fdd585
+  to: synthetic-training-eval-00c1d43f
+mapping:
+  mode: nominal-contract-envelope
+  preserves_payload: true

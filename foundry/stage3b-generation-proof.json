@@ -1,0 +1,20 @@
+{
+  "schema": "portfolio-foundry.stage3b-generation-proof.v1",
+  "buildToken": "BUILD216_TEST229",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "status": "PASS",
+  "total": 7,
+  "implemented": 7,
+  "proven": 7,
+  "requiredRequirements": 9,
+  "provenRequiredRequirements": 9,
+  "deferredRequirements": 4,
+  "desiredRequirements": 6,
+  "uncoveredDesiredRequirements": 1,
+  "implementationProofId": "implementation-20261002-181232-184857e863f54c2e",
+  "implementationStatus": "PASS",
+  "aiCallsInStage3B": 0,
+  "findings": [],
+  "createdAt": "2026-10-02T17:13:01.1887894+00:00"
+}

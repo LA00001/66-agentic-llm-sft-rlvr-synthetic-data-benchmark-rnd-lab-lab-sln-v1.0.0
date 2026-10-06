@@ -1,0 +1,52 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "synthetic-agent-data-ge-f494f36b",
+  "strategy": "1",
+  "runtime_profile": "python",
+  "resolution": "EXPLICIT_GRAPH_ADAPTER",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/adapters/synthetic-agent-data-ge-f494f36b/core.py",
+    "callable": "adapt"
+  },
+  "arguments": {
+    "mode": "value"
+  },
+  "input": {
+    "contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+    "smoke_fixture": null,
+    "schema": null,
+    "fixture_sha256": null,
+    "fixture_source": null,
+    "consumer_brick": "synthetic-agent-data-ge-f494f36b"
+  },
+  "output": {
+    "validation": "mapping",
+    "contract": "foundry.platform.evidence_registry.v1",
+    "graph_contract": "foundry.platform.evidence_registry.v1",
+    "runtime_contract": "foundry.platform.evidence_registry.v1",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 30,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "d11ecbac28fee1e15f1be013197c9a7f1f7959b45c61f3184c9304efd8714d23"
+  },
+  "provenance": {
+    "implementation_provider": "contract-closure-adapter-v1",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

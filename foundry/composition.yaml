@@ -1,0 +1,39 @@
+project_spec: 'portfolio-foundry.project-spec.v3'
+project: 'agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab'
+catalog_snapshot: '3e5e034f2977cc48c564a2e3e168e0c0cb4cf86360cdd3296185ca7ea1a6f0a4'
+bricks:
+  - stage: 1
+    id: 'domain-llm-fine-tuning-05d1e392'
+    strategy: ADAPT
+    capability: 'Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats'
+    source: 'nlp-llm-fine-tuning-and-5ad208ff'
+  - stage: 2
+    id: 'scientifically-rigorous-2d3b54ba'
+    strategy: ADAPT
+    capability: 'Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison'
+    source: 'ab-testing'
+  - stage: 3
+    id: 'synthetic-agent-data-ge-5456d7a2'
+    strategy: NEW
+    capability: 'Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly'
+    source: 'NEW'
+  - stage: 4
+    id: 'agentic-benchmark-harne-b447fbac'
+    strategy: ADAPT
+    capability: 'Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories'
+    source: 'evidence-registry'
+  - stage: 5
+    id: 'sql-agent-tasks-and-exe-31fdd585'
+    strategy: ADAPT
+    capability: 'SQL-agent tasks and executable database oracles for generated benchmarks'
+    source: 'complex-sql-analysis-an-0e9c0c3c'
+  - stage: 6
+    id: 'synthetic-training-eval-00c1d43f'
+    strategy: ADAPT
+    capability: 'Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering'
+    source: 'data-quality'
+  - stage: 7
+    id: 'project-owned-end-to-en-f490927d'
+    strategy: ADAPT
+    capability: 'Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface'
+    source: 'project-owned-docker-pa-ffcf750f'

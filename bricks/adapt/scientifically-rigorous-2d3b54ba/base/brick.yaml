@@ -1,0 +1,26 @@
+id: ab-testing
+name: A/B Testing Engine
+version: 1.0.0
+type: component
+language: python
+stage: 7
+strategy: NEW
+origin: NEW
+capabilities:
+- ab-testing
+- statistics
+- experimentation
+contract: foundry.analytics.ab_testing.v1
+evidence:
+  required:
+  - unit-tests
+  - integration-test
+source:
+  entrypoint: bricks/analytics/ab_testing/core.py
+  tests: []
+runtime:
+  family: python
+  profile: analytics-py314-v1
+provenance:
+  origin: NEW
+  strategy: NEW

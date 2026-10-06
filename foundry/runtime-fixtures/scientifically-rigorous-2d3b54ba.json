@@ -1,0 +1,1227 @@
+{
+  "experiment_spec": {
+    "experiment_id": "rlvr-agent-eval-004",
+    "hypothesis": "The trained checkpoint increases verified task success without exceeding the latency guardrail.",
+    "primary_metric": "verified_success",
+    "baseline": "baseline",
+    "treatment": "rlvr",
+    "baseline_checkpoint_id": "gigacode-base@rev-001",
+    "trained_checkpoint_id": "gigacode-rlvr@rev-017",
+    "expected_treatment_share": 0.5,
+    "srm_alpha": 0.01,
+    "guardrails": [
+      {
+        "metric": "latency_seconds",
+        "direction": "max_increase",
+        "limit": 0.25
+      }
+    ],
+    "acceptance_criterion": {
+      "alpha": 0.05,
+      "min_absolute_uplift": 0.1,
+      "require_ci_above_zero": true
+    }
+  },
+  "records": [
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 1,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "baseline",
+      "verified_success": 0,
+      "latency_seconds": 1.0
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 1,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    },
+    {
+      "variant": "rlvr",
+      "verified_success": 0,
+      "latency_seconds": 1.1
+    }
+  ]
+}

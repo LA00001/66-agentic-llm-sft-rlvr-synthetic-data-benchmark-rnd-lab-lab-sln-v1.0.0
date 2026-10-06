@@ -1,0 +1,162 @@
+{
+  "schema": "portfolio-foundry.runtime-contract-resolution.v1",
+  "stage9RunId": null,
+  "status": "PASS",
+  "nodes": [
+    {
+      "brick": "agentic-benchmark-harne-b447fbac",
+      "callable": "execute",
+      "input_contract": "foundry.platform.evidence_registry.v1",
+      "output_contract": "foundry.platform.evidence_registry.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.platform.evidence_registry.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/agentic-benchmark-harne-b447fbac.input-schema.json",
+      "fixture_sha256": "d98fc2089065a14d785937009d80d0c871215cf06e5e87ed67cc5f632dd8726a"
+    },
+    {
+      "brick": "agentic-benchmark-harne-e01dfa09",
+      "callable": "adapt",
+      "input_contract": "foundry.platform.evidence_registry.v1",
+      "output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "runtime_output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "graph_output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    },
+    {
+      "brick": "domain-llm-fine-tuning-05d1e392",
+      "callable": "execute",
+      "input_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/domain-llm-fine-tuning-05d1e392.input-schema.json",
+      "fixture_sha256": "9bbbf314e7b3bbf5b5225b9b760fda2d9f6d3ee451855ccef9fba93013b1b4bd"
+    },
+    {
+      "brick": "domain-llm-fine-tuning-c63d3d23",
+      "callable": "adapt",
+      "input_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "output_contract": "foundry.analytics.ab_testing.v1",
+      "runtime_output_contract": "foundry.analytics.ab_testing.v1",
+      "graph_output_contract": "foundry.analytics.ab_testing.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    },
+    {
+      "brick": "ingress-domain-llm-fine-4d7e8b27",
+      "callable": "adapt",
+      "input_contract": "foundry.requirement.v1",
+      "output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "runtime_output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "graph_output_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    },
+    {
+      "brick": "project-owned-end-to-en-f490927d",
+      "callable": "execute",
+      "input_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/project-owned-end-to-en-f490927d.input-schema.json",
+      "fixture_sha256": "3dd4ac649b31797ba56966aaf433edccf16e53fc78c444c57c28e8a29c23b6ef"
+    },
+    {
+      "brick": "scientifically-rigorous-2d3b54ba",
+      "callable": "execute",
+      "input_contract": "foundry.analytics.ab_testing.v1",
+      "output_contract": "foundry.analytics.ab_testing.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.analytics.ab_testing.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/scientifically-rigorous-2d3b54ba.input-schema.json",
+      "fixture_sha256": "0e049ba99cfebe75a89fa1477b5ab9f1e3fafcdba4ef3968499ed9bc766f1fab"
+    },
+    {
+      "brick": "scientifically-rigorous-83d835d4",
+      "callable": "adapt",
+      "input_contract": "foundry.analytics.ab_testing.v1",
+      "output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "runtime_output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "graph_output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    },
+    {
+      "brick": "sql-agent-tasks-and-exe-31fdd585",
+      "callable": "execute",
+      "input_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/sql-agent-tasks-and-exe-31fdd585.input-schema.json",
+      "fixture_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "brick": "sql-agent-tasks-and-exe-e5909590",
+      "callable": "adapt",
+      "input_contract": "foundry.project.cybersecurity-data-exchange-route-ri-0fb020cc.v1",
+      "output_contract": "foundry.data.data_quality.v1",
+      "runtime_output_contract": "foundry.data.data_quality.v1",
+      "graph_output_contract": "foundry.data.data_quality.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    },
+    {
+      "brick": "synthetic-agent-data-ge-5456d7a2",
+      "callable": "execute",
+      "input_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/synthetic-agent-data-ge-5456d7a2.input-schema.json",
+      "fixture_sha256": "e5de8e6a1c58bf8c0a002fd70f137bb826e0ccbaffec806c1ddd01cb613cd576"
+    },
+    {
+      "brick": "synthetic-agent-data-ge-f494f36b",
+      "callable": "adapt",
+      "input_contract": "foundry.candidate.synthetic-agent-data-ge-5456d7a2.v1",
+      "output_contract": "foundry.platform.evidence_registry.v1",
+      "runtime_output_contract": "foundry.platform.evidence_registry.v1",
+      "graph_output_contract": "foundry.platform.evidence_registry.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    },
+    {
+      "brick": "synthetic-training-eval-00c1d43f",
+      "callable": "execute",
+      "input_contract": "foundry.data.data_quality.v1",
+      "output_contract": "foundry.data.data_quality.v1",
+      "runtime_output_contract": "",
+      "graph_output_contract": "foundry.data.data_quality.v1",
+      "contract_bridge": null,
+      "input_schema": "foundry/runtime-contracts/synthetic-training-eval-00c1d43f.input-schema.json",
+      "fixture_sha256": "53118aba596dbd2f7b5e2ab05718a19d554ddf119eaf2757d0f5ae43b032abbc"
+    },
+    {
+      "brick": "synthetic-training-eval-ae6d4440",
+      "callable": "adapt",
+      "input_contract": "foundry.data.data_quality.v1",
+      "output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "runtime_output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "graph_output_contract": "foundry.candidate.project-owned-docker-pa-ffcf750f.v1",
+      "contract_bridge": null,
+      "input_schema": null,
+      "fixture_sha256": null
+    }
+  ],
+  "created_at": "2026-10-05T23:09:22.100685+00:00"
+}

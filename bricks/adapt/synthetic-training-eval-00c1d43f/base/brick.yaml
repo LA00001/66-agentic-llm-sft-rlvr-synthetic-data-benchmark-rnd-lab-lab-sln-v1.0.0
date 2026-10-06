@@ -1,0 +1,26 @@
+id: data-quality
+name: Data Quality
+version: 1.0.0
+type: component
+language: python
+stage: 2
+strategy: REUSED
+origin: 46-sber-b2c-data-mart-quality-agent-lab-sln-v1.0.3
+capabilities:
+- data-quality
+- anomaly
+- pandas
+contract: foundry.data.data_quality.v1
+evidence:
+  required:
+  - unit-tests
+  - integration-test
+source:
+  entrypoint: bricks/data/data_quality/core.py
+  tests: []
+runtime:
+  family: python
+  profile: analytics-py314-v1
+provenance:
+  origin: 46-sber-b2c-data-mart-quality-agent-lab-sln-v1.0.3
+  strategy: REUSED

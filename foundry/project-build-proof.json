@@ -1,0 +1,305 @@
+{
+  "proofId": "proof-20261004-072049-40d5a1d08ac84e3b",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "projectId": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "status": "PASS",
+  "proofScope": "REAL_RUNNABLE_APPLICATION_PORTABLE_V2",
+  "steps": [
+    {
+      "id": "v030-implementation",
+      "label": "v0.30 Implementation \u002B Contract Closure",
+      "status": "PASS",
+      "durationMs": 59,
+      "summary": "v0.30 proof compatibility PASS \u00B7 EXACT_DURABLE_PROOF \u00B7 legacy derived artifacts normalized=0 \u00B7 authored mutations=0 \u00B7 binding mutations=0",
+      "metrics": {
+        "implementationId": "implementation-20261003-133050-9cae8bfc714344a9",
+        "fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+        "legacyDerivedIgnored": "0",
+        "authoredMutations": "0",
+        "bindingMutations": "0"
+      },
+      "timestamp": "2026-10-04T04:20:51.726263+00:00",
+      "action": "v0.30 Implementation \u002B Contract Closure",
+      "exitCode": 0,
+      "input": null,
+      "output": "v0.30 proof compatibility PASS \u00B7 EXACT_DURABLE_PROOF \u00B7 legacy derived artifacts normalized=0 \u00B7 authored mutations=0 \u00B7 binding mutations=0",
+      "artifact": null,
+      "hash": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5"
+    },
+    {
+      "id": "v031-application",
+      "label": "Validate v0.31 Application",
+      "status": "PASS",
+      "durationMs": 51,
+      "summary": "v0.31 application compatibility PASS \u00B7 NATIVE_V2 \u00B7 stable mutations=0 \u00B7 runtime semantic mutations=0 \u00B7 observation-only files=3",
+      "metrics": {
+        "stableApplicationFingerprintV2": "87cfcee75911ae9945fdba1326f972ab746bd4e516a5f0f02ed2abaca4ba159f",
+        "runtimeSemanticFingerprint": "14e3361401d11fbb45a81433087cc61cfbdd9b64bfce3ce5e9349ec83c1b8900",
+        "compatibility": "NATIVE_V2",
+        "stableMutations": "0",
+        "observationOnlyFiles": "3"
+      },
+      "timestamp": "2026-10-04T04:20:51.7822792+00:00",
+      "action": "Validate v0.31 Application",
+      "exitCode": 0,
+      "input": null,
+      "output": "v0.31 application compatibility PASS \u00B7 NATIVE_V2 \u00B7 stable mutations=0 \u00B7 runtime semantic mutations=0 \u00B7 observation-only files=3",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "composition",
+      "label": "Composition",
+      "status": "PASS",
+      "durationMs": 21,
+      "summary": "capability graph materialized \u00B7 nodes=7; edges=6",
+      "metrics": {
+        "bindings": "7",
+        "edges": "6"
+      },
+      "timestamp": "2026-10-04T04:20:51.804308+00:00",
+      "action": "Composition",
+      "exitCode": 0,
+      "input": null,
+      "output": "capability graph materialized \u00B7 nodes=7; edges=6",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "runtime-bindings",
+      "label": "Runtime Bindings",
+      "status": "PASS",
+      "durationMs": 0,
+      "summary": "resolved runtime bindings PASS \u00B7 count=7",
+      "metrics": {
+        "bindings": "7"
+      },
+      "timestamp": "2026-10-04T04:20:51.8043135+00:00",
+      "action": "Runtime Bindings",
+      "exitCode": 0,
+      "input": null,
+      "output": "resolved runtime bindings PASS \u00B7 count=7",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "contracts",
+      "label": "Contracts",
+      "status": "PASS",
+      "durationMs": 0,
+      "summary": "declared/input/output contract bindings are complete",
+      "metrics": {},
+      "timestamp": "2026-10-04T04:20:51.8043141+00:00",
+      "action": "Contracts",
+      "exitCode": 0,
+      "input": null,
+      "output": "declared/input/output contract bindings are complete",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "restore",
+      "label": "Restore / Dependencies",
+      "status": "PASS",
+      "durationMs": 3202,
+      "summary": "dotnet restore PASS \u00B7 project-local pip check PASS",
+      "metrics": {
+        "exitCode": "0",
+        "command": "dotnet restore PortfolioApplication.sln \u002B project-local python -m pip check"
+      },
+      "timestamp": "2026-10-04T04:20:55.076496+00:00",
+      "action": "Restore / Dependencies",
+      "exitCode": 0,
+      "input": null,
+      "output": "dotnet restore PASS \u00B7 project-local pip check PASS",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "build-lint",
+      "label": "Build / Lint",
+      "status": "PASS",
+      "durationMs": 5235,
+      "summary": "generated launcher build PASS; Python source compile PASS; candidate lint PASS \u00B7 durable_max_path=244; workspace_path_budget=COMPACTION_REQUIRED; portable_path_budget=PASS; portable_projected_max=184; placeholder_scaffolds=1",
+      "metrics": {
+        "exitCode": "0",
+        "command": "dotnet build PortfolioApplication.sln -c Release \u002B external runtime python compile()",
+        "maxPath": "244",
+        "placeholderScaffolds": "1"
+      },
+      "timestamp": "2026-10-04T04:21:00.3690783+00:00",
+      "action": "Build / Lint",
+      "exitCode": 0,
+      "input": null,
+      "output": "generated launcher build PASS; Python source compile PASS; candidate lint PASS \u00B7 durable_max_path=244; workspace_path_budget=COMPACTION_REQUIRED; portable_path_budget=PASS; portable_projected_max=184; placeholder_scaffolds=1",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "unit-tests",
+      "label": "Unit Tests",
+      "status": "PASS",
+      "durationMs": 23803,
+      "summary": "[capability:domain-llm-fine-tuning-05d1e392]",
+      "metrics": {
+        "exitCode": "0",
+        "command": "project-local python tests/bricks/*/test_unit.py"
+      },
+      "timestamp": "2026-10-04T04:21:24.1976872+00:00",
+      "action": "Unit Tests",
+      "exitCode": 0,
+      "input": null,
+      "output": "[capability:domain-llm-fine-tuning-05d1e392]",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "contract-tests",
+      "label": "Contract Tests",
+      "status": "PASS",
+      "durationMs": 21483,
+      "summary": "[capability:domain-llm-fine-tuning-05d1e392]",
+      "metrics": {
+        "bindings": "7",
+        "exitCode": "0",
+        "command": "project-local python tests/bricks/* \u002B tests/adapters/*/test_contract.py"
+      },
+      "timestamp": "2026-10-04T04:21:45.7312779+00:00",
+      "action": "Contract Tests",
+      "exitCode": 0,
+      "input": null,
+      "output": "[capability:domain-llm-fine-tuning-05d1e392]",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "integration-tests",
+      "label": "Integration Tests",
+      "status": "PASS",
+      "durationMs": 23838,
+      "summary": "[capability:domain-llm-fine-tuning-05d1e392]",
+      "metrics": {
+        "edges": "6",
+        "exitCode": "0",
+        "command": "project-local python tests/bricks/* \u002B tests/adapters/*/test_integration.py"
+      },
+      "timestamp": "2026-10-04T04:22:09.590003+00:00",
+      "action": "Integration Tests",
+      "exitCode": 0,
+      "input": null,
+      "output": "[capability:domain-llm-fine-tuning-05d1e392]",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "runtime-smoke",
+      "label": "Runtime / UI Smoke",
+      "status": "PASS",
+      "durationMs": 33362,
+      "summary": "runtime/UI smoke PASS in v0.32 sandbox \u00B7 fresh evidence=8 \u00B7 historical v031 evidence unchanged",
+      "metrics": {
+        "exitCode": "0",
+        "artifact": "evidence/v032/runtime/runtime-smoke.json",
+        "command": "project-local python scripts/runtime_smoke.py --project-root \u003Cv032-sandbox\u003E --python \u003Cruntime\u003E",
+        "v031EvidenceImmutable": "true",
+        "freshRuntimeEvidence": "8"
+      },
+      "timestamp": "2026-10-04T04:22:44.4609157+00:00",
+      "action": "Runtime / UI Smoke",
+      "exitCode": 0,
+      "input": null,
+      "output": "runtime/UI smoke PASS in v0.32 sandbox \u00B7 fresh evidence=8 \u00B7 historical v031 evidence unchanged",
+      "artifact": "evidence/v032/runtime/runtime-smoke.json",
+      "hash": null
+    },
+    {
+      "id": "resources",
+      "label": "Resources / Integrity",
+      "status": "PASS",
+      "durationMs": 425,
+      "summary": "SHA-256 manifests PASS \u00B7 manifests=13 files=59 \u00B7 legacy-derived-ignored=0 \u00B7 legal lifecycle duplicates=21 \u00B7 illegal executable duplicates=0",
+      "metrics": {
+        "manifests": "13",
+        "files": "59",
+        "readOnlyFiles": "24",
+        "legacyDerivedIgnored": "0",
+        "brickDescriptors": "34",
+        "allowedLifecycleDuplicates": "21",
+        "illegalDuplicates": "0"
+      },
+      "timestamp": "2026-10-04T04:22:44.9489748+00:00",
+      "action": "Resources / Integrity",
+      "exitCode": 0,
+      "input": null,
+      "output": "SHA-256 manifests PASS \u00B7 manifests=13 files=59 \u00B7 legacy-derived-ignored=0 \u00B7 legal lifecycle duplicates=21 \u00B7 illegal executable duplicates=0",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence",
+      "status": "PASS",
+      "durationMs": 63,
+      "summary": "deterministic logs \u002B resource report \u002B evidence SHA-256 manifest written",
+      "metrics": {
+        "directory": "evidence/v032"
+      },
+      "timestamp": "2026-10-04T04:22:45.0242336+00:00",
+      "action": "Evidence",
+      "exitCode": 0,
+      "input": null,
+      "output": "deterministic logs \u002B resource report \u002B evidence SHA-256 manifest written",
+      "artifact": null,
+      "hash": null
+    },
+    {
+      "id": "package",
+      "label": "Package / Clean Extract Re-run",
+      "status": "PASS",
+      "durationMs": 35835,
+      "summary": "portable ZIP PASS \u00B7 agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab-proof-20261004-072049-40d5a1d08ac84e3b.zip \u00B7 clean extract runtime smoke PASS",
+      "metrics": {
+        "file": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab-proof-20261004-072049-40d5a1d08ac84e3b.zip",
+        "hash": "298d9f4afa53835f7b92aaf6a8acc66ef0de448bf7b11804838b94b42c0247ff",
+        "portable": "PASS",
+        "buildToken": "BUILD237_TEST250",
+        "command": "ZIP build \u2192 clean extract \u2192 proven v0.31 external Python \u2192 runtime_smoke.py"
+      },
+      "timestamp": "2026-10-04T04:23:20.8860605+00:00",
+      "action": "Package / Clean Extract Re-run",
+      "exitCode": 0,
+      "input": null,
+      "output": "portable ZIP PASS \u00B7 agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab-proof-20261004-072049-40d5a1d08ac84e3b.zip \u00B7 clean extract runtime smoke PASS",
+      "artifact": "agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab-proof-20261004-072049-40d5a1d08ac84e3b.zip",
+      "hash": "298d9f4afa53835f7b92aaf6a8acc66ef0de448bf7b11804838b94b42c0247ff"
+    },
+    {
+      "id": "project-build-proof",
+      "label": "Project Build Proof",
+      "status": "PASS",
+      "durationMs": 0,
+      "summary": "all required v0.32 whole-project gates PASS \u00B7 PROJECT READY \u00B7 PORTABLE \u00B7 PROVEN",
+      "metrics": {},
+      "timestamp": "2026-10-04T04:23:20.8896056+00:00",
+      "action": "Project Build Proof",
+      "exitCode": 0,
+      "input": null,
+      "output": "all required v0.32 whole-project gates PASS \u00B7 PROJECT READY \u00B7 PORTABLE \u00B7 PROVEN",
+      "artifact": null,
+      "hash": null
+    }
+  ],
+  "runtimeBindings": 7,
+  "resourceManifestsChecked": 13,
+  "resourceFilesChecked": 59,
+  "evidenceDirectory": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\workspaces\\HH133035106\\stages\\stage10\\evidence",
+  "packagePath": "C:\\Users\\AS\\AppData\\Local\\PortfolioFoundry\\workspaces\\HH133035106\\stages\\stage10\\packages\\agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab-proof-20261004-072049-40d5a1d08ac84e3b.zip",
+  "createdAt": "2026-10-04T04:23:20.9443102+00:00",
+  "totalMachineTimeMs": 147377,
+  "approvalWaitMs": 0,
+  "applicationFingerprint": "87cfcee75911ae9945fdba1326f972ab746bd4e516a5f0f02ed2abaca4ba159f",
+  "executionLedgerPath": "evidence/v032/execution-ledger.json",
+  "packageSha256": "5b2316c7968de52c669e4bc3a906c8f084ab43b1474881113206d692f56ec65e",
+  "portableVerificationStatus": "PASS"
+}

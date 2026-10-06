@@ -1,0 +1,13 @@
+{
+  "schema": "portfolio-foundry.stage3c-failure-receipt.v1",
+  "buildToken": "BUILD216_TEST229",
+  "patchToken": "PATCH_PORTFOLIO_KB_COVERLETTER_HH_APPLY152",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "specHash": "423b03967361ab12e684c785c6fc8ce78adb369afc4add324824108ac4d0cc88",
+  "stage3bStatus": "PASS",
+  "failures": [],
+  "retryBudget": 2,
+  "aiCalls": 0,
+  "createdAt": "2026-10-02T17:13:00.9281095+00:00"
+}

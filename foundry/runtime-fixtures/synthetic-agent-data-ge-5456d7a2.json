@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "seed_items": [
+    {
+      "domain": "code",
+      "prompt": "Produce A",
+      "expected": "A"
+    },
+    {
+      "domain": "sql",
+      "prompt": "Produce B",
+      "expected": "B"
+    },
+    {
+      "domain": "office",
+      "prompt": "Produce C [fail]",
+      "expected": "C"
+    },
+    {
+      "domain": "cyber",
+      "prompt": "Produce D",
+      "expected": "D"
+    }
+  ]
+}

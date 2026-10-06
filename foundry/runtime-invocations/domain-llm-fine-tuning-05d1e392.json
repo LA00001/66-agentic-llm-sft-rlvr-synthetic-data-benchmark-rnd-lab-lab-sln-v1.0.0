@@ -1,0 +1,54 @@
+{
+  "schema": "portfolio-foundry.runtime-invocation.v1",
+  "target_brick_id": "domain-llm-fine-tuning-05d1e392",
+  "strategy": "1",
+  "runtime_profile": "python",
+  "resolution": "GENERIC_RUNTIME_CONTRACT",
+  "entrypoint": {
+    "kind": "python-function",
+    "file": "src/bricks/domain-llm-fine-tuning-05d1e392/core.py",
+    "callable": "execute"
+  },
+  "arguments": {
+    "mode": "payload"
+  },
+  "input": {
+    "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "smoke_fixture": "foundry/runtime-fixtures/domain-llm-fine-tuning-05d1e392.json",
+    "schema": "foundry/runtime-contracts/domain-llm-fine-tuning-05d1e392.input-schema.json",
+    "fixture_sha256": "9bbbf314e7b3bbf5b5225b9b760fda2d9f6d3ee451855ccef9fba93013b1b4bd",
+    "fixture_source": "tests/bricks/domain-llm-fine-tuning-05d1e392/test_contract.py",
+    "consumer_brick": "domain-llm-fine-tuning-05d1e392"
+  },
+  "output": {
+    "validation": "json-compatible",
+    "contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "graph_contract": "foundry.project.enterprise-operational-risk-agentic-21313c83.v1",
+    "runtime_contract": "",
+    "bridge": null
+  },
+  "execution": {
+    "working_directory": "candidate-root",
+    "timeout_seconds": 30,
+    "call_timeout_seconds": 30,
+    "spark_call_timeout_seconds": 30,
+    "import_timeout_seconds": 90,
+    "cold_start_timeout_seconds": 30,
+    "heavy_import_modules": [
+      "torch"
+    ],
+    "cleanup_grace_seconds": 5,
+    "network": false,
+    "shell": false,
+    "execution_model": "isolated-process-tree",
+    "timeout_policy": "phase-aware-import-call"
+  },
+  "integrity": {
+    "source_sha256": "422cc3fcc61b9da752aad0a3d642341c3efd94daf07ea193ce764f01e629a16b"
+  },
+  "provenance": {
+    "implementation_provider": "ai-generic-chatgpt-webview2-cache-v2",
+    "v030_proof_fingerprint": "63fbe11e34948c6fc30c7585609232559a1ccbf06441791adede6f4d2915b3f5",
+    "provider_used_for_dispatch": false
+  }
+}

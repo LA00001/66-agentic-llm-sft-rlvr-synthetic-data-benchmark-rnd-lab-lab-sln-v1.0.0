@@ -1,0 +1,122 @@
+{
+  "type": "object",
+  "required": [
+    "experiment_spec",
+    "records"
+  ],
+  "properties": {
+    "experiment_spec": {
+      "type": "object",
+      "required": [
+        "acceptance_criterion",
+        "baseline",
+        "baseline_checkpoint_id",
+        "expected_treatment_share",
+        "experiment_id",
+        "guardrails",
+        "hypothesis",
+        "primary_metric",
+        "srm_alpha",
+        "trained_checkpoint_id",
+        "treatment"
+      ],
+      "properties": {
+        "acceptance_criterion": {
+          "type": "object",
+          "required": [
+            "alpha",
+            "min_absolute_uplift",
+            "require_ci_above_zero"
+          ],
+          "properties": {
+            "alpha": {
+              "type": "number"
+            },
+            "min_absolute_uplift": {
+              "type": "number"
+            },
+            "require_ci_above_zero": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": true
+        },
+        "baseline": {
+          "type": "string"
+        },
+        "baseline_checkpoint_id": {
+          "type": "string"
+        },
+        "expected_treatment_share": {
+          "type": "number"
+        },
+        "experiment_id": {
+          "type": "string"
+        },
+        "guardrails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "direction",
+              "limit",
+              "metric"
+            ],
+            "properties": {
+              "direction": {
+                "type": "string"
+              },
+              "limit": {
+                "type": "number"
+              },
+              "metric": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "hypothesis": {
+          "type": "string"
+        },
+        "primary_metric": {
+          "type": "string"
+        },
+        "srm_alpha": {
+          "type": "number"
+        },
+        "trained_checkpoint_id": {
+          "type": "string"
+        },
+        "treatment": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "latency_seconds",
+          "variant",
+          "verified_success"
+        ],
+        "properties": {
+          "latency_seconds": {
+            "type": "number"
+          },
+          "variant": {
+            "type": "string"
+          },
+          "verified_success": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,634 @@
+{
+  "schema": "portfolio-foundry.skill-truth-ledger.v1",
+  "buildToken": "BUILD216_TEST229",
+  "candidateId": "candidate-20261002-165427-agentic-llm-sft-rlvr-synthetic-data-benchmark-rnd-lab",
+  "vacancyId": "133035106",
+  "status": "PASS",
+  "total": 7,
+  "implemented": 7,
+  "proven": 7,
+  "reuseValidated": 0,
+  "generated": 7,
+  "vacancyCoverage": {
+    "required": 9,
+    "provenRequired": 9,
+    "deferred": 4,
+    "desired": 6,
+    "uncoveredDesired": 1
+  },
+  "capabilities": [
+    {
+      "capability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "decision": "ADAPT_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 PyTorch forward/backward training step \u043D\u0430 Transformers causal LM \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C finite loss \u0438 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 trainable \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432.",
+        "\u0421\u043E\u0437\u0434\u0430\u0442\u044C PEFT LoraConfig, \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C get_peft_model \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C, \u0447\u0442\u043E \u043E\u0431\u0443\u0447\u0430\u0435\u043C\u044B\u043C\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F LoRA-\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B, \u0430 base-\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u044B \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u043E \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C SFT \u043D\u0430 \u043D\u0430\u0431\u043E\u0440\u0435 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 dialogue trajectories \u0441 user/assistant/tool_call/tool_result turns \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u043A\u043E\u0440\u0440\u0435\u043A\u0442\u043D\u043E\u0435 masking labels.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0438 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C LoRA adapter, \u0437\u0430\u0442\u0435\u043C \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u044D\u043A\u0432\u0438\u0432\u0430\u043B\u0435\u043D\u0442\u043D\u044B\u0439 inference result \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C input.",
+        "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C baseline \u0438 post-SFT \u043C\u0435\u0442\u0440\u0438\u043A\u0443 \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C eval-\u043D\u0430\u0431\u043E\u0440\u0435 \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C machine-readable before/after artifact.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C Transformers tokenizer/model serialization \u0438 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u0440\u0438 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C seed.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 transformer forward/backward pass \u0441 loss, gradients \u0438 parameter update.",
+        "\u0417\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C architecture/tokenization/training configuration \u0438 \u043E\u0431\u044A\u044F\u0441\u043D\u0438\u043C\u044B\u0435 baseline-versus-trained metrics.",
+        "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C torch \u0438 transformers \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 training/inference path \u043D\u0430 Transformers model.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435 \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 model/tokenizer artifacts.",
+        "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C PEFT LoRA adapter \u043A \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0439 Transformers causal LM \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C optimization step.",
+        "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C trainable-parameter report \u0438 reloadable LoRA adapter artifact."
+      ],
+      "vacancyRequirements": [
+        "\u0425\u043E\u0440\u043E\u0448\u0438\u0435 \u0437\u043D\u0430\u043D\u0438\u044F ML/DL \u0441 \u0443\u043F\u043E\u0440\u043E\u043C \u043D\u0430 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 NLP \u0438 \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0435\u0440\u044B",
+        "PyTorch \u0438 Transformers \u043A\u0430\u043A \u0446\u0435\u043B\u0435\u0432\u043E\u0439 \u0441\u0442\u0435\u043A \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438",
+        "\u0414\u043E\u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 LLM \u043F\u043E\u0434 \u0434\u043E\u043C\u0435\u043D\u043D\u044B\u0435 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u0441 LoRA/PEFT",
+        "SFT \u043D\u0430 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0445 \u0442\u0440\u0430\u0435\u043A\u0442\u043E\u0440\u0438\u044F\u0445 \u0438 \u0444\u043E\u0440\u043C\u0430\u0442\u0430\u0445 \u0434\u0438\u0430\u043B\u043E\u0433\u043E\u0432/tool calls"
+      ],
+      "evidence": "evidence/v030/domain-llm-fine-tuning-05d1e392"
+    },
+    {
+      "capability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+      "decision": "ADAPT_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C experiment spec \u0441 \u0433\u0438\u043F\u043E\u0442\u0435\u0437\u043E\u0439, primary metric, guardrails, baseline, treatment \u0438 \u0437\u0430\u0440\u0430\u043D\u0435\u0435 \u0437\u0430\u0434\u0430\u043D\u043D\u044B\u043C acceptance criterion \u0434\u043E \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044F.",
+        "\u041D\u0430 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C pandas DataFrame \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C baseline-versus-treatment statistical comparison \u0441 p-value \u0438 confidence interval.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C SRM/\u0432\u0430\u043B\u0438\u0434\u043D\u043E\u0441\u0442\u044C \u0440\u0430\u0437\u0431\u0438\u0435\u043D\u0438\u044F \u0438 \u044F\u0432\u043D\u043E \u0437\u0430\u0432\u0435\u0440\u0448\u0430\u0442\u044C \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442 \u043E\u0448\u0438\u0431\u043A\u043E\u0439 \u043F\u0440\u0438 \u043D\u0435\u043A\u043E\u0440\u0440\u0435\u043A\u0442\u043D\u043E\u043C \u0434\u0438\u0437\u0430\u0439\u043D\u0435.",
+        "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u0430\u043D\u0430\u043B\u0438\u0437 \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C dataset \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C \u0434\u0435\u0442\u0435\u0440\u043C\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 machine-readable verdict.",
+        "\u0421\u0432\u044F\u0437\u0430\u0442\u044C experiment artifact \u0441 \u043A\u043E\u043D\u043A\u0440\u0435\u0442\u043D\u044B\u043C\u0438 baseline \u0438 trained checkpoint identifiers.",
+        "\u0414\u043E \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C hypothesis, metric, baseline, treatment \u0438 acceptance criterion.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0435 \u0438 \u0441\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u044B\u0432\u043E\u0434 \u0442\u043E\u043B\u044C\u043A\u043E \u0438\u0437 \u0437\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u043C\u0435\u0442\u0440\u0438\u043A \u0438 confidence statistics."
+      ],
+      "vacancyRequirements": [
+        "\u041D\u0430\u0443\u0447\u043D\u043E \u0441\u0442\u0440\u043E\u0433\u0430\u044F \u043F\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0433\u0438\u043F\u043E\u0442\u0435\u0437, \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u0432\u044B\u0432\u043E\u0434\u044B"
+      ],
+      "evidence": "evidence/v030/scientifically-rigorous-2d3b54ba"
+    },
+    {
+      "capability": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly",
+      "decision": "NEW_BRICK_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u0421\u0433\u0435\u043D\u0435\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043D\u0430\u0431\u043E\u0440 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 agent tasks \u0438\u0437 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0433\u043E \u0432\u0445\u043E\u0434\u043D\u043E\u0433\u043E \u043A\u043E\u0440\u043F\u0443\u0441\u0430 \u0438\u043B\u0438 seed-\u043D\u0430\u0431\u043E\u0440\u0430.",
+        "\u0414\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0439 \u0437\u0430\u0434\u0430\u0447\u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C agent rollout \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u043E\u043B\u043D\u0443\u044E trajectory.",
+        "\u041F\u0440\u043E\u0433\u043D\u0430\u0442\u044C \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 oracle/test verifier \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u043C\u044B\u0439 verdict \u0441 \u043F\u0440\u0438\u0447\u0438\u043D\u043E\u0439.",
+        "\u041E\u0442\u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432\u0430\u0442\u044C failed/invalid/low-quality trajectories \u043F\u043E \u044F\u0432\u043D\u044B\u043C \u043F\u0440\u0430\u0432\u0438\u043B\u0430\u043C \u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0447\u0435\u0442\u0447\u0438\u043A\u0438 \u0434\u043E/\u043F\u043E\u0441\u043B\u0435.",
+        "\u0421\u043E\u0431\u0440\u0430\u0442\u044C \u0438\u0442\u043E\u0433\u043E\u0432\u044B\u0439 train/eval dataset \u0441 \u0432\u0430\u043B\u0438\u0434\u0438\u0440\u0443\u0435\u043C\u043E\u0439 schema \u0438 \u0443\u043D\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C\u0438 IDs.",
+        "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C pipeline \u0441 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u043C seed \u0438 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u044B\u0435 dataset statistics.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043F\u043E\u043B\u043D\u044B\u0439 pipeline \u043E\u0442 generation \u0434\u043E assembled dataset \u043D\u0430 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 \u0437\u0430\u0434\u0430\u0447\u0430\u0445.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C, \u0447\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u043E\u0448\u0435\u0434\u0448\u0438\u0435 verifier/filter \u0437\u0430\u043F\u0438\u0441\u0438 \u043F\u043E\u043F\u0430\u0434\u0430\u044E\u0442 \u0432 \u0438\u0442\u043E\u0433\u043E\u0432\u044B\u0439 dataset."
+      ],
+      "vacancyRequirements": [
+        "\u0413\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0447\u0435\u0440\u0435\u0437 \u0446\u0438\u043A\u043B task generation \u2192 agent solve \u2192 verification \u2192 filtering \u2192 dataset"
+      ],
+      "evidence": "evidence/v030/synthetic-agent-data-ge-5456d7a2"
+    },
+    {
+      "capability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "decision": "ADAPT_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u0427\u0435\u0440\u0435\u0437 pytest \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C benchmark suite \u043C\u0438\u043D\u0438\u043C\u0443\u043C \u0434\u043B\u044F code, SQL \u0438 tool-use \u0437\u0430\u0434\u0430\u0447 \u0441 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u043C\u0438 pass/fail assertions.",
+        "\u0414\u043B\u044F code-\u0437\u0430\u0434\u0430\u0447\u0438 \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C candidate solution \u043F\u0440\u043E\u0442\u0438\u0432 \u0434\u0435\u0442\u0435\u0440\u043C\u0438\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 executable tests \u0438 \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C oracle verdict.",
+        "\u0414\u043B\u044F SQL-\u0437\u0430\u0434\u0430\u0447\u0438 \u0438\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u044C query \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C SQL engine \u0438 \u0441\u0440\u0430\u0432\u043D\u0438\u0442\u044C \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 result set \u0441 expected oracle.",
+        "\u0414\u043B\u044F tool-use trajectory \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C tool calls, arguments, observations \u0438 \u0444\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0439 answer \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u044B\u043C\u0438 assertions.",
+        "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C per-domain \u0438 aggregate benchmark scores \u0438\u0437 \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 test outcomes.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C failure taxonomy \u0438 evidence manifest \u0441 checksum \u043A\u0430\u0436\u0434\u043E\u0433\u043E benchmark artifact.",
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C executable oracle/test \u0434\u043B\u044F \u043C\u0438\u043D\u0438\u043C\u0443\u043C code \u0438 SQL benchmark cases.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C machine-readable pass/fail verdict \u0438 failure reason \u0434\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0439 \u0437\u0430\u0434\u0430\u0447\u0438.",
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C pytest suite \u0434\u043B\u044F code, SQL \u0438 tool-use benchmark cases \u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u043C\u044B\u0435 pass/fail \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0445\u043E\u0442\u044F \u0431\u044B \u043E\u0434\u0438\u043D \u043D\u0430\u043C\u0435\u0440\u0435\u043D\u043D\u043E failing case, \u0447\u0442\u043E\u0431\u044B \u0434\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0443 oracle, \u0430 \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E happy path.",
+        "\u041E\u043F\u0440\u0435\u0434\u0435\u043B\u0438\u0442\u044C benchmark task schema, executable oracle \u0438 scoring contract \u0438 \u043F\u0440\u043E\u0433\u043D\u0430\u0442\u044C \u0438\u0445 \u043D\u0430 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 domain cases.",
+        "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0440\u0430\u0437\u043B\u0438\u0447\u0438\u0435 execution failure, oracle failure \u0438 wrong-answer failure \u0432 taxonomy."
+      ],
+      "vacancyRequirements": [
+        "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u043A\u0438 \u0438 benchmark-\u0437\u0430\u0434\u0430\u0447 \u0447\u0435\u0440\u0435\u0437 \u043E\u0440\u0430\u043A\u043B\u044B \u0438 executable tests",
+        "pytest \u0434\u043B\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 unit/integration/benchmark \u043F\u0440\u043E\u0432\u0435\u0440\u043E\u043A",
+        "Agentic benchmark design \u0438 \u043F\u043E\u043D\u0438\u043C\u0430\u043D\u0438\u0435 \u0437\u0430\u0434\u0430\u0447, \u043E\u0440\u0430\u043A\u043B\u043E\u0432 \u0438 \u043E\u0446\u0435\u043D\u043A\u0438",
+        "\u0410\u043D\u0430\u043B\u0438\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u043D\u044B\u0445 \u043C\u0435\u0441\u0442 \u0432 \u0440\u0430\u0431\u043E\u0442\u0435 LLM \u0447\u0435\u0440\u0435\u0437 benchmark failures \u0438 before/after evaluation"
+      ],
+      "evidence": "evidence/v030/agentic-benchmark-harne-b447fbac"
+    },
+    {
+      "capability": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "decision": "ADAPT_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u0421\u043E\u0437\u0434\u0430\u0442\u044C \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u0443\u044E SQL fixture database \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0435 CREATE/INSERT/SELECT \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438 \u0447\u0435\u0440\u0435\u0437 sqlite3.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C benchmark query \u0441 JOIN, aggregation \u0438/\u0438\u043B\u0438 window function \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C exact expected rows.",
+        "\u041F\u0435\u0440\u0435\u0434\u0430\u0442\u044C SQL \u043A\u0430\u043A \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 agent task \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0435\u0433\u043E \u0447\u0435\u0440\u0435\u0437 \u0442\u043E\u0442 \u0436\u0435 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 database engine.",
+        "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C agent query result \u0441 canonical oracle result \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0442\u0435\u043A\u0441\u0442\u043E\u0432\u043E\u0433\u043E \u0441\u043E\u0432\u043F\u0430\u0434\u0435\u043D\u0438\u044F SQL.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C syntax/runtime/wrong-result failure cases \u0438 \u043A\u043B\u0430\u0441\u0441\u0438\u0444\u0438\u0446\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0438\u0445 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C query, parameters, expected result \u0438 actual result \u0432 reproducible benchmark artifact.",
+        "\u0418\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u044C agent-generated SQL \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u043C SQL engine.",
+        "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C result set \u0441 independently computed canonical oracle."
+      ],
+      "vacancyRequirements": [
+        "SQL-\u0437\u0430\u0434\u0430\u0447\u0438 \u0434\u043B\u044F \u0430\u0433\u0435\u043D\u0442\u043E\u0432 \u0438 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0435 database oracles"
+      ],
+      "evidence": "evidence/v030/sql-agent-tasks-and-exe-31fdd585"
+    },
+    {
+      "capability": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering",
+      "decision": "ADAPT_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u041D\u0430 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C pandas DataFrame \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C schema/null/duplicate/invalid-trajectory checks \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u043E\u0436\u0438\u0434\u0430\u0435\u043C\u044B\u0435 failed-row counts.",
+        "\u0412\u044B\u044F\u0432\u0438\u0442\u044C exact duplicate task/trajectory IDs \u0438 \u043E\u0442\u0434\u0435\u043B\u0438\u0442\u044C \u0438\u0445 \u0432 quarantine DataFrame.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C train/eval contamination \u043F\u043E \u043D\u043E\u0440\u043C\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u044B\u043C task fingerprints \u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0430\u0442\u044C \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443 WARN/FAIL \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u0441\u0435\u0447\u0435\u043D\u0438\u0438.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C answer-oracle consistency \u0438 \u0443\u0434\u0430\u043B\u0438\u0442\u044C trajectories \u0441 \u043F\u0440\u043E\u0442\u0438\u0432\u043E\u0440\u0435\u0447\u0430\u0449\u0438\u043C verifier verdict.",
+        "\u0412\u044B\u044F\u0432\u0438\u0442\u044C reward/length/error outliers \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u0440\u0438\u0447\u0438\u043D\u044B \u0444\u0438\u043B\u044C\u0442\u0440\u0430\u0446\u0438\u0438 \u043F\u043E \u043A\u0430\u0436\u0434\u043E\u0439 \u0437\u0430\u043F\u0438\u0441\u0438.",
+        "\u0421\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C clean \u0438 quarantined dataset artifacts \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C, \u0447\u0442\u043E \u0438\u0445 \u043E\u0431\u044A\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0435 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442 \u0438\u0441\u0445\u043E\u0434\u043D\u044B\u0439 \u043D\u0430\u0431\u043E\u0440 \u0431\u0435\u0437 \u043F\u043E\u0442\u0435\u0440\u044C IDs.",
+        "\u041D\u0430 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C pandas DataFrame \u0432\u044B\u044F\u0432\u0438\u0442\u044C duplicates, invalid trajectories \u0438 train/eval contamination.",
+        "\u0421\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C clean/quarantine outputs \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0441\u0447\u0435\u0442\u0447\u0438\u043A\u0438 \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u043D\u043E\u0441\u0442\u044C \u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u043E\u0432."
+      ],
+      "vacancyRequirements": [
+        "\u041E\u0447\u0438\u0441\u0442\u043A\u0430 \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 train/eval \u0434\u0430\u043D\u043D\u044B\u0445, \u0434\u0435\u0434\u0443\u043F\u043B\u0438\u043A\u0430\u0446\u0438\u044F, contamination control \u0438 \u0430\u043D\u0430\u043B\u0438\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445"
+      ],
+      "evidence": "evidence/v030/synthetic-training-eval-00c1d43f"
+    },
+    {
+      "capability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "decision": "ADAPT_REQUIRED",
+      "required": true,
+      "planned": true,
+      "implemented": true,
+      "proven": true,
+      "proofBasis": "STAGE3B_GENERATED_UNIT_CONTRACT_INTEGRATION_PASS",
+      "scope": "STAGE3B_TECHNOLOGY_CAPABILITY",
+      "projectExecutionProof": "PENDING_STAGE4_V026",
+      "requiredProof": [
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u043F\u0440\u043E\u0435\u043A\u0442 \u0447\u0435\u0440\u0435\u0437 Python entrypoint \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C end-to-end \u043F\u0443\u0442\u044C synthetic data \u2192 SFT/RLVR artifact \u2192 benchmark evaluation \u0431\u0435\u0437 \u0440\u0443\u0447\u043D\u043E\u0433\u043E \u0432\u043C\u0435\u0448\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430.",
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 FastAPI app \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C /health HTTP 200 \u0438 \u0442\u0438\u043F\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 inference/experiment endpoint.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C Python dependency preflight \u0438 \u0438\u043C\u043F\u043E\u0440\u0442 \u043A\u043B\u044E\u0447\u0435\u0432\u044B\u0445 runtime modules \u043F\u0435\u0440\u0435\u0434 \u0441\u0442\u0430\u0440\u0442\u043E\u043C pipeline.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C run_id, config, seeds, input fingerprints, checkpoint identifiers \u0438 \u0438\u0442\u043E\u0433\u043E\u0432\u044B\u0435 metrics \u0432 experiment artifact.",
+        "\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u043E\u0434\u0438\u043D \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 run \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u044C \u043A\u043B\u044E\u0447\u0435\u0432\u044B\u0445 output metrics/artifact hashes \u0432 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u044B\u0445 \u043F\u0440\u0435\u0434\u0435\u043B\u0430\u0445.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C pytest integration test, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u0442 \u0438\u043B\u0438 \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u0442 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 service path \u0438 \u0432\u0430\u043B\u0438\u0434\u0438\u0440\u0443\u0435\u0442 end-to-end response contract.",
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C project entrypoint \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u043C Python runtime \u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044C smoke/integration test \u0441 exit code 0.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0438\u043C\u043F\u043E\u0440\u0442 project modules \u0438 reproducible execution \u0438\u0437 \u0447\u0438\u0441\u0442\u043E\u0433\u043E process invocation.",
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 FastAPI application \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C HTTP 200 \u043D\u0430 /health.",
+        "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0442\u0438\u043F\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 request \u043D\u0430 project endpoint \u0438 \u0432\u0430\u043B\u0438\u0434\u0438\u0440\u043E\u0432\u0430\u0442\u044C response schema."
+      ],
+      "vacancyRequirements": [
+        "Python \u043A\u0430\u043A \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u044F\u0437\u044B\u043A \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438",
+        "FastAPI \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 service interface \u0434\u043B\u044F \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u043E\u0433\u043E \u0434\u043E\u0441\u0442\u0443\u043F\u0430 \u043A \u043F\u0440\u043E\u0435\u043A\u0442\u0443"
+      ],
+      "evidence": "evidence/v030/project-owned-end-to-en-f490927d"
+    }
+  ],
+  "requirements": [
+    {
+      "requirementId": "req-01",
+      "requirement": "\u0425\u043E\u0440\u043E\u0448\u0438\u0435 \u0437\u043D\u0430\u043D\u0438\u044F ML/DL \u0441 \u0443\u043F\u043E\u0440\u043E\u043C \u043D\u0430 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 NLP \u0438 \u0442\u0440\u0430\u043D\u0441\u0444\u043E\u0440\u043C\u0435\u0440\u044B",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u041F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 proof \u0447\u0435\u0440\u0435\u0437 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 transformer training \u043D\u0435 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u0443\u0435\u0442 \u0432\u0441\u044E \u0442\u0435\u043E\u0440\u0438\u044E, \u043D\u043E \u0447\u0435\u0441\u0442\u043D\u043E \u0434\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u043C\u044B\u0445 ML/DL/NLP \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u043E\u0432 \u0432 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0439 \u0437\u0430\u0434\u0430\u0447\u0435 \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438.",
+      "requiredProof": [
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 transformer forward/backward pass \u0441 loss, gradients \u0438 parameter update.",
+        "\u0417\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C architecture/tokenization/training configuration \u0438 \u043E\u0431\u044A\u044F\u0441\u043D\u0438\u043C\u044B\u0435 baseline-versus-trained metrics."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/domain-llm-fine-tuning-05d1e392"
+    },
+    {
+      "requirementId": "req-02",
+      "requirement": "PyTorch \u0438 Transformers \u043A\u0430\u043A \u0446\u0435\u043B\u0435\u0432\u043E\u0439 \u0441\u0442\u0435\u043A \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "TARGET_STACK:PyTorch",
+        "TARGET_STACK:Transformers"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u041E\u0431\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u0443\u0436\u0435 \u043F\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u044E\u0442 \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C donor code \u0438 \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u043E\u0442\u043D\u043E\u0441\u044F\u0442\u0441\u044F \u043A fine-tuning capability.",
+      "requiredProof": [
+        "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C torch \u0438 transformers \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 training/inference path \u043D\u0430 Transformers model.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435 \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 model/tokenizer artifacts."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/domain-llm-fine-tuning-05d1e392"
+    },
+    {
+      "requirementId": "req-03",
+      "requirement": "\u0414\u043E\u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 LLM \u043F\u043E\u0434 \u0434\u043E\u043C\u0435\u043D\u043D\u044B\u0435 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u0441 LoRA/PEFT",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT",
+        "TARGET_STACK:PEFT",
+        "TARGET_STACK:LoRA"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "Vacancy \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0433\u043E LLM fine-tuning; donor \u0443\u0436\u0435 \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442 PEFT/LoRA primitives, \u043D\u043E Stage 3B \u0434\u043E\u043B\u0436\u0435\u043D \u0430\u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0438\u0445 \u043A agent domain.",
+      "requiredProof": [
+        "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C PEFT LoRA adapter \u043A \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0439 Transformers causal LM \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C optimization step.",
+        "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C trainable-parameter report \u0438 reloadable LoRA adapter artifact."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/domain-llm-fine-tuning-05d1e392"
+    },
+    {
+      "requirementId": "req-04",
+      "requirement": "SFT \u043D\u0430 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0445 \u0442\u0440\u0430\u0435\u043A\u0442\u043E\u0440\u0438\u044F\u0445 \u0438 \u0444\u043E\u0440\u043C\u0430\u0442\u0430\u0445 \u0434\u0438\u0430\u043B\u043E\u0433\u043E\u0432/tool calls",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT",
+        "TARGET_STACK:SFT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Domain LLM fine-tuning with LoRA/SFT and dialogue/tool-call training formats",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u042D\u0442\u043E \u043F\u0440\u044F\u043C\u043E \u0443\u043A\u0430\u0437\u0430\u043D\u043E \u0432 \u043E\u0431\u044F\u0437\u0430\u043D\u043D\u043E\u0441\u0442\u044F\u0445 \u0438 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442 fine-tuning capability \u043F\u043E\u0441\u043B\u0435 \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0439 \u0430\u0434\u0430\u043F\u0442\u0430\u0446\u0438\u0438 \u0444\u043E\u0440\u043C\u0430\u0442\u0430 \u0434\u0430\u043D\u043D\u044B\u0445.",
+      "requiredProof": [
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C SFT \u043D\u0430 dataset, \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0449\u0435\u043C dialogue turns, tool calls, tool results \u0438 final answers.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C masking supervised labels \u0442\u0430\u043A, \u0447\u0442\u043E\u0431\u044B loss \u0441\u0447\u0438\u0442\u0430\u043B\u0441\u044F \u043F\u043E \u0442\u0440\u0435\u0431\u0443\u0435\u043C\u044B\u043C assistant outputs."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/domain-llm-fine-tuning-05d1e392"
+    },
+    {
+      "requirementId": "req-05",
+      "requirement": "RL/RLVR post-training \u0441 reward-\u0441\u0438\u0433\u043D\u0430\u043B\u0430\u043C\u0438 \u0438 \u0438\u0437\u043C\u0435\u0440\u0435\u043D\u0438\u0435\u043C \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0430",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT",
+        "TARGET_STACK:GRPO/RLVR"
+      ],
+      "coverage": "DEFERRED",
+      "mappedCapability": "RL/RLVR post-training pipeline with reward signals, rollout evaluation and before/after acceptance gates",
+      "proofTargetCapability": null,
+      "proofScope": "LOCAL",
+      "rationale": "\u0412\u0430\u043A\u0430\u043D\u0441\u0438\u044F \u043F\u0440\u044F\u043C\u043E \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u043F\u043E\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F \u0438 \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F RL pipeline; \u0447\u0435\u0441\u0442\u043D\u044B\u0439 portfolio scope \u2014 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 training cycle, \u0431\u0435\u0437 claims \u043E production-scale RL infrastructure. BUILD137_DEFERRED_BY_USER=true; required proof is preserved in backlog and is not claimed by the current candidate.",
+      "requiredProof": [
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 rollout \u2192 reward \u2192 optimization cycle \u0441 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u043C\u0438 model tensors.",
+        "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C baseline \u0438 post-RL/RLVR checkpoint \u043D\u0430 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C eval set."
+      ],
+      "implemented": false,
+      "proven": false,
+      "proofStatus": "DEFERRED",
+      "evidence": ""
+    },
+    {
+      "requirementId": "req-06",
+      "requirement": "TRL \u043A\u0430\u043A \u0446\u0435\u043B\u0435\u0432\u0430\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 RL/post-training",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "TARGET_STACK:TRL"
+      ],
+      "coverage": "DEFERRED",
+      "mappedCapability": "RL/RLVR post-training pipeline with reward signals, rollout evaluation and before/after acceptance gates",
+      "proofTargetCapability": null,
+      "proofScope": "LOCAL",
+      "rationale": "TRL \u043D\u0435 \u043D\u0430\u0437\u0432\u0430\u043D \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0435\u0439 \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E, \u043D\u043E \u0443\u043A\u0430\u0437\u0430\u043D target_stack \u0438 \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0432\u0445\u043E\u0434\u0438\u0442 \u0432 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 RL proof. BUILD137_DEFERRED_BY_USER=true; required proof is preserved in backlog and is not claimed by the current candidate.",
+      "requiredProof": [
+        "\u0418\u043C\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 \u043F\u0430\u043A\u0435\u0442 trl \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0435\u0433\u043E trainer/config path \u0432 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u043C post-training demo.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C trainer configuration \u0438 \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 rollout/reward metrics."
+      ],
+      "implemented": false,
+      "proven": false,
+      "proofStatus": "DEFERRED",
+      "evidence": ""
+    },
+    {
+      "requirementId": "req-07",
+      "requirement": "Agentic LLM \u0441 planning, \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0430\u043C\u0438, \u043F\u0430\u043C\u044F\u0442\u044C\u044E \u0438 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u044B\u043C\u0438 \u0442\u0440\u0430\u0435\u043A\u0442\u043E\u0440\u0438\u044F\u043C\u0438",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT",
+        "TARGET_STACK:agentic LLM",
+        "TARGET_STACK:tool calling"
+      ],
+      "coverage": "DEFERRED",
+      "mappedCapability": "Agentic LLM runtime with planning, tool calling, memory, retries and reproducible agent trajectories",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u0420\u0430\u0431\u043E\u0442\u0430 \u0441 \u0430\u0433\u0435\u043D\u0442\u0430\u043C\u0438 \u0438 \u0432\u044B\u0437\u043E\u0432\u0430\u043C\u0438 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u043E\u0432 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0439 \u0447\u0430\u0441\u0442\u044C\u044E \u043E\u0431\u044F\u0437\u0430\u043D\u043D\u043E\u0441\u0442\u0435\u0439; capability \u0442\u043E\u0447\u043D\u043E \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u043F\u043E\u0441\u043B\u0435 fresh executable adaptation. BUILD137_DEFERRED_BY_USER=true; required proof is preserved in backlog and is not claimed by the current candidate.",
+      "requiredProof": [
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C agent trajectory \u0441 planning, \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u043C tool invocation, observation \u0438 final answer.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C memory/retry behavior \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u043D\u044B\u043C\u0438 assertions \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C trajectory artifact."
+      ],
+      "implemented": false,
+      "proven": false,
+      "proofStatus": "DEFERRED",
+      "evidence": ""
+    },
+    {
+      "requirementId": "req-08",
+      "requirement": "\u041D\u0430\u0443\u0447\u043D\u043E \u0441\u0442\u0440\u043E\u0433\u0430\u044F \u043F\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u0433\u0438\u043F\u043E\u0442\u0435\u0437, \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u044B \u0438 \u043E\u0431\u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0435 \u0432\u044B\u0432\u043E\u0434\u044B",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Scientifically rigorous hypothesis formulation, controlled experiments and statistical comparison",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u042D\u0442\u043E \u043F\u0440\u044F\u043C\u043E\u0435 \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0435 \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438; A/B/statistical donor \u0434\u0430\u0435\u0442 \u0432\u044B\u0447\u0438\u0441\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E \u043E\u0441\u043D\u043E\u0432\u0443, \u0430 adaptation \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 pre-registered experiment protocol.",
+      "requiredProof": [
+        "\u0414\u043E \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C hypothesis, metric, baseline, treatment \u0438 acceptance criterion.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0435 \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0435 \u0438 \u0441\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u044B\u0432\u043E\u0434 \u0442\u043E\u043B\u044C\u043A\u043E \u0438\u0437 \u0437\u0430\u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u043C\u0435\u0442\u0440\u0438\u043A \u0438 confidence statistics."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/scientifically-rigorous-2d3b54ba"
+    },
+    {
+      "requirementId": "req-09",
+      "requirement": "\u0413\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0447\u0435\u0440\u0435\u0437 \u0446\u0438\u043A\u043B task generation \u2192 agent solve \u2192 verification \u2192 filtering \u2192 dataset",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Synthetic agent-data generation pipeline: task generation, agent rollout, automatic verification, filtering and dataset assembly",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u0414\u043B\u044F \u044D\u0442\u043E\u0439 \u043E\u0431\u044F\u0437\u0430\u043D\u043D\u043E\u0441\u0442\u0438 \u0443\u0436\u0435 \u043F\u0440\u0435\u0434\u0443\u0441\u043C\u043E\u0442\u0440\u0435\u043D \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0439 NEW project-owned capability, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 supplemental target \u043D\u0435 \u043D\u0443\u0436\u0435\u043D.",
+      "requiredProof": [
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043F\u043E\u043B\u043D\u044B\u0439 pipeline \u043E\u0442 generation \u0434\u043E assembled dataset \u043D\u0430 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 \u0437\u0430\u0434\u0430\u0447\u0430\u0445.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C, \u0447\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u043E\u0448\u0435\u0434\u0448\u0438\u0435 verifier/filter \u0437\u0430\u043F\u0438\u0441\u0438 \u043F\u043E\u043F\u0430\u0434\u0430\u044E\u0442 \u0432 \u0438\u0442\u043E\u0433\u043E\u0432\u044B\u0439 dataset."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/synthetic-agent-data-ge-5456d7a2"
+    },
+    {
+      "requirementId": "req-10",
+      "requirement": "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u043A\u0438 \u0438 benchmark-\u0437\u0430\u0434\u0430\u0447 \u0447\u0435\u0440\u0435\u0437 \u043E\u0440\u0430\u043A\u043B\u044B \u0438 executable tests",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "Deterministic executable oracles \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u043F\u0440\u044F\u043C\u044B\u043C \u0441\u043C\u044B\u0441\u043B\u043E\u043C benchmark capability \u0438 \u043C\u043E\u0433\u0443\u0442 \u0447\u0435\u0441\u0442\u043D\u043E \u043F\u043E\u043A\u0440\u044B\u0442\u044C \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0435 \u0431\u0435\u0437 \u0438\u043C\u0438\u0442\u0430\u0446\u0438\u0438 LLM-\u0441\u0443\u0434\u044C\u0438.",
+      "requiredProof": [
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C executable oracle/test \u0434\u043B\u044F \u043C\u0438\u043D\u0438\u043C\u0443\u043C code \u0438 SQL benchmark cases.",
+        "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C machine-readable pass/fail verdict \u0438 failure reason \u0434\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0439 \u0437\u0430\u0434\u0430\u0447\u0438."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/agentic-benchmark-harne-b447fbac"
+    },
+    {
+      "requirementId": "req-11",
+      "requirement": "\u041E\u0447\u0438\u0441\u0442\u043A\u0430 \u0441\u0438\u043D\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 train/eval \u0434\u0430\u043D\u043D\u044B\u0445, \u0434\u0435\u0434\u0443\u043F\u043B\u0438\u043A\u0430\u0446\u0438\u044F, contamination control \u0438 \u0430\u043D\u0430\u043B\u0438\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT",
+        "TARGET_STACK:pandas"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Synthetic training/evaluation dataset quality controls, deduplication, contamination checks and failure-oriented filtering",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u0412\u0430\u043A\u0430\u043D\u0441\u0438\u044F \u043F\u0440\u044F\u043C\u043E \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0438 \u0438 \u043E\u0447\u0438\u0441\u0442\u043A\u0438 synthetic data; \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 pandas-based donor \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0430\u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u043D \u043F\u043E\u0434 LLM trajectories \u0438 contamination.",
+      "requiredProof": [
+        "\u041D\u0430 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C pandas DataFrame \u0432\u044B\u044F\u0432\u0438\u0442\u044C duplicates, invalid trajectories \u0438 train/eval contamination.",
+        "\u0421\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C clean/quarantine outputs \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0441\u0447\u0435\u0442\u0447\u0438\u043A\u0438 \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u043D\u043E\u0441\u0442\u044C \u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u043E\u0432."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/synthetic-training-eval-00c1d43f"
+    },
+    {
+      "requirementId": "req-12",
+      "requirement": "SQL-\u0437\u0430\u0434\u0430\u0447\u0438 \u0434\u043B\u044F \u0430\u0433\u0435\u043D\u0442\u043E\u0432 \u0438 \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0435 database oracles",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "RESPONSIBILITIES_TEXT",
+        "TARGET_STACK:SQL"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "SQL-agent tasks and executable database oracles for generated benchmarks",
+      "proofTargetCapability": null,
+      "proofScope": "LOCAL",
+      "rationale": "SQL \u044F\u0432\u043D\u043E \u043D\u0430\u0437\u0432\u0430\u043D \u0434\u043E\u043C\u0435\u043D\u043E\u043C \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0445 \u0437\u0430\u0434\u0430\u0447, \u0430 donor \u0443\u0436\u0435 \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 sqlite3 execution; \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E benchmark-oriented adaptation.",
+      "requiredProof": [
+        "\u0418\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u044C agent-generated SQL \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u043C SQL engine.",
+        "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C result set \u0441 independently computed canonical oracle."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN_LOCAL",
+      "evidence": "evidence/v030/sql-agent-tasks-and-exe-31fdd585"
+    },
+    {
+      "requirementId": "req-13",
+      "requirement": "Python \u043A\u0430\u043A \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u0439 \u044F\u0437\u044B\u043A \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "TARGET_STACK:Python"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "Python \u0437\u0430\u0434\u0430\u043D \u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0449\u0438\u043A\u043E\u043C \u043A\u0430\u043A target stack \u0438 \u0443\u0436\u0435 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F runtime language \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0435\u0433\u043E integration donor.",
+      "requiredProof": [
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C project entrypoint \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u043C Python runtime \u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044C smoke/integration test \u0441 exit code 0.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0438\u043C\u043F\u043E\u0440\u0442 project modules \u0438 reproducible execution \u0438\u0437 \u0447\u0438\u0441\u0442\u043E\u0433\u043E process invocation."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/project-owned-end-to-en-f490927d"
+    },
+    {
+      "requirementId": "req-14",
+      "requirement": "pytest \u0434\u043B\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 unit/integration/benchmark \u043F\u0440\u043E\u0432\u0435\u0440\u043E\u043A",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "TARGET_STACK:pytest"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "pytest \u043D\u0435 \u0443\u043A\u0430\u0437\u0430\u043D \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u043C \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E, \u043D\u043E \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0438 \u0431\u0435\u0437 \u0438\u0441\u043A\u0430\u0436\u0435\u043D\u0438\u044F \u0443\u0441\u0438\u043B\u0438\u0432\u0430\u0435\u0442 executable benchmark capability.",
+      "requiredProof": [
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C pytest suite \u0434\u043B\u044F code, SQL \u0438 tool-use benchmark cases \u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u043C\u044B\u0435 pass/fail \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B.",
+        "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0445\u043E\u0442\u044F \u0431\u044B \u043E\u0434\u0438\u043D \u043D\u0430\u043C\u0435\u0440\u0435\u043D\u043D\u043E failing case, \u0447\u0442\u043E\u0431\u044B \u0434\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0443 oracle, \u0430 \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E happy path."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/agentic-benchmark-harne-b447fbac"
+    },
+    {
+      "requirementId": "req-15",
+      "requirement": "FastAPI \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 service interface \u0434\u043B\u044F \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u043C\u043E\u0433\u043E \u0434\u043E\u0441\u0442\u0443\u043F\u0430 \u043A \u043F\u0440\u043E\u0435\u043A\u0442\u0443",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "TARGET_STACK:FastAPI"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Project-owned end-to-end integration, reproducible runtime, experiment artifacts and local service interface",
+      "proofTargetCapability": null,
+      "proofScope": "LOCAL",
+      "rationale": "FastAPI \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F planner target, \u0430 donor \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 FastAPI app; \u0435\u0433\u043E \u043C\u043E\u0436\u043D\u043E \u0447\u0435\u0441\u0442\u043D\u043E \u0430\u0434\u0430\u043F\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043A\u0430\u043A \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0431\u0435\u0437 production claims.",
+      "requiredProof": [
+        "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0440\u0435\u0430\u043B\u044C\u043D\u044B\u0439 FastAPI application \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C HTTP 200 \u043D\u0430 /health.",
+        "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0442\u0438\u043F\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 request \u043D\u0430 project endpoint \u0438 \u0432\u0430\u043B\u0438\u0434\u0438\u0440\u043E\u0432\u0430\u0442\u044C response schema."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN_LOCAL",
+      "evidence": "evidence/v030/project-owned-end-to-en-f490927d"
+    },
+    {
+      "requirementId": "req-16",
+      "requirement": "Agentic benchmark design \u0438 \u043F\u043E\u043D\u0438\u043C\u0430\u043D\u0438\u0435 \u0437\u0430\u0434\u0430\u0447, \u043E\u0440\u0430\u043A\u043B\u043E\u0432 \u0438 \u043E\u0446\u0435\u043D\u043A\u0438",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u0412\u0430\u043A\u0430\u043D\u0441\u0438\u044F \u043F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u044F\u0435\u0442 SWE-bench, Terminal-Bench, SQL/BIRD \u0438 CyberGym \u043A\u0430\u043A \u043F\u0440\u0438\u043C\u0435\u0440\u044B, \u0430 \u043D\u0435 \u043A\u0430\u043A \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0435 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0432\u043D\u0435\u0448\u043D\u0435\u0433\u043E benchmark; \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 executable harness \u0447\u0435\u0441\u0442\u043D\u043E \u0434\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442 \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E \u0437\u0430\u0434\u0430\u0447, oracles \u0438 scoring.",
+      "requiredProof": [
+        "\u041E\u043F\u0440\u0435\u0434\u0435\u043B\u0438\u0442\u044C benchmark task schema, executable oracle \u0438 scoring contract \u0438 \u043F\u0440\u043E\u0433\u043D\u0430\u0442\u044C \u0438\u0445 \u043D\u0430 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 domain cases.",
+        "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0440\u0430\u0437\u043B\u0438\u0447\u0438\u0435 execution failure, oracle failure \u0438 wrong-answer failure \u0432 taxonomy."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/agentic-benchmark-harne-b447fbac"
+    },
+    {
+      "requirementId": "req-17",
+      "requirement": "\u0423\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E agent frameworks: tools, memory, context compression, subagents \u0438 trajectories",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT"
+      ],
+      "coverage": "DEFERRED",
+      "mappedCapability": "Agentic LLM runtime with planning, tool calling, memory, retries and reproducible agent trajectories",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "\u042D\u0442\u043E \u043F\u043B\u044E\u0441 \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438 \u0438 \u0441\u0435\u043C\u0430\u043D\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043E\u0441\u0442\u0430\u0435\u0442\u0441\u044F \u0446\u0435\u043B\u044C\u043D\u044B\u043C \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435\u043C agent runtime capability, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0439 proof brick \u043D\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F. BUILD137_DEFERRED_BY_USER=true; required proof is preserved in backlog and is not claimed by the current candidate.",
+      "requiredProof": [
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C trajectory \u0441 tool use \u0438 memory, \u0437\u0430\u0442\u0435\u043C \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0438\u0437\u043C\u0435\u0440\u0438\u043C\u043E\u0435 context compaction.",
+        "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0439 subagent/delegation step \u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0432\u043E\u0437\u0432\u0440\u0430\u0442 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u0430 \u0432 parent trajectory."
+      ],
+      "implemented": false,
+      "proven": false,
+      "proofStatus": "DEFERRED",
+      "evidence": ""
+    },
+    {
+      "requirementId": "req-18",
+      "requirement": "\u0410\u043D\u0430\u043B\u0438\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u043D\u044B\u0445 \u043C\u0435\u0441\u0442 \u0432 \u0440\u0430\u0431\u043E\u0442\u0435 LLM \u0447\u0435\u0440\u0435\u0437 benchmark failures \u0438 before/after evaluation",
+      "importance": "REQUIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT"
+      ],
+      "coverage": "COVERED_BY_CAPABILITY",
+      "mappedCapability": "Agentic benchmark harness with deterministic oracles, tests and domain-specific scoring for code, SQL and tool-use trajectories",
+      "proofTargetCapability": null,
+      "proofScope": "FULL",
+      "rationale": "Failure taxonomy \u0438 executable benchmark outcomes \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0442 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u043D\u043E \u0430\u043D\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043E\u0448\u0438\u0431\u043A\u0438 \u043C\u043E\u0434\u0435\u043B\u0438 \u0431\u0435\u0437 \u0441\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0430\u043D\u0430\u043B\u0438\u0437\u0430 \u043A README-\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u044E.",
+      "requiredProof": [
+        "\u0421\u043E\u0431\u0440\u0430\u0442\u044C failure cases \u0438\u0437 \u0444\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445 benchmark executions \u0438 \u043A\u043B\u0430\u0441\u0441\u0438\u0444\u0438\u0446\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u0440\u0438\u0447\u0438\u043D\u044B \u043F\u043E \u043F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u043C\u044B\u043C \u043F\u0440\u0438\u0437\u043D\u0430\u043A\u0430\u043C.",
+        "\u0421\u0440\u0430\u0432\u043D\u0438\u0442\u044C distribution \u043E\u0448\u0438\u0431\u043E\u043A baseline \u0438 trained model \u0438 \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0438\u0437\u043C\u0435\u043D\u0438\u0432\u0448\u0438\u0435\u0441\u044F \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438."
+      ],
+      "implemented": true,
+      "proven": true,
+      "proofStatus": "PROVEN",
+      "evidence": "evidence/v030/agentic-benchmark-harne-b447fbac"
+    },
+    {
+      "requirementId": "req-19",
+      "requirement": "\u041E\u0444\u0438\u0441\u043D\u044B\u0435 \u0438 \u043A\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u043D\u044B\u0435 \u0430\u0433\u0435\u043D\u0442\u043D\u044B\u0435 \u0437\u0430\u0434\u0430\u0447\u0438",
+      "importance": "DESIRED",
+      "sourceRefs": [
+        "REQUIREMENTS_TEXT",
+        "RESPONSIBILITIES_TEXT"
+      ],
+      "coverage": "DESIRED_UNCOVERED",
+      "mappedCapability": null,
+      "proofTargetCapability": null,
+      "proofScope": "NONE",
+      "rationale": "\u041E\u043D\u0438 \u044F\u0432\u043D\u043E \u043E\u0431\u043E\u0437\u043D\u0430\u0447\u0435\u043D\u044B \u043A\u0430\u043A \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043F\u043B\u044E\u0441/\u0434\u043E\u043C\u0435\u043D\u043D\u044B\u0435 \u043F\u0440\u0438\u043C\u0435\u0440\u044B. \u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0445 office/cyber execution environments \u043D\u0435\u043F\u0440\u043E\u043F\u043E\u0440\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u0438\u043B\u043E \u0431\u044B \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 candidate; \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0435 code/SQL/tool-use agent mechanics \u0443\u0436\u0435 \u043F\u0440\u043E\u0432\u0435\u0440\u044F\u044E\u0442\u0441\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u043E.",
+      "requiredProof": [
+        "\u041D\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F: optional domain \u043E\u0441\u0442\u0430\u0435\u0442\u0441\u044F \u044F\u0432\u043D\u043E \u043D\u0435\u043F\u043E\u043A\u0440\u044B\u0442\u044B\u043C \u0438 \u043D\u0435 \u0434\u043E\u043B\u0436\u0435\u043D \u0437\u0430\u044F\u0432\u043B\u044F\u0442\u044C\u0441\u044F \u043A\u0430\u043A \u0434\u043E\u043A\u0430\u0437\u0430\u043D\u043D\u044B\u0439."
+      ],
+      "implemented": false,
+      "proven": false,
+      "proofStatus": "DESIRED_UNCOVERED",
+      "evidence": ""
+    }
+  ],
+  "findings": [],
+  "nextStage": "4 \u00B7 v0.26 PROOF",
+  "createdAt": "2026-10-02T17:13:01.1732591+00:00"
+}

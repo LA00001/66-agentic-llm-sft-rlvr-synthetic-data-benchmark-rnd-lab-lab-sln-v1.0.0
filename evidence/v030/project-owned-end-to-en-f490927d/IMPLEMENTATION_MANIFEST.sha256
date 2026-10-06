@@ -1,0 +1,7 @@
+20e5721ff2c4d609c8d343ece07b8c101ce5d6bc1459c4a2189dc46544bc3018  src/bricks/project-owned-end-to-en-f490927d/brick.yaml
+a7662f08732c567435e77cb29719770003652e9c549323b767f2a747398691be  src/bricks/project-owned-end-to-en-f490927d/core.py
+eaf2f6c144f9c0bb00fd56413dda53319a863617f7210a3cb92541a574e166c3  src/bricks/project-owned-end-to-en-f490927d/requirements.txt
+63fd74264ac6ae94ef1a8dd37e9611b2cc492f7a987311c5fbae80dba6deaf3f  src/bricks/project-owned-end-to-en-f490927d/__init__.py
+fa8ba55057a822f06d975dbb147513f9d6e874feb6c7d579022376f03168fc38  tests/bricks/project-owned-end-to-en-f490927d/test_contract.py
+25293efc536bc2b539c95ac569e2e983ee1b2dbfbeb07451b479d8a35df0eafe  tests/bricks/project-owned-end-to-en-f490927d/test_integration.py
+de59ef5b693814f836c530b3c77a7f86fb5581024dd706b991ddea025779446a  tests/bricks/project-owned-end-to-en-f490927d/test_unit.py

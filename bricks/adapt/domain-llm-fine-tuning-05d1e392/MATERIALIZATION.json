@@ -1,0 +1,11 @@
+{
+  "strategy": "ADAPT",
+  "source": "nlp-llm-fine-tuning-and-5ad208ff@1.0.1",
+  "sourceProject": 65,
+  "expected_fingerprint": "a42415e8ecc73501d9f670c4b10e49117adb51fedb88781b1fd23ba6eb8429a9",
+  "materialized_files": 4,
+  "immutable_base": true,
+  "editable_workspace": "work",
+  "materialization_boundary": "SHALLOW_V1",
+  "transitive_copy": false
+}

@@ -1,0 +1,39 @@
+﻿brick_schema: '1.0'
+id: 'project-owned-docker-pa-ffcf750f'
+logical_id: 'project-owned-docker-packaging-configuration-and-end-to-end-integration-'
+name: 'Project-owned Docker packaging, configuration and end-to-end integration of agents, retrieval, ML, SQL/PySpark and API components'
+version: 0.1.0
+status: EXPERIMENTAL
+language: python
+contract: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+capabilities:
+  - 'Project-owned Docker packaging, configuration and end-to-end integration of agents, retrieval, ML, SQL/PySpark and API components'
+runtime:
+  family: python
+  profile: 'python'
+runtime_contract:
+  input: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  output: 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  requires:
+    - 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  provides:
+    - 'foundry.candidate.project-owned-docker-pa-ffcf750f.v1'
+  resources: []
+  side_effects: []
+  timeout_ms: 15000
+  retry_policy:
+    mode: none
+    max_attempts: 1
+    backoff_ms: 0
+implementation:
+  release: 0.30.1
+  provider: 'ai-generic-chatgpt-webview2-cache-v2'
+  source_of_truth: repository-short-path
+provenance:
+  strategy: NEW
+  origin: 'NEW'
+  origin_project: null
+  source_fingerprint: 'NEW'
+reuse:
+  eligible: false
+  policy: Requires v0.30 implementation proof + fresh v0.26 project proof before promotion.

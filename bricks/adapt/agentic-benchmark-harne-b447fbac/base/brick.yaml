@@ -1,0 +1,26 @@
+id: evidence-registry
+name: Evidence Registry
+version: 1.0.0
+type: component
+language: python
+stage: 9
+strategy: NEW
+origin: NEW
+capabilities:
+- evidence
+- integrity
+- testing
+contract: foundry.platform.evidence_registry.v1
+evidence:
+  required:
+  - unit-tests
+  - integration-test
+source:
+  entrypoint: bricks/platform/evidence_registry/core.py
+  tests: []
+runtime:
+  family: python
+  profile: analytics-py314-v1
+provenance:
+  origin: NEW
+  strategy: NEW
